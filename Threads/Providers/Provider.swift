@@ -16,11 +16,11 @@ protocol LocationInfoProvider {
 }
 
 protocol LogUploaderSync {
-    func uploadString(_ string: String) -> Error?
+    func uploadString(_ string: String, url: URL) -> Error?
 }
 
 protocol LogUploaderAsync {
-    func uploadString(_ string: String, completion :@escaping (Error?)->())
+    func uploadString(_ string: String, url: URL, completion :@escaping (Error?)->())
 }
 
 typealias LogUploader = LogUploaderSync & LogUploaderAsync

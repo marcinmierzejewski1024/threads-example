@@ -18,6 +18,8 @@
 		5697EF3428C2903E00D4BF7A /* ThreadsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697EF3328C2903E00D4BF7A /* ThreadsTests.swift */; };
 		5697EF3B28C2923700D4BF7A /* ProviderMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697EF3A28C2923700D4BF7A /* ProviderMocks.swift */; };
 		5697EF4128C3412900D4BF7A /* Threads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697EF4028C3412900D4BF7A /* Threads.swift */; };
+		5697EF4428C3726F00D4BF7A /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697EF4328C3726F00D4BF7A /* ApiClient.swift */; };
+		5697EF4628C372B900D4BF7A /* UrlSessionApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697EF4528C372B900D4BF7A /* UrlSessionApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		5697EF3328C2903E00D4BF7A /* ThreadsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTests.swift; sourceTree = "<group>"; };
 		5697EF3A28C2923700D4BF7A /* ProviderMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderMocks.swift; sourceTree = "<group>"; };
 		5697EF4028C3412900D4BF7A /* Threads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Threads.swift; sourceTree = "<group>"; };
+		5697EF4328C3726F00D4BF7A /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		5697EF4528C372B900D4BF7A /* UrlSessionApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSessionApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		5697EF1428C203BD00D4BF7A /* Threads */ = {
 			isa = PBXGroup;
 			children = (
+				5697EF4228C3724A00D4BF7A /* Services */,
 				5697EF3F28C3411300D4BF7A /* Concurency */,
 				5697EF3E28C340C800D4BF7A /* Views */,
 				5697EF3D28C3409C00D4BF7A /* Providers */,
@@ -145,6 +150,15 @@
 				5697EF4028C3412900D4BF7A /* Threads.swift */,
 			);
 			path = Concurency;
+			sourceTree = "<group>";
+		};
+		5697EF4228C3724A00D4BF7A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5697EF4328C3726F00D4BF7A /* ApiClient.swift */,
+				5697EF4528C372B900D4BF7A /* UrlSessionApiClient.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,11 +263,13 @@
 			files = (
 				5697EF1828C203BD00D4BF7A /* ContentView.swift in Sources */,
 				5697EF3B28C2923700D4BF7A /* ProviderMocks.swift in Sources */,
+				5697EF4428C3726F00D4BF7A /* ApiClient.swift in Sources */,
 				5697EF1628C203BD00D4BF7A /* ThreadsApp.swift in Sources */,
 				5697EF4128C3412900D4BF7A /* Threads.swift in Sources */,
 				5697EF2A28C20A3B00D4BF7A /* ProviderImpl.swift in Sources */,
 				5697EF2628C2067300D4BF7A /* IntervalThread.swift in Sources */,
 				5697EF2828C20A2F00D4BF7A /* Provider.swift in Sources */,
+				5697EF4628C372B900D4BF7A /* UrlSessionApiClient.swift in Sources */,
 				5697EF2428C203DD00D4BF7A /* ThreadViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -50,7 +50,7 @@ class T3 : IntervalThread {
     
     var mode = UploadMode.sync
     var uploader : LogUploader?
-    var url : String?
+    var url : URL?
     var queueSize = 1
     
     private var packagesToSend = [String]()
@@ -85,6 +85,11 @@ class T3 : IntervalThread {
     
     func uploadNextPackage(){
 
+        guard let url = url else {
+            print("missing url!")
+            return
+        }
+        
         self.packagesToSendSemaphore.wait()
         let nextPackage = packagesToSend.first
         self.packagesToSendSemaphore.signal()
@@ -94,7 +99,7 @@ class T3 : IntervalThread {
         if let nextPackage = nextPackage {
             switch mode {
             case .async:
-                uploader?.uploadString(nextPackage, completion: { [weak self] err in
+                uploader?.uploadString(nextPackage, url: url, completion: { [weak self] err in
                     if let err = err {
                          print("Error while uploading package \(nextPackage) err:\(err)")
                     } else {
@@ -105,7 +110,7 @@ class T3 : IntervalThread {
                     }
                 })
             case .sync:
-                let err = uploader?.uploadString(nextPackage)
+                let err = uploader?.uploadString(nextPackage, url: url)
                 if let err = err {
                     print("Error while uploading package \(nextPackage) err:\(err)")
                 } else {

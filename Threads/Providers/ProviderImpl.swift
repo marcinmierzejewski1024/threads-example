@@ -49,11 +49,37 @@ class LocationInfoProviderImpl : NSObject, LocationInfoProvider, CLLocationManag
 }
 
 class LogUploaderImpl : LogUploader {
-    func uploadString(_ string: String) -> Error? {
-        return nil;
+    
+    let urlSessionClient = URLSessionApiClient()
+    
+    func uploadString(_ string: String, url: URL) -> Error? {
+        
+        var error : Error?
+        let waiter = DispatchGroup()
+        let request = prepareRequest(url: url, content: string)
+        
+        waiter.enter()
+        urlSessionClient.httpRequest(request) { data, potentialErr in
+            error = potentialErr
+            waiter.leave()
+        }
+        waiter.wait()
+        
+        return error
     }
     
-    func uploadString(_ string: String, completion: @escaping (Error?) -> ()) {
-        completion(nil)
+    func uploadString(_ string: String, url: URL, completion: @escaping (Error?) -> ()) {
+        let request = prepareRequest(url: url, content: string)
+        urlSessionClient.httpRequest(request) { data, potentialErr in
+            completion(potentialErr)
+        }
+
+    }
+    
+    func prepareRequest(url: URL, content: String) -> ApiRequest {
+        let requestBody = ApiRequestBody(body: ["data":content])
+        let request = ApiRequest.post(url: url.path, body: requestBody, headers: nil)
+        
+        return request
     }
 }

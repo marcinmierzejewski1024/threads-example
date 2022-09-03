@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F497A9C0-FEDB-495B-B20F-0B0598DE4F71"
+            uuid = "7E74F61F-89F0-4A44-AC11-B2FD3F38CD8C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Threads/Concurency/Threads.swift"
+            filePath = "Threads/Services/UrlSessionApiClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "uploadNextPackage()"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "httpRequest(_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7DCC4D29-70F0-4AEB-AE78-771EC40DFED5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Threads/Services/UrlSessionApiClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "httpRequest(_:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

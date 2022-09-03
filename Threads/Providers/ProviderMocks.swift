@@ -25,14 +25,14 @@ class LocationMockProviderImpl : LocationInfoProvider {
 class LogUploaderMockImpl : LogUploader {
     var uploaded = [String]()
     
-    func uploadString(_ string: String) -> Error? {
+    func uploadString(_ string: String, url: URL) -> Error? {
         Thread.sleep(forTimeInterval: 0.2)
         print("uploaded \(string)")
         uploaded.append(string)
         return nil;
     }
     
-    func uploadString(_ string: String, completion: @escaping (Error?) -> ()) {
+    func uploadString(_ string: String, url: URL, completion: @escaping (Error?) -> ()) {
         
         DispatchQueue.global().asyncAfter(deadline: .now() + 0.1) {
             print("uploaded \(string)")
@@ -57,7 +57,7 @@ class ThreadViewModelMockConfiguratorImpl : ThreadViewModelConfigurator {
         
         let t3 = T3()
         t3.queueSize = queueSize
-        t3.url = url
+        t3.url = URL(string: url)
         t3.interval = min(t1Interval, t2Interval) * 0.1
         t3.uploader = LogUploaderMockImpl()
         
