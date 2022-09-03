@@ -7,6 +7,16 @@
 
 import Foundation
 
+enum ApiError: Error {
+    case connectionError
+    case notFound
+    case invalidResponse
+    case serverError
+    case serverUnavailable
+    case timeOut
+    case unsuppotedURL
+ }
+
 public struct ApiRequestBody {
     var body : [String:String]
     

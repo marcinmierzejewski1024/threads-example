@@ -19,10 +19,10 @@ class ThreadViewModel {
     var t3 : T3?
     
     func handleStart() {
-        let a = 0.02
-        let b = 0.01
-        let c = 40
-        let d = "http://wp.pl"
+        let a = 1.2
+        let b = 2.01
+        let c = 3
+        let d = "https://wp.pl"
         
         prepareThreads(t1Interval: a, t2Interval: b, queueSize: c, url: d)
         start()

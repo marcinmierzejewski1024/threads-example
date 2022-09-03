@@ -48,7 +48,7 @@ class T3 : IntervalThread {
         case sync
     }
     
-    var mode = UploadMode.sync
+    var mode = UploadMode.async
     var uploader : LogUploader?
     var url : URL?
     var queueSize = 1
@@ -59,11 +59,11 @@ class T3 : IntervalThread {
     override func main() {
         while (!isCancelled) {
             
-            var potentialPackage :String?
+            var potentialPackage: String?
             
             ThreadViewModel.sharedListSemaphore.wait()
             if (ThreadViewModel.sharedList.count >= queueSize) {
-                let items = ThreadViewModel.sharedList.dropFirst(queueSize)
+                let items = ThreadViewModel.sharedList.prefix(queueSize)
                 potentialPackage = items.joined(separator: ",")
             }
             ThreadViewModel.sharedListSemaphore.signal()
@@ -74,9 +74,9 @@ class T3 : IntervalThread {
                 packagesToSend.append(potentialPackage)
                 self.packagesToSendSemaphore.signal()
 
+                self.uploadNextPackage()
             }
             
-            self.uploadNextPackage()
 
             Thread.sleep(forTimeInterval: self.interval)
         }

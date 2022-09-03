@@ -31,7 +31,6 @@ public class URLSessionApiClient : ApiClient {
                 connectionBody = try body.toData()
                 connectionHeaders = headers
                 
-                
             case .delete(let url, let body, let headers):
                 urlString = url
                 connectionBody = try body.toData()
@@ -40,10 +39,10 @@ public class URLSessionApiClient : ApiClient {
             }
         } catch {
             completion(nil, error)
+            return
         }
         
         if let urlFromString = URL(string: urlString ?? ""){
-
             var urlRequest = URLRequest(url: urlFromString)
             urlRequest.httpBody = connectionBody
             urlRequest.httpMethod = httpMethod
@@ -52,8 +51,9 @@ public class URLSessionApiClient : ApiClient {
             let dataTask = session.dataTask(with: urlRequest) { data, response, error in
                 completion(data, error)
             }
-            
             dataTask.resume()
+        } else {
+            completion(nil, ApiError.unsuppotedURL)
         }
         
     }

@@ -78,7 +78,7 @@ class LogUploaderImpl : LogUploader {
     
     func prepareRequest(url: URL, content: String) -> ApiRequest {
         let requestBody = ApiRequestBody(body: ["data":content])
-        let request = ApiRequest.post(url: url.path, body: requestBody, headers: nil)
+        let request = ApiRequest.post(url: url.absoluteString, body: requestBody, headers: nil)
         
         return request
     }
