@@ -12,11 +12,11 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Button("START") {
-                threadViewModel.handleStart()
+                threadViewModel.startClicked()
             }.padding()
             
             Button("STOP") {
-                threadViewModel.handleStop()
+                threadViewModel.stopClicked()
             }.padding()
 
             

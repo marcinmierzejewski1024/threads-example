@@ -11,14 +11,13 @@ class ThreadViewModel {
     
     static let sharedListSemaphore = DispatchSemaphore(value: 1)
     static var sharedList = [String]()
-//    static var sharedListFilledSemaphore : DispatchSemaphore?
     
     var configurator: ThreadViewModelConfigurator = ThreadViewModelConfiguratorImpl()
     var t1 : T1?
     var t2 : T2?
     var t3 : T3?
     
-    func handleStart() {
+    func startClicked() {
         let a = 1.2
         let b = 2.01
         let c = 3
@@ -30,21 +29,17 @@ class ThreadViewModel {
     
     
     func prepareThreads(t1Interval:TimeInterval, t2Interval:TimeInterval, queueSize:Int, url: String) {
-        
         guard t1 == nil else {
             print("already prepared")
             return
         }
-//        ThreadViewModel.sharedListFilledSemaphore = DispatchSemaphore(value: -queueSize)
-//        #warning("mock configurator")
-//        self.configurator = ThreadViewModelMockConfiguratorImpl()
         
         (self.t1, self.t2, self.t3) = self.configurator.prepareThreads(t1Interval: t1Interval, t2Interval: t2Interval, queueSize: queueSize, url: url)
         
     }
     
     func start() {
-        guard !(t1?.isExecuting ?? true) else {
+        guard !(t1?.isExecuting ?? false) else {
             print("already started")
             return
         }
@@ -55,7 +50,7 @@ class ThreadViewModel {
     }
     
     
-    func handleStop() {
+    func stopClicked() {
         t1?.cancel()
         t2?.cancel()
         t3?.cancel()

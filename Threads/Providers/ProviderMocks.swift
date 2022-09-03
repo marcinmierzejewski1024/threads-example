@@ -10,7 +10,6 @@ import Foundation
 class BatteryMockProviderImpl : BatteryInfoProvider {
     func getBatteryPercentage() -> Float {
         return 77.4
-
     }
     
 }
@@ -26,20 +25,15 @@ class LogUploaderMockImpl : LogUploader {
     var uploaded = [String]()
     
     func uploadString(_ string: String, url: URL) -> Error? {
-        Thread.sleep(forTimeInterval: 0.2)
         print("uploaded \(string)")
         uploaded.append(string)
         return nil;
     }
     
     func uploadString(_ string: String, url: URL, completion: @escaping (Error?) -> ()) {
-        
-        DispatchQueue.global().asyncAfter(deadline: .now() + 0.1) {
-            print("uploaded \(string)")
-            self.uploaded.append(string)
-            completion(nil)
-
-        }
+        print("uploaded \(string)")
+        self.uploaded.append(string)
+        completion(nil)
     }
 }
 

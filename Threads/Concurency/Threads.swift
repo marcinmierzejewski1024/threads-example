@@ -39,10 +39,10 @@ class T3 : IntervalThread {
         case sync
     }
     
-    var mode = UploadMode.async
     var uploader : LogUploader?
     var url : URL?
     var queueSize = 1
+    var mode = UploadMode.async
     
     private var packagesToSend = [String]()
     private let packagesToSendSemaphore = DispatchSemaphore(value: 1)
@@ -54,23 +54,23 @@ class T3 : IntervalThread {
         ThreadViewModel.sharedListSemaphore.wait()
         if (ThreadViewModel.sharedList.count >= queueSize) {
             let items = ThreadViewModel.sharedList.prefix(queueSize)
+            ThreadViewModel.sharedList.removeFirst(queueSize)
             potentialPackage = items.joined(separator: ",")
         }
         ThreadViewModel.sharedListSemaphore.signal()
         
         
         if let potentialPackage = potentialPackage {
-            self.packagesToSendSemaphore.wait()
+            packagesToSendSemaphore.wait()
             packagesToSend.append(potentialPackage)
-            self.packagesToSendSemaphore.signal()
+            packagesToSendSemaphore.signal()
             
-            self.uploadNextPackage()
+            uploadNextPackage()
         }
     }
     
     
-    func uploadNextPackage(){
-        
+    func uploadNextPackage() {
         guard let url = url else {
             print("missing url!")
             return
@@ -84,6 +84,7 @@ class T3 : IntervalThread {
         
         if let nextPackage = nextPackage {
             switch mode {
+                
             case .async:
                 uploader?.uploadString(nextPackage, url: url, completion: { [weak self] err in
                     if let err = err {
@@ -95,6 +96,7 @@ class T3 : IntervalThread {
                         print("packagesToSend after \(self?.packagesToSend.count ?? -1)")
                     }
                 })
+                
             case .sync:
                 let err = uploader?.uploadString(nextPackage, url: url)
                 if let err = err {
