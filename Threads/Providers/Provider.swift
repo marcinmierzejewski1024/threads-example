@@ -12,7 +12,8 @@ protocol BatteryInfoProvider {
 }
 
 protocol LocationInfoProvider {
-    func getLatLng()->(Double,Double)?
+    func getLatLng() -> (Double,Double)?
+    func authorized() -> Bool
 }
 
 protocol LogUploaderSync {

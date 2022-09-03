@@ -8,6 +8,8 @@
 import Foundation
 
 class IntervalThread: Thread {
+    var logger : ((String) -> ())?
+    
     var interval = TimeInterval(1.0)
     
     override func main() {

@@ -21,6 +21,7 @@
 		5697EF4128C3412900D4BF7A /* Threads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697EF4028C3412900D4BF7A /* Threads.swift */; };
 		5697EF4428C3726F00D4BF7A /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697EF4328C3726F00D4BF7A /* ApiClient.swift */; };
 		5697EF4628C372B900D4BF7A /* UrlSessionApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697EF4528C372B900D4BF7A /* UrlSessionApiClient.swift */; };
+		5697EF4828C3EE7B00D4BF7A /* ConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697EF4728C3EE7B00D4BF7A /* ConsoleView.swift */; };
 		6357532498DB78C8CA31A8C0 /* Pods_ThreadsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E0F0CBE44686754709117E /* Pods_ThreadsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		5697EF4028C3412900D4BF7A /* Threads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Threads.swift; sourceTree = "<group>"; };
 		5697EF4328C3726F00D4BF7A /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		5697EF4528C372B900D4BF7A /* UrlSessionApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSessionApiClient.swift; sourceTree = "<group>"; };
+		5697EF4728C3EE7B00D4BF7A /* ConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleView.swift; sourceTree = "<group>"; };
 		71E0F0CBE44686754709117E /* Pods_ThreadsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreadsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E17810F299B0D110B09E5E /* Pods-ThreadsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreadsTests.debug.xcconfig"; path = "Target Support Files/Pods-ThreadsTests/Pods-ThreadsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		99B5B009568F2972524CB5F9 /* Pods-Threads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Threads.release.xcconfig"; path = "Target Support Files/Pods-Threads/Pods-Threads.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,7 +88,6 @@
 				90E17810F299B0D110B09E5E /* Pods-ThreadsTests.debug.xcconfig */,
 				B0ED2FA1A856D4070383F688 /* Pods-ThreadsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -172,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				5697EF1728C203BD00D4BF7A /* ContentView.swift */,
+				5697EF4728C3EE7B00D4BF7A /* ConsoleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -369,6 +371,7 @@
 				5697EF2A28C20A3B00D4BF7A /* ProviderImpl.swift in Sources */,
 				5697EF2628C2067300D4BF7A /* IntervalThread.swift in Sources */,
 				5697EF2828C20A2F00D4BF7A /* Provider.swift in Sources */,
+				5697EF4828C3EE7B00D4BF7A /* ConsoleView.swift in Sources */,
 				5697EF4628C372B900D4BF7A /* UrlSessionApiClient.swift in Sources */,
 				5697EF2428C203DD00D4BF7A /* ThreadViewModel.swift in Sources */,
 			);

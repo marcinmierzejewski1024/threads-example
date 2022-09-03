@@ -9,7 +9,7 @@ import Foundation
 
 class BatteryMockProviderImpl : BatteryInfoProvider {
     func getBatteryPercentage() -> Float {
-        return 77.4
+        return 0.77
     }
     
 }
@@ -17,6 +17,9 @@ class BatteryMockProviderImpl : BatteryInfoProvider {
 class LocationMockProviderImpl : LocationInfoProvider {
     func getLatLng() -> (Double, Double)? {
         return (51.3340, 20.5589)
+    }
+    func authorized() -> Bool {
+        return true
     }
     
 }

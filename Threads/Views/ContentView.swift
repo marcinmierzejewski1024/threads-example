@@ -8,16 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var threadViewModel = ThreadViewModel()
+    @ObservedObject var threadViewModel = ThreadViewModel()
     var body: some View {
         VStack {
-            Button("START") {
+            HStack {
+            Button("Start") {
                 threadViewModel.startClicked()
             }.padding()
             
-            Button("STOP") {
+            Button("Stop") {
                 threadViewModel.stopClicked()
             }.padding()
+                
+            Button("Debug") {
+                threadViewModel.debugClicked()
+            }.padding()
+            }
+            ConsoleView(content: threadViewModel.consoleLog)
+            
 
             
         }

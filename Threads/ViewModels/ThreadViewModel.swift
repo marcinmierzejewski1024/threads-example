@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import DBDebugToolkit
 
-class ThreadViewModel {
+class ThreadViewModel : ObservableObject {
     
     static let sharedListSemaphore = DispatchSemaphore(value: 1)
     static var sharedList = [String]()
@@ -16,11 +17,13 @@ class ThreadViewModel {
     var t1 : T1?
     var t2 : T2?
     var t3 : T3?
+    @Published var consoleLog = ""
+    
     
     func startClicked() {
-        let a = 1.2
-        let b = 2.01
-        let c = 3
+        let a = 0.001
+        let b = 0.002
+        let c = 100
         let d = "https://wp.pl"
         
         prepareThreads(t1Interval: a, t2Interval: b, queueSize: c, url: d)
@@ -30,23 +33,40 @@ class ThreadViewModel {
     
     func prepareThreads(t1Interval:TimeInterval, t2Interval:TimeInterval, queueSize:Int, url: String) {
         guard t1 == nil else {
-            print("already prepared")
+            printLog("already prepared")
             return
         }
         
         (self.t1, self.t2, self.t3) = self.configurator.prepareThreads(t1Interval: t1Interval, t2Interval: t2Interval, queueSize: queueSize, url: url)
         
+        t1?.logger = { [weak self] log in
+            self?.printLog(log)
+        }
+        t2?.logger = { [weak self] log in
+            self?.printLog(log)
+        }
+        t3?.logger = { [weak self] log in
+            self?.printLog(log)
+        }
+        
     }
     
     func start() {
         guard !(t1?.isExecuting ?? false) else {
-            print("already started")
+            printLog("already started")
+            return
+        }
+        
+        guard t2?.locationProvider?.authorized() ?? false else {
+            printLog("location not authorized!")
             return
         }
         
         t1?.start()
         t2?.start()
         t3?.start()
+        
+        printLog("started")
     }
     
     
@@ -58,6 +78,20 @@ class ThreadViewModel {
         t1 = nil
         t2 = nil
         t3 = nil
+        
+        printLog("stopped")
+    }
+    
+    
+    func debugClicked() {
+        DBDebugToolkit.showMenu()
+    }
+    
+    func printLog(_ text: String) {
+        DispatchQueue.main.async {
+            self.consoleLog = "\(text)\n\(self.consoleLog)"
+        }
+        print(text)
     }
 }
 

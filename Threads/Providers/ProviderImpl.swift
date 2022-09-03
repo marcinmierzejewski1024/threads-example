@@ -41,9 +41,22 @@ class LocationInfoProviderImpl : NSObject, LocationInfoProvider, CLLocationManag
         locationManager.requestWhenInUseAuthorization()
     }
     
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        
+    }
+    
+    func authorized() -> Bool {
+        switch locationManager.authorizationStatus {
+        case .authorizedWhenInUse, .authorizedAlways:
+            return true
+        default:
+            return false
+        }
+    }
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let lastLocation = locations.last {
-            lastLatLng = (lastLocation.coordinate.latitude,lastLocation.coordinate.longitude)
+            lastLatLng = (lastLocation.coordinate.latitude, lastLocation.coordinate.longitude)
         }
     }
 }

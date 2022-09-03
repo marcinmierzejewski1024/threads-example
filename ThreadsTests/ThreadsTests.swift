@@ -8,6 +8,7 @@
 import XCTest
 @testable import Threads
 
+
 class ThreadsTests: XCTestCase {
     
     func testPackaging() throws {
@@ -29,9 +30,8 @@ class ThreadsTests: XCTestCase {
             print(mockUploader.uploaded.count)
             XCTAssert(mockUploader.uploaded.count >= 10)
         }
-        
-        
     }
-
-
 }
+
+
+

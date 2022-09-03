@@ -72,7 +72,7 @@ class T3 : IntervalThread {
     
     func uploadNextPackage() {
         guard let url = url else {
-            print("missing url!")
+            logger?("missing url!")
             return
         }
         
@@ -80,7 +80,7 @@ class T3 : IntervalThread {
         let nextPackage = packagesToSend.first
         self.packagesToSendSemaphore.signal()
         
-        print("packagesToSend start \(self.packagesToSend.count)")
+        logger?("packages to send start \(self.packagesToSend.count)")
         
         if let nextPackage = nextPackage {
             switch mode {
@@ -88,23 +88,23 @@ class T3 : IntervalThread {
             case .async:
                 uploader?.uploadString(nextPackage, url: url, completion: { [weak self] err in
                     if let err = err {
-                        print("Error while uploading package \(nextPackage) err:\(err)")
+                        self?.logger?("Error while uploading package \(nextPackage) err:\(err)")
                     } else {
                         self?.packagesToSendSemaphore.wait()
                         self?.packagesToSend.removeFirst()
                         self?.packagesToSendSemaphore.signal()
-                        print("packagesToSend after \(self?.packagesToSend.count ?? -1)")
+                        self?.logger?("packages To Send after \(self?.packagesToSend.count ?? -1)")
                     }
                 })
                 
             case .sync:
                 let err = uploader?.uploadString(nextPackage, url: url)
                 if let err = err {
-                    print("Error while uploading package \(nextPackage) err:\(err)")
+                    logger?("Error while uploading package \(nextPackage) err:\(err)")
                 } else {
                     packagesToSend.removeFirst()//same thread - no need to synchronize access
                 }
-                print("packagesToSend after \(self.packagesToSend.count)")
+                logger?("packages To Send after \(self.packagesToSend.count)")
             }
         }
     }
