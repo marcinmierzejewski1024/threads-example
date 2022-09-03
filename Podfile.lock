@@ -1,0 +1,16 @@
+PODS:
+  - DBDebugToolkit (0.9.0)
+
+DEPENDENCIES:
+  - DBDebugToolkit
+
+SPEC REPOS:
+  trunk:
+    - DBDebugToolkit
+
+SPEC CHECKSUMS:
+  DBDebugToolkit: 41663a36673c919dfe665003f159ea5621aee0db
+
+PODFILE CHECKSUM: 8a5d69d0acbb0f5023ae7c2f29ae01906684b8d4
+
+COCOAPODS: 1.11.2

@@ -1,0 +1,1854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01CADB8927FEEB2FA5C3BBAC01B3607D /* DBDebugToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CEC3C633DAE3BD52D494795DC26FEA /* DBDebugToolkit.m */; };
+		02C64B5854F193E56DD0C54212A22247 /* DBPerformanceWidgetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7395C0A29D56E093D99A3A5E795610E /* DBPerformanceWidgetView.xib */; };
+		03528B0E99F454AAECE7A35E084929FE /* DBUserInterfaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B3B128F0CCC0D25FF10CD20E7F414E /* DBUserInterfaceTableViewController.m */; };
+		0464270806C95463211C632D4818685B /* DBColorPickerTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 26F30322747F00DAE364855B8DC29C92 /* DBColorPickerTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0592AB3D8EA42BE5AC6BFD68E98ECC68 /* DBGridOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 726B4A111F2074F284207738BA9B5B41 /* DBGridOverlayView.m */; };
+		061F026834F52A217E561B9B4FCD263F /* UIColor+DBDebugToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9402312FC4DF37B3DFFCEA7E17ED5460 /* UIColor+DBDebugToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0626CD021D1307FCD69B74038192B9E5 /* DBCrashReportDetailsTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0469501753B94BE32A18689E38290B55 /* DBCrashReportDetailsTableViewController.storyboard */; };
+		086892E3A41F4DE20B9DD1F67BCAA058 /* DBKeychainToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = F2558977421945302A8B7EADBC11DA88 /* DBKeychainToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08C4B942E653BAABA4CC4DBD9CD70B5E /* DBUserInterfaceToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = E97996D519F1863DDA656B61EA4E497C /* DBUserInterfaceToolkit.m */; };
+		09200C9C9D8CED5F5D2A6364575B4EBD /* ResourcesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484708B63CD10798F893871677BE24E /* ResourcesViewModel.swift */; };
+		0A3CE40D9B0EDB9326B658251E8160C8 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE145678FA6251AF845376C33C9C10 /* MenuList.swift */; };
+		0A46A164C533661B59B75FC0768DE636 /* DBResourcesTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D36E6EEA80FA827751A180E06CDC358 /* DBResourcesTableViewController.storyboard */; };
+		0B38897F2A3D7927A9C6A7B02E8BEFBA /* DBResourcesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CE04DB1FE689EB8F4E1B2991230F8F0 /* DBResourcesTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B9E8FF9E02FB4A57E697E82E1FB3E95 /* DBMenuTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD120AC494BF51491546B3F05C00A47 /* DBMenuTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C38CD4D8E0D2D8F0B29BE40E318A582 /* DBCustomAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FA883A69A3430B51B269CC79565D2C /* DBCustomAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D12AC0AE88DC2E5DBBF75CA74A7E13D /* DBPerformanceToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DACEA3D4DDC12779CA8F4D89D30B2 /* DBPerformanceToolkit.m */; };
+		106D2A8A1F4CBDF54DAF0A5BBD47986C /* DBCoreDataFilterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CB2658ED730465D28079FCA1C9BF12 /* DBCoreDataFilterTableViewController.m */; };
+		12D4A66766CB00846BD9288C57831EBD /* DBTextViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3868637932F74AF809A190215417FBA3 /* DBTextViewTableViewCell.xib */; };
+		13CD68494C16174D3DECAB22A8684AF2 /* DBDeviceInfoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 428C3D78520389229D1C0F00BACA3506 /* DBDeviceInfoProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		166D0C7A130C8C1FDCCE14CFE8D6D9E4 /* DBCoreDataFilterTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 916FF0A813B59881D8886327F7876A0D /* DBCoreDataFilterTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16A0C2AAACF64AFF3E6A73FD2DB03487 /* DBManagedObjectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDC3CF4F644DBBB0025E98C20A3D330 /* DBManagedObjectTableViewCell.m */; };
+		16E786FDCFA7485B5B51A34CC0E22D39 /* DBManagedObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E46AB538FEE99E6D192880C4DF17EA /* DBManagedObjectTableViewController.m */; };
+		17B37459772089A787F620662E188D30 /* DBResourcesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD566BBB42F5F37BD057DE5EAB5777D3 /* DBResourcesTableViewController.m */; };
+		184F818C9D05987B36BBF94091B8C9EC /* DBLocationTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548E49B8BC38ECA0032E9D08C96F7F2C /* DBLocationTableViewController.storyboard */; };
+		1A337AF1BEA62756199568B8C53B6B81 /* DBOptionsListTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E204D3AAE35CA4D5BC75B9C047E720E0 /* DBOptionsListTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C3373E64A1FFE45F094D3303A6F119F /* DBOptionsListTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CFFBC380105B3F16599943B371D2769 /* DBOptionsListTableViewController.storyboard */; };
+		1C5B2242DF82302D6B61E5A17A3A5F6A /* DBLocationTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 516E921CA0A9C86B86C8DEFB0B541E23 /* DBLocationTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D4C400B2BA970B392F59BF47C94A696 /* DBFPSCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A36A0EB271896A25022F5A506E63D2D /* DBFPSCalculator.m */; };
+		1E4E5D1387D75A66DF17988CC64391F7 /* DBTitleValueTableViewCellDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = CBCC8B3F457AC6F55755530795C70E1A /* DBTitleValueTableViewCellDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EAE3ED662417B63477B7721EBB3CB4D /* DBLongPressTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD4ABB82AE5A1E27FA1C127E5BEBAEF /* DBLongPressTrigger.m */; };
+		207CB6083F0C1C1DE427BC42B8A47980 /* DBSliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A4848FE78E0017BA5C4A38DBD5DE8E /* DBSliderTableViewCell.xib */; };
+		216402C7553A0740EC84C9C595B0FB4C /* Bundle+BuildInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F2FB47ACE18F6E1D2E1D2EDD5D45F /* Bundle+BuildInfo.swift */; };
+		226133E9CA5FAED5B64FDE09F63947B8 /* DBCoreDataFilterOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = B618863D16ED04971E00E24CD5ACF071 /* DBCoreDataFilterOperator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22F56D7DF5C62CBDFD1C6102A4544355 /* DBFileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6892C1B92A9BEC5C5010CFA169FED24D /* DBFileTableViewCell.xib */; };
+		22FB22235AE3348CF80D1CEF3DC5E9A1 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9AF8047D958A6BDE98669C7B11570F /* LocationView.swift */; };
+		240B23DD2CDFC1EEA18E7D22D4A27967 /* NSBundle+DBDebugToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = D55BEA4CD77BD6CF02B1D2248C76ED45 /* NSBundle+DBDebugToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24A08919DFE3C06188B55A0664E39604 /* DBCustomLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B955E734A435E9BD256FE7EB10E584E /* DBCustomLocationViewController.m */; };
+		24B3D21E9A25E1F8F42492E852BE8DEE /* RequestDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B0B3A4FCC143E7C6826B99D3C4532 /* RequestDetails.swift */; };
+		24CCEB5367F9EF84C2E7B8CAF8D13B2C /* CLLocationManager+DBLocationToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B86099F0DA845D4F0B4A83BB6764D60 /* CLLocationManager+DBLocationToolkit.m */; };
+		24E6B86C1284F8747BE83667F835E7E5 /* Pods-Threads-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4C74DF6748CFDEFB630DFAD407709B /* Pods-Threads-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27773DD7F2DF95265931E6642BE195EE /* DBImageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AFFBF8626D143D62B1EB172C4AECA6 /* DBImageViewViewController.m */; };
+		2841DF4527C4CFAB0092DD60C5CC74A8 /* DBCustomLocationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 145CDA617266721B6AD24A28382CA062 /* DBCustomLocationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2868D12A12004125C73D37EBEC1E9A46 /* DBShakeTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9233601300B5C7E4E6A597C498528E99 /* DBShakeTrigger.m */; };
+		28EF7D09A2518B06642498A655E7212A /* DBFilesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E8740D024D5676CBB1C9AE9DB3037C /* DBFilesTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C0CA98186550E2C89F4F2700027D454 /* DBCustomVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F85CC67880E6A26A050AE6BE8B228A /* DBCustomVariable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C8D9A38ACE5A21ED1510D7195B2EB17 /* DBMenuSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 12864362F52CC3D62F459AAE79EB48A7 /* DBMenuSwitchTableViewCell.m */; };
+		2E03EA2967A9836C8246B1717EF56A98 /* NetworkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA12FF3A0C8E5407704E58DFECF8C319 /* NetworkList.swift */; };
+		2E3FBF3A5F45806C76E8FD265E5DE954 /* DBDebugToolkitUserDefaultsKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 69EDCD09E2484FDC086CF84E523961EC /* DBDebugToolkitUserDefaultsKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E934F41A49F72054A5C75C10B9C16E3 /* UIWindow+keyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A90D920406526C28FBF400DB28FAA /* UIWindow+keyWindow.swift */; };
+		2FA94811F9969B79F2B8659C714BF683 /* DBFontFamiliesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EB22353EE21039EFB092584D2058F58 /* DBFontFamiliesTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31828ECC02B4E5A076D6F5D38EC72709 /* DBTextViewTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 931C230FD776EB787B6A53213A2066DA /* DBTextViewTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3377B0DB18ACF3DCED9E8A88BFC3F2FF /* UIColor+DBUserInterfaceToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A999BFD0AC50D9615C931EF90562B6 /* UIColor+DBUserInterfaceToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		345F9B5CC68BBBD38DF4A0172AB9478D /* Pods-ThreadsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A5BFE9ACA789FBD94114260C5EDC862 /* Pods-ThreadsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34DE249A76A3875EDC5EF2D68E3CC53D /* DBMenuTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B35BF94568B1D5E4B20B8191F26E3FC /* DBMenuTableViewController.storyboard */; };
+		358874A5B0CA1DF7BA41AECBC83406EA /* DBGridOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = D92B44939551ACD42BEA4CD2D4C8E9FA /* DBGridOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		360D740E3A9D691DC483DD7A97BBF315 /* DBTextViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35ECA3BE0F882F1058387416BC3BE932 /* DBTextViewTableViewCell.m */; };
+		36A22992AC40F87D47B3A0F3D280002D /* DBCoreDataFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B08D0D955B78217F82C6D52328B12A /* DBCoreDataFilter.m */; };
+		36F19678C41394D558C83B3922A23667 /* ConsoleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044C4B1A3B76E0397FD9443AFCEF350 /* ConsoleViewModel.swift */; };
+		3771FCD8FC5787126B780E6BF86D2FE2 /* DBTitleValueListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E47D45A66FA69234FD7EB2720A0661 /* DBTitleValueListTableViewController.m */; };
+		37DE891C5354807871C3432ECF3F5C71 /* DBRequestDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0A1D45997EFA27739781CEAC790450 /* DBRequestDataHandler.m */; };
+		382D373DAC2950006B4D90225DDDAA20 /* CustomActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38094E14C9E69D5F5A9282F5BD21B9F7 /* CustomActionsView.swift */; };
+		398633C49C496B9DDD10F0D4DBDF8BF9 /* DBFileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD31897BAA86F1583BBC838B0DAAF62 /* DBFileTableViewCell.m */; };
+		3B54CB4FB346D6F167E0CF930DC59938 /* NSPersistentStoreCoordinator+DBCoreDataToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = AD92CEAF58DA361837E683F388E49586 /* NSPersistentStoreCoordinator+DBCoreDataToolkit.m */; };
+		3DCF62968CDF34DAB06D193028049B74 /* NSURLSessionDelegateSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = F641B6F61654737621CE022C333E3823 /* NSURLSessionDelegateSwizzle.m */; };
+		3F425DE927F3BA3F045189B1B064195D /* DBCoreDataFilterSettingsTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D692C9AA332E7407487272FF89E4B54 /* DBCoreDataFilterSettingsTableViewController.storyboard */; };
+		3F93C31937BDC072B432210EE527E8C6 /* DBCustomVariablesTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BF5F770C11895188C9EEF0AA7D0142 /* DBCustomVariablesTableViewController.storyboard */; };
+		41521C48ED781DA8791506BBF9734E3F /* UIApplication+DBDebugToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = AEF4B4A00F0DCD759537997001DC3449 /* UIApplication+DBDebugToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41C141E01939D06FB5CA28755AD90F53 /* DBPresetLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECE8D466D7759825AF45EFAEDB8B4DA /* DBPresetLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		435704D72FE1627E0EB6DEDFB38D1A6E /* DBMenuSwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25AECA0325F83B8EFDD7A3E76B95C43A /* DBMenuSwitchTableViewCell.xib */; };
+		44FF238DDC162A3AB6AB6B63E72F1A60 /* NSURLSessionDelegateSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = F121FF52619029C0A1ACFD00996E4ACC /* NSURLSessionDelegateSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46707208AE8167A220762260981F193E /* DBColorPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3621AC07124CF3DF2C8457CEBB057D0 /* DBColorPickerTableViewCell.xib */; };
+		485C338804D835A8599F03F75B77E4A5 /* DBGridOverlaySettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8188B42640F2B80DCCA7DFBD0FE81910 /* DBGridOverlaySettingsTableViewController.m */; };
+		48F9F488366F926FCE8A5C85967FB4F7 /* DBTapTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BB5571B43B793A866C5C4597B0C7D0 /* DBTapTrigger.m */; };
+		495A33F355CDC69FC4F3AE4EE9975FA2 /* UIWindow+DBShakeTrigger.h in Headers */ = {isa = PBXBuildFile; fileRef = 885016BB1A651079F369A8B246F51086 /* UIWindow+DBShakeTrigger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BF825AE2AA2F88A8D80C269BFE3A1F8 /* DBPerformanceSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 96518C64E5C0F51C64E713A0DEC5AAFA /* DBPerformanceSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C890B683A00F055BA7AF81BAFCCA762 /* UserInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3D2966ECF3A2683148F4CF9D81A4B /* UserInterfaceView.swift */; };
+		4C9803A46DBDC147681DF931FA764CD8 /* DBRequestModel+responseDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2B0E2F32CEE29679BAFAD14568DF7 /* DBRequestModel+responseDescription.swift */; };
+		4CAE29D0EEBB76EFD60E36706ECD777A /* DBTopLevelViewsWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B7EA7D00958717D79511D0410A134 /* DBTopLevelViewsWrapper.m */; };
+		4CE448C070B565208F849C53F176C1C2 /* DBShakeTrigger.h in Headers */ = {isa = PBXBuildFile; fileRef = CF8BE4E21D8C21E4FB526A56E811CDC0 /* DBShakeTrigger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DAAB73D517B8C2F245CCEE16D6C2066 /* DBTopLevelViewsWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 39722CD3B520B8E1B87B86B75D06E32C /* DBTopLevelViewsWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F78BD63E1ABD311D0B55DBE7B0A7144 /* DBTopLevelView.h in Headers */ = {isa = PBXBuildFile; fileRef = ACAC1FB175DC8E4D29A3C00EEF1DBAD0 /* DBTopLevelView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		512E4BF4AA2C4447293F0F13AAE5E310 /* DBGridOverlayColorScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8D91924DF77839D08EEBB9439C7D93 /* DBGridOverlayColorScheme.m */; };
+		535978FB6B399B3C5B3AF380FCEA697C /* DBCrashReportDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C59388552FE59555E0CF5F8576C736B /* DBCrashReportDetailsTableViewController.m */; };
+		540D77E08F47F355E9BA9BA40FD2C321 /* CookiesList+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E28B9C1AD6710889D628080E95A9E37 /* CookiesList+ViewModel.swift */; };
+		554F10605AD063FBD07F76A223703D6E /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7760CE22308AB153B99F8764496BE3 /* MenuViewModel.swift */; };
+		576A6DAEC4FEDC6CFA9056B67FA6D4AD /* DBPersistentStoreCoordinatorsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A70C21A00DC927E1626BA9DFB9660447 /* DBPersistentStoreCoordinatorsTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		580AA6692F376EAD33FC1F8004EE6AB5 /* DBFontPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39495CB768B63785FFC3DD732194A4B0 /* DBFontPreviewViewController.m */; };
+		5BF56209464D2065608BC95681191BB0 /* DBNetworkSettingsTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC55EDC4387A16B83488D79D1547FE19 /* DBNetworkSettingsTableViewController.storyboard */; };
+		5DD42C0EB70BF06A54D924F4B189DAA4 /* UILabel+DBDebugToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 32FEB870F5F875BB380BE0BE0D9DD4E9 /* UILabel+DBDebugToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E9F0CF07DED4B5A34CC128AE4F3B2C2 /* DBRequestOutcome.h in Headers */ = {isa = PBXBuildFile; fileRef = 422151AB2ECBC756B24A4B329DA68ECC /* DBRequestOutcome.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F93BB19A77B683109644A6F44D3ED04 /* DBCoreDataFilterSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6EC253FE4A93FA80351E59D0089F9 /* DBCoreDataFilterSettingsTableViewController.m */; };
+		5FBFEDF663786D893661B9D1A5B3D629 /* DBCoreDataToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EBC22D455F9BEFA264BC9A7172C67C /* DBCoreDataToolkit.m */; };
+		61B46599D555DC11859AB38B0BC70013 /* DBTapTrigger.h in Headers */ = {isa = PBXBuildFile; fileRef = 796ADF3E6F60409F54ECEA7CFA08D118 /* DBTapTrigger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63272583DDF2D07998AC35A4E428F0A8 /* PerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8A29ABDECD6819D42FA4F91A249EB /* PerformanceView.swift */; };
+		643BB3D7861F0FC7B3F9164D7B20C769 /* DBCoreDataFilterTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D4758AF6353652ABAF45799FCFA82F /* DBCoreDataFilterTableViewController.storyboard */; };
+		644867300F8A436732BBBC5FF140FC49 /* DBPerformanceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B74DD567DB1819F6946EDBCE56D6DD2 /* DBPerformanceTableViewController.m */; };
+		64E3EF5ABF1768795E6EC2FF407AC71F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6835582C4C1FFCF64E2FCBD7A7873E0E /* DBTextViewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A95E7CC49D21DB42A73B6F9EA04C447 /* DBTextViewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6894A943AC940853CDC4F3F66E08D9C8 /* CustomVariablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF52F1183DAA7C8BB172244A1399396 /* CustomVariablesView.swift */; };
+		694D74C426F29040D2C53D6DE3821741 /* DBPersistentStoreCoordinatorsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 502FFD6B39A8B30170A0B885C06BC5D6 /* DBPersistentStoreCoordinatorsTableViewController.m */; };
+		69F248E46C8842596075C55E1E856FEB /* DBKeychainToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 86673FC976BCFE2F4797979855B4C4A8 /* DBKeychainToolkit.m */; };
+		6A34B1F1CC0553191971E6E27BF199DE /* DBMenuChartTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8693F91333D7BD5B1C99BDAADFF613BA /* DBMenuChartTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A8FA730D6DE05EEB55C6DD1399C2410 /* UIView+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F05B0663473CA21C89E3EBA2FE19FC2 /* UIView+Snapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B895A50F9DE4A1893AB5E7EA3ACF414 /* CrashReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7735285AE791A8549BFEF4F79E14A832 /* CrashReportsView.swift */; };
+		6BEC30B52D7538048FB6FB607D53F973 /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D381DAC868AB9DF1410EAE96D4E79F /* FilesView.swift */; };
+		6C0CE7873F6A393FC79C9AF884D6CDD0 /* TitleValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B8689C6FDF07B4362F54D7814DAD4 /* TitleValueView.swift */; };
+		6C13095552E3BC0D99C1221BAC3346CE /* DBConsoleOutputCaptor.h in Headers */ = {isa = PBXBuildFile; fileRef = B81E75FA5AE2F59302E1D489A31E0C1A /* DBConsoleOutputCaptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C26ADA950F9FD09B1C655FE4D70457D /* UIWindow+DBShakeTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB9761848F731CD25500E3B4C3753D3 /* UIWindow+DBShakeTrigger.m */; };
+		6F0C78172D9FD099BE9FF313156F700F /* DBOptionsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E02C78DD1B7FA907342BF476495A3137 /* DBOptionsListTableViewController.m */; };
+		6F4DA2395E15452E6225D9C93B0B6187 /* RequestBodyPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD967E14A2416FD58B6EB61BC912A4 /* RequestBodyPreview.swift */; };
+		6F8BE813730E4797FE91138C36D94A8D /* DBGridOverlaySettingsTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B298E0AF9A635238B89A335E1E7289D4 /* DBGridOverlaySettingsTableViewController.storyboard */; };
+		6FB4AC46B76CBC1E5E3A0ACFD47ADFD5 /* DBLongPressTrigger.h in Headers */ = {isa = PBXBuildFile; fileRef = 42CDD998E4B8F3E0395BBEF6ED0FA572 /* DBLongPressTrigger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70C1E3FCB0141F45233CD03C621A5E30 /* DBCustomVariablesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DBBEB4A2CAC0137FC1D378DBF8F1BA /* DBCustomVariablesTableViewController.m */; };
+		71B7E5690CCD928F9F52D46D35A074B9 /* DBManagedObjectsListTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 68B44C9B4132A0AA17756DA53B1E09A3 /* DBManagedObjectsListTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71C8B52698B485C114063BF60A174C8C /* NetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED8784726ABBC11317A9415CFA70EE7 /* NetworkViewModel.swift */; };
+		7626CC6C5B9F5680A341742DD4860ECD /* DBManagedObjectTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 267360C5078E7C3F741354DBE60D56F4 /* DBManagedObjectTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7828E5C9C6EC435C09EDF5401217AE63 /* ResourcesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E249771D40FBA071066F210FE2B4D71 /* ResourcesList.swift */; };
+		7AC18938CA67664C7416D4CA2182DBEA /* UILabel+DBDebugToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = AB44C0ED80EC7830AAB2123ABE5BEFC3 /* UILabel+DBDebugToolkit.m */; };
+		7AD084C6FE45BCF89D76F2D19AFD5DC9 /* DBImageViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE04279DF66CC6E18984581B42F9445 /* DBImageViewViewController.storyboard */; };
+		7B5B91FC16614942CBB426AF03E00D14 /* DBCoreDataFilterSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 65AD03EC8D7FA759D30836E68B80BC52 /* DBCoreDataFilterSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B6412C09E5D69F54EEDAACFAD400D13 /* UIWindow+DBUserInterfaceToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B06D106AD20F56A09D2F18ED16150F /* UIWindow+DBUserInterfaceToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C702375B3E0575541172E69FEF29D30 /* UIWindow+DBUserInterfaceToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = E69F0FE0945A420A72DD28D9AF40C0A9 /* UIWindow+DBUserInterfaceToolkit.m */; };
+		7EC87437DA614A352CE74CD8F805509C /* DBLocationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66F6E7BD368D615F5612A14B2209D6 /* DBLocationTableViewController.m */; };
+		7F6B36B0BFAD11BC8C5DBA18CA95A4FD /* CLLocationManager+DBLocationToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F8FE779A47B57DC2CEC6E455DC79A31 /* CLLocationManager+DBLocationToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F8BB011AC46D32699FEF4C1B219D9E0 /* DBCustomLocationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806F732D077782DD64243F54BA10C8F5 /* DBCustomLocationViewController.storyboard */; };
+		80CCFCA4BB55A980676158F70839E533 /* DBImageViewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD1642D27BFD8F730008A378EE6B399 /* DBImageViewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82081D6D19AA0633A441B28D05A8B0F8 /* DBColorCheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 59799C8332E040715658B712AC212055 /* DBColorCheckbox.m */; };
+		8473EF245C457982935B6F0421632073 /* DBFPSCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 14FF8B0C2C5AB8582F7DAE49195CB38E /* DBFPSCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85D352041DF595622D9477F00EA1CC27 /* CookiesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AE5900A114515A9B400DC6D9B96BBA /* CookiesList.swift */; };
+		85E27157BC8F5FD8AC13E5D9D1D2E852 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		87631E2F35E274C3D8211A11FE6F09A7 /* DBCustomVariablesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ED909260F0764639AAB4F6DFAEBE1CD0 /* DBCustomVariablesTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		892801E6002794B288D1993B9B3AB6DB /* DBNetworkToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0C6B27621D83AC6127EA43C7400811 /* DBNetworkToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8944F3C3BED31E0BA71C50C182C7BEB7 /* DBTextViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D61BF32DE9C6CDAC2CF233E88D19C2 /* DBTextViewViewController.storyboard */; };
+		8B2FB17240FDF7EE945B4946B0432889 /* DBTouchIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07273670CC87D729BF5D1ED3238C0CA6 /* DBTouchIndicatorView.m */; };
+		8CBE4BB5B7A0DFF74D90A23F934A3E9A /* DBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = F581E052AA7BAB592038B5C12D2F90E9 /* DBChartView.m */; };
+		8DA4F57E647CCA36FD16146A345E08A6 /* DBCoreDataFilterOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E115DCD18DD793C55E8C597778A61A /* DBCoreDataFilterOperator.m */; };
+		8F39CE465F18D94A806514F94D9C5B21 /* NSOperationQueue+DBMainQueueOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC7014B12612903FF3BEC7FA4C757E /* NSOperationQueue+DBMainQueueOperation.m */; };
+		9085FCCF47D0432DDD68E616A5AB6B1B /* DBFontPreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 049A707BB80D253D38222162A185C467 /* DBFontPreviewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90AAAB0425C893FBF12DB72481CC3EE3 /* DBDebugToolkit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FF56CA65340CA9F84019B76C30E344 /* DBDebugToolkit-dummy.m */; };
+		91D2B074ED3BE75F7FC13DC2D980D028 /* DBColorCheckbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 3773962A74E67FB21FDCE49966D560B5 /* DBColorCheckbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95A3FA4016D3D64F4D510BD22817A53B /* DBUserInterfaceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511887E5C350C644C56CAAEA744D5080 /* DBUserInterfaceViewController.storyboard */; };
+		966DCA55A9A9DE91CB0F28B56AC099DE /* DBMenuSegmentedControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 734C65E9E9D7154C907B2064FEFE2702 /* DBMenuSegmentedControlTableViewCell.m */; };
+		97DF74AD2237B026827F366918C81CB9 /* CoreDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CEE0981F01DE5DD7D0B00139121A3F /* CoreDataView.swift */; };
+		98BB62D638475C0EABEFFE287BF7EA58 /* DBManagedObjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 765E1D77AE82C69FB273DA6EB4219AFC /* DBManagedObjectTableViewCell.xib */; };
+		9A3F6333D27422FD003B226FD3EC3D9B /* DBMainQueueOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD40006FCE507BD2749BBEE60756FB73 /* DBMainQueueOperation.m */; };
+		9B5F2789B376401E10F0E0484F019F7D /* DBCustomActionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA57A939A9E48A3AEE0A34496380328 /* DBCustomActionsTableViewController.m */; };
+		9C1E8A120693C20C8F54D86AA077FD52 /* DBLocationToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 525321F34B3B60EA2520D446AA1B2D7E /* DBLocationToolkit.m */; };
+		9C3D7E38B455A5C2B52D4FAC584082E6 /* DBTextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0968CEC477ED34AAD57B3F06BDF72E /* DBTextViewViewController.m */; };
+		9CF1F96290FCC7923FF896E859C29472 /* DBRequestDataHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E027DC524021201BF54C87C205B4D5E /* DBRequestDataHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D0F7BB89D4EA5E30F18023DA742FA2B /* SwiftUIViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8617C5FCE1B9563A4FABDCA8035F4982 /* SwiftUIViewFactory.swift */; };
+		9D2C71CADD482F0972DF58D3D4C98066 /* DBNetworkSettingsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 95DB0FD557F58A0BEA7F57E38FDB6D2B /* DBNetworkSettingsTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D955CB15B5F4C165162E699E325F02E /* DBTouchIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 144207C319C0D828493BC94814878232 /* DBTouchIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E67855C296C8374CE07B3173C297BEE /* DBUserDefaultsToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = F75C2B86660BA9ED75F782BFD6F8BC5D /* DBUserDefaultsToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EE174C9C0129CE4B6E336EFB1B05630 /* DBManagedObjectsListTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D07D6BD77F4FC0C4056F77129EA7C8 /* DBManagedObjectsListTableViewController.storyboard */; };
+		9F7CD1A939B9DB70EDC86197FE506B4F /* DBCoreDataFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 672243441AAD0E84777E855B6EAAFA50 /* DBCoreDataFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0F4498B54160540A0530E05A9D5BE4C /* DBColorPickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C454775AD58C1E383F29FD0A78A4BF7D /* DBColorPickerTableViewCell.m */; };
+		A158DAD573A014B8C7E949E7BFC39E43 /* DBNetworkToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = E69934A912F0CFD61EF738313DC594AF /* DBNetworkToolkit.m */; };
+		A232F2B5C0232A9608C594A04BA8E4AB /* DBFilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47306E99F0DB46E1A83F005A953F3B /* DBFilesTableViewController.m */; };
+		A2AF37AD3FF458234A419EE68B36CB32 /* DBMenuSegmentedControlTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE7BB23298FD0836CB9F636C765B44A /* DBMenuSegmentedControlTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A41E5C7613A375B9CD6D5CA70E0D50C4 /* DBDebugToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = F8CD840C4CC10636AA3382494EE23EDF /* DBDebugToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A49F2063214C0831CD046219E90184F5 /* DBAuthenticationChallengeSender.m in Sources */ = {isa = PBXBuildFile; fileRef = CB91297BF28EE38C47A3814A0AA5A84B /* DBAuthenticationChallengeSender.m */; };
+		A510600A1D75E5E047ED848E0501D142 /* DBCrashReportsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E553D24E633D07342FBABD928B9FBD1 /* DBCrashReportsTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F6C7396623C8EDB7B05E2BE1D5BC28 /* URLRequest.CachePolicy+readableDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90EEC5A3D501AC8C47592C27552C8D /* URLRequest.CachePolicy+readableDescription.swift */; };
+		A9A6873F85388CAF879040C49AC051D1 /* DBMenuSwitchTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC4126BB51BC99E511ED81510913A4E /* DBMenuSwitchTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB7FA0ACCA6F7B4EB39ECB7AAA71022C /* DBCoreDataFilterSettingsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E3BD10FC0D0A36531E053658273758E /* DBCoreDataFilterSettingsTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB8CCC0B54D245C4356A095D1DB99C73 /* DBGridOverlayColorScheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 1727EDCD028D31F5CF4D102112050069 /* DBGridOverlayColorScheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF9BAFE913B7D1031D51F517AD706482 /* DBDebugToolkit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE9165A604C096A76AA4C64C9A3CAE03 /* DBDebugToolkit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0F6BE5B36B35F1851A969B6B4F4ACA2 /* NSObject+DBDebugToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BA21C2E0468215B01789A44795975F /* NSObject+DBDebugToolkit.m */; };
+		B1E8DC0AB03A8AEC0167A054C51E1B11 /* DBRequestModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A19C6CA679EE617D1BA7DE614A6165 /* DBRequestModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2F8A8ECF16154273936D5F7BFAAB1B2 /* Pods-Threads-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D6D47ADBB55B7F0E548DDEFCAEC451 /* Pods-Threads-dummy.m */; };
+		B3CACEE412C115F207E5618EEF9455BB /* DBFontFamiliesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3F1F947AA247D63DB4F6FA118AD3DF /* DBFontFamiliesTableViewController.m */; };
+		B3DFD0F57222562351B86EE34A025C91 /* UIView+DBUserInterfaceToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EBB6C15BBE82A23748104BC88EB4F5 /* UIView+DBUserInterfaceToolkit.m */; };
+		B767D21B757957E6A60B8759E7B99FD6 /* NSPersistentStoreCoordinator+DBCoreDataToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = F09E72B19B8414062103830712E76ECC /* NSPersistentStoreCoordinator+DBCoreDataToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B80A5DF59C550158FAD87C5497CB4A3B /* DBChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E02092D46469B2AD74FE458D9E6F00D /* DBChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B960C219736C9CE38B1E5F2E4CA40804 /* DBCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 672703F1B8E281F291F3EC27FD8C439A /* DBCrashReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAF7EC870FC47F425E7A8E9AF4614ECB /* DBRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C65812B9DA1633EB980FD1E0597289 /* DBRequestModel.m */; };
+		BB25D0C94EB11F2A47BA685A22466285 /* DBTitleValueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CE58ADC47E044EA9EA469BFE8407D2 /* DBTitleValueTableViewCell.m */; };
+		BCEDCF0D48DE7C14CD9896E6D2712715 /* DBPerformanceTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DEECB7C5FC2697F92693DB2657EBE47 /* DBPerformanceTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD2C55BA5C5CA46D3FCCE91C73CC70D3 /* DBCustomActionsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86E65D95E2D1868110AC3900F5079AAF /* DBCustomActionsTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD4FBE5EA38AF483DFDBDE04CB3F958A /* DBPresetLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B91D919848314528ABAD52CC6180B7 /* DBPresetLocation.m */; };
+		BDC069FB375784D0FE307CF25734CB4D /* DBMainQueueOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A18DFBA52C9E6375C87920C8CF11E99 /* DBMainQueueOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDE58849EF8191431975DF218FB71469 /* DBUserInterfaceTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 17BE92BE174078F58C7FA36662EFE166 /* DBUserInterfaceTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFDF1A0CF921ABE46100C7015E653CD9 /* DBRequestOutcome.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5514B12C1C677BBC5D481F73858E3D /* DBRequestOutcome.m */; };
+		C3F1C2187F194B007B32AA004586049E /* DBTitleValueListTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 795E7419DE572A49DBB6E4E08B73CCAF /* DBTitleValueListTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C43B789B6F9ECC195D1C5B6E0C6E6DE4 /* DBTopLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02854C5D5654E7CC2E29819B0DCB29D4 /* DBTopLevelView.m */; };
+		C48FA19E2D41D415ED2CE2AA31C93F96 /* DBUserInterfaceToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 03816ACF6184A4666CD20D120C54048D /* DBUserInterfaceToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C557C489609DE22D4D3F97A6E37AAFA2 /* DBFontFamiliesTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391F883D476A22EBF9AC07DE996DAB84 /* DBFontFamiliesTableViewController.storyboard */; };
+		C896A67292EE23BEA05A2CBCE17165D0 /* RequestSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B2F73F5F10095FFF7283F0F4F83F0 /* RequestSettings.swift */; };
+		CA95F662FA953B149A024FF0521AD179 /* DBPerformanceTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D36E8C8F6F9F4A59904E158803F82110 /* DBPerformanceTableViewController.storyboard */; };
+		CB0B480EBAB656E5EC69FFEB4C9ABADD /* DBMenuChartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB10DD752CE1C902568614DB58970227 /* DBMenuChartTableViewCell.xib */; };
+		CD45808BAD375D78E30E7362E6A662A9 /* DBSliderTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AF03FA766339610C7F81C66115BCB1 /* DBSliderTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD45B0F3F3AD67D97ED8270C0593681F /* DBDeviceInfoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EC02182CE1C68F45913B5BDB99378E /* DBDeviceInfoProvider.m */; };
+		CD75131EFE80C1055B77E4A876705FDC /* DBCustomVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B314B6261F27B5AA5557465387ECE3E /* DBCustomVariable.m */; };
+		CE5D1FD074E0E8081D3108F9853A1B0F /* DBCrashReportsTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FC361C5234D25C7D4FB34405385C9A2 /* DBCrashReportsTableViewController.storyboard */; };
+		CFBDD4F2D4FC133B0AF6C51EC2C0778F /* DBManagedObjectTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8378C089EDDE8BDD6E0504AFEBA7340D /* DBManagedObjectTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFF79D9FA4D5F22B5A882F4F3C4EFE7F /* DBCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CDD91858D1461E28716C896DE5A52E /* DBCrashReport.m */; };
+		D0DF175DB056C671135FACF7B45236BF /* NSBundle+DBDebugToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD982DC53221F941966DA37DC37B46F /* NSBundle+DBDebugToolkit.m */; };
+		D510401C4BEAF051C60C033284C59A5A /* DBBodyPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCB7C7C2E3F4FC12BDAA188FF37C864 /* DBBodyPreviewViewController.m */; };
+		D5157643E46E575C1362D23C475D89EE /* DBConsoleOutputCaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B8D61162AF02A503299E9D8CD5027 /* DBConsoleOutputCaptor.m */; };
+		D524B099A48EF7CF85F507AA9843BD2D /* DBManagedObjectsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD141E29266577DF3CA33B7AA6FCBDB7 /* DBManagedObjectsListTableViewController.m */; };
+		D83BE8912201B4A73D6796BE3F6FF0C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D8704409B166677D4E80007882CBB17F /* DBTitleValueListViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 55F468F7AC5310885B5A840046646C6B /* DBTitleValueListViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8AA5A1FD944DC8567297BE52DAF70D7 /* DBCustomAction.m in Sources */ = {isa = PBXBuildFile; fileRef = FE20DE1CFE58033D0F31BDD80D39EDC4 /* DBCustomAction.m */; };
+		D9B1D72A80883993E290F82D4DA20AA6 /* DBRequestTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = FA05EBAB0DF8892E5D51248F3B9BCAFE /* DBRequestTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9EF8A9417A6D7E103B8526FD8435F19 /* UIColor+DBDebugToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = EE17D79D50EA79F8AAEE698CECB71044 /* UIColor+DBDebugToolkit.m */; };
+		D9FECAD17A97925C7E9A68E7D086B865 /* NSOperationQueue+DBMainQueueOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1AB7A1D10154E0AA1DD1CC65FB75A5 /* NSOperationQueue+DBMainQueueOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA35CDD9A015B230B3BB097B9131B36D /* DBFileTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF03ED0519E0BD371EB02E6E55DC343 /* DBFileTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAC5FEAB58E29737C4F15BDCECAB1DC0 /* DBFontPreviewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506C8C90D6E2B006164FFD9178393CBC /* DBFontPreviewViewController.storyboard */; };
+		DC091B911BE794C2660DAB1A8618E355 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394103FD3D405AC1E88CBB52234C1638 /* SearchBar.swift */; };
+		DC4BCB982D5F5389D9B7170603E4DD83 /* DBAuthenticationChallengeSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 5624DE9DED9A6C649B84D26927FF1FE1 /* DBAuthenticationChallengeSender.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD7C312702ABBC1FECDF3F80A1B53CFA /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 0222182780ADE425063651DC922FFC35 /* UIView+Snapshot.m */; };
+		DE5BB4FBBE7BE0E53C4DBF16558B2DBE /* DBPerformanceWidgetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D840C55A86EF232FFB8C75E7A79146 /* DBPerformanceWidgetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF9ED7652E053C04E2CC94200E5BCF7C /* ConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE850A8F85F577B466F9D08E9A7C10E0 /* ConsoleView.swift */; };
+		DFCC21D5BAC15C12CFE7A3E092D90CBA /* DBDebugToolkitTriggerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 75141E97289D184902E3F110062EE30D /* DBDebugToolkitTriggerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFD255FEF4A8BFF431623EB0784613B2 /* DBGridOverlaySettingsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C1AC9EAD82D6CE3DCC11C3F124D9DC4 /* DBGridOverlaySettingsTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E345D8EEF76A7D9C8926E23364683B5A /* DBBodyPreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F498BAE74DD0F3FD71858AB9096576 /* DBBodyPreviewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3572C69F566ED624D1EB5B5C6894AE1 /* UIColor+DBUserInterfaceToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4411612F2AAE54BC49D8E356C1D05E7F /* UIColor+DBUserInterfaceToolkit.m */; };
+		E38AFB5D9C90CBF2A6D380DA922A3BB0 /* DBEntitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 196B8A8D93DFB8DC14E3824F96B10F65 /* DBEntitiesTableViewController.m */; };
+		E4225F938500B5C78C0DF491D3C8EC1C /* DBPersistentStoreCoordinatorsTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33F58DADA462F0748736D561CF9C70C /* DBPersistentStoreCoordinatorsTableViewController.storyboard */; };
+		E439E40301E68534FE5B7317F0BAAA52 /* DBRequestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0EFCC02F487752029954DD13848FF8 /* DBRequestTableViewCell.m */; };
+		E57E397F0A604BEB1758EDC2F112C49C /* DBBodyPreviewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE54B82F225662500E95F3331F10CCF /* DBBodyPreviewViewController.storyboard */; };
+		E5E8BD0ADC116B96FFFC6E7E85154332 /* DBCoreDataToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = A2DF852D686ECBC60C348E5E86CE8F31 /* DBCoreDataToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E63CDB77E2611D06CB59EAD3ACAC4829 /* DBMenuSegmentedControlTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFC041C7788D3C099D420547F99A7F0C /* DBMenuSegmentedControlTableViewCell.xib */; };
+		E735E9EE32BC29AEE2FBAE9979BB5F6D /* NSObject+DBDebugToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 21286D7165A48D0584D31D48172CFAA5 /* NSObject+DBDebugToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9C422ACF66831D68CEE1BF236F95AD1 /* DBEntitiesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C2BBEDB707E9893A99A29A0BEBAD1EA4 /* DBEntitiesTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBC8E3126A759D3C0781D4739BBC51E1 /* DBPerformanceWidgetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE767ADA72B1EE0F793643E4EDB7E0F /* DBPerformanceWidgetView.m */; };
+		EC5C0A1E852778353E75C0BBAE746F69 /* DBMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F317D12C62E1697EDC4E0313137B01C /* DBMenuTableViewController.m */; };
+		ECF432C46D605F919F8EC80F441F31D7 /* DBMenuChartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F50A88C0A9ED88694AE7A2761587A31D /* DBMenuChartTableViewCell.m */; };
+		ED5233490423554B4883E4C6B74F637E /* DBCrashReportsToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0832D4B3AE6E1B31745AEC6F27E198 /* DBCrashReportsToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0140B75957A9451CF4E59A3F3D99192 /* DBCoreDataFilterSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EBD5A1AFBEE3CD5881C372C7832D4E /* DBCoreDataFilterSettings.m */; };
+		F04622F08DBB74E0B9B771D33D79979E /* DBTitleValueListTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE918BE17C8075B91160FC17662493B3 /* DBTitleValueListTableViewController.storyboard */; };
+		F1017624CDC8DC4B971AB4D2A6C30148 /* DBEntitiesTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B14B72E644548160145C5646B2C117 /* DBEntitiesTableViewController.storyboard */; };
+		F3CC0A68CEFA2D88DFBBD6A83759DE55 /* DBNetworkSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E0015E78EE74C764EFDA186B59A15 /* DBNetworkSettingsTableViewController.m */; };
+		F3E32235625853439A46FDD350DF46FC /* UIApplication+DBDebugToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = B395CEB1148D6E86852355F0698774E7 /* UIApplication+DBDebugToolkit.m */; };
+		F547C734283AD4E70FD4B3E9F28C136E /* DBTitleValueTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 372C37BD5ED129565DC9940F81484449 /* DBTitleValueTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5A9F370F52F3BD27E66E07C5E31A823 /* DBDebugToolkitTrigger.h in Headers */ = {isa = PBXBuildFile; fileRef = DDBBFBEB8C13373CC85C20975EDA9C1E /* DBDebugToolkitTrigger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5D31100DEA95B9B8DA2AF694DCB358E /* DBDebugToolkit-DBDebugToolkit in Resources */ = {isa = PBXBuildFile; fileRef = C6CC39D1F8D9CE2A1049B82A8A9BC9D5 /* DBDebugToolkit-DBDebugToolkit */; };
+		F6714BB9FA94F11FBE13952AE5FCD2B5 /* DBCustomActionsTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8BC2A66D739E5F02677FFD2E8CAAC20 /* DBCustomActionsTableViewController.storyboard */; };
+		F6A161D10CC4581932768110685B0B5E /* DBLocationToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 67ED3F4F563812EB03FE44DC98972BE9 /* DBLocationToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B586B43F5FE04AD0BC497DBB16B09B /* DBSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BCA2AB48E4A008CD1144FDEC486911 /* DBSliderTableViewCell.m */; };
+		F7A791ECD44EABC682EF6ECEED37529F /* DBUserDefaultsToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BBB92A1F96FE0F97A6A739CD5D60E9 /* DBUserDefaultsToolkit.m */; };
+		F9AD4539BEBCA2B83C9C9974B6FA9501 /* DBCrashReportsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93C140BB89A938205B64A7555BC553A /* DBCrashReportsTableViewController.m */; };
+		FC2E56F3ACFCC24E933ED14671980FEF /* UIView+DBUserInterfaceToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B58406417D7A8529EF64388FDB91937 /* UIView+DBUserInterfaceToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC9AAA3F68AC9DF668594CEF69CDA403 /* Pods-ThreadsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2530B71926FF7B3C03CDEB6FDDF9FAB8 /* Pods-ThreadsTests-dummy.m */; };
+		FD3242608E421F5089F939293F6B0E9A /* DBTitleValueTableViewCellDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1BC7AAA5E719AEBB07A569154EBCD4 /* DBTitleValueTableViewCellDataSource.m */; };
+		FD50364C2FF187E9DD8555FBA4E33698 /* DBPerformanceToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 822DF892D15E1293F811E4E0C161E9A5 /* DBPerformanceToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDF7C4D991FF645D819D7591DDB719BA /* DBManagedObjectTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A093FBB68579BABBC6F909642D49C3 /* DBManagedObjectTableViewController.storyboard */; };
+		FE64939A847F9A1B6A4C45A75C63C3C2 /* DBTitleValueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D6B0E60BCE93FD6AEF4D15DEA797B0C /* DBTitleValueTableViewCell.xib */; };
+		FE694803AFE40BD047FA48EE5BC6DE38 /* DBFilesTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877B7E11FDC774EE28AB6428616EE669 /* DBFilesTableViewController.storyboard */; };
+		FEA68B109599C5500F4BEEF1A6D8FCC9 /* DBCrashReportsToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DFA45137254382701B96BC18D41598 /* DBCrashReportsToolkit.m */; };
+		FFED1E8A1FB4530125446837871293A5 /* DBCrashReportDetailsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CF9F1E69C1D7366E3A8775DFB3476E21 /* DBCrashReportDetailsTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17766B9740D71CBD17AAEEC390B443AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39C7BD4699F15645EA51D9F439333942;
+			remoteInfo = "DBDebugToolkit-DBDebugToolkit";
+		};
+		362357AD618FB9EFDBECD5DAC1A9BA21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E1B3B34BD09192573D90B8EF35F244D;
+			remoteInfo = DBDebugToolkit;
+		};
+		E46AFCECD06FBC2CE593E205EACA6D4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 997B7FEB9CE0DFFC18E77E5D46DA626D;
+			remoteInfo = "Pods-Threads";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0033EFE13DDEFF5A77EFCE5C4066CCC1 /* DBDebugToolkit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DBDebugToolkit.modulemap; sourceTree = "<group>"; };
+		0222182780ADE425063651DC922FFC35 /* UIView+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Snapshot.m"; path = "DBDebugToolkit/Classes/Categories/UIView+Snapshot.m"; sourceTree = "<group>"; };
+		02854C5D5654E7CC2E29819B0DCB29D4 /* DBTopLevelView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBTopLevelView.m; path = DBDebugToolkit/Classes/TopLevelViews/DBTopLevelView.m; sourceTree = "<group>"; };
+		03816ACF6184A4666CD20D120C54048D /* DBUserInterfaceToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBUserInterfaceToolkit.h; path = DBDebugToolkit/Classes/UserInterface/DBUserInterfaceToolkit.h; sourceTree = "<group>"; };
+		0469501753B94BE32A18689E38290B55 /* DBCrashReportDetailsTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBCrashReportDetailsTableViewController.storyboard; path = DBDebugToolkit/Resources/DBCrashReportDetailsTableViewController.storyboard; sourceTree = "<group>"; };
+		0484708B63CD10798F893871677BE24E /* ResourcesViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourcesViewModel.swift; path = DBDebugToolkit/Classes/Swift/Models/ResourcesViewModel.swift; sourceTree = "<group>"; };
+		049A707BB80D253D38222162A185C467 /* DBFontPreviewViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBFontPreviewViewController.h; path = DBDebugToolkit/Classes/UserInterface/DBFontPreviewViewController.h; sourceTree = "<group>"; };
+		05E8740D024D5676CBB1C9AE9DB3037C /* DBFilesTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBFilesTableViewController.h; path = DBDebugToolkit/Classes/Resources/Files/DBFilesTableViewController.h; sourceTree = "<group>"; };
+		05F6630D2DEEB15780A3EAFFCE8824CF /* Pods-Threads-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Threads-Info.plist"; sourceTree = "<group>"; };
+		07273670CC87D729BF5D1ED3238C0CA6 /* DBTouchIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBTouchIndicatorView.m; path = DBDebugToolkit/Classes/UserInterface/DBTouchIndicatorView.m; sourceTree = "<group>"; };
+		078A90D920406526C28FBF400DB28FAA /* UIWindow+keyWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIWindow+keyWindow.swift"; path = "DBDebugToolkit/Classes/Extensions/UIWindow+keyWindow.swift"; sourceTree = "<group>"; };
+		0B314B6261F27B5AA5557465387ECE3E /* DBCustomVariable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCustomVariable.m; path = DBDebugToolkit/Classes/CustomVariables/DBCustomVariable.m; sourceTree = "<group>"; };
+		0C0C6B27621D83AC6127EA43C7400811 /* DBNetworkToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBNetworkToolkit.h; path = DBDebugToolkit/Classes/Network/DBNetworkToolkit.h; sourceTree = "<group>"; };
+		0C1AC9EAD82D6CE3DCC11C3F124D9DC4 /* DBGridOverlaySettingsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBGridOverlaySettingsTableViewController.h; path = DBDebugToolkit/Classes/UserInterface/GridOverlay/DBGridOverlaySettingsTableViewController.h; sourceTree = "<group>"; };
+		0CD6BDC41047BB706E05FACA313022DD /* Pods-ThreadsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThreadsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D6B0E60BCE93FD6AEF4D15DEA797B0C /* DBTitleValueTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DBTitleValueTableViewCell.xib; path = DBDebugToolkit/Resources/DBTitleValueTableViewCell.xib; sourceTree = "<group>"; };
+		0DEECB7C5FC2697F92693DB2657EBE47 /* DBPerformanceTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBPerformanceTableViewController.h; path = DBDebugToolkit/Classes/Performance/DBPerformanceTableViewController.h; sourceTree = "<group>"; };
+		0EB22353EE21039EFB092584D2058F58 /* DBFontFamiliesTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBFontFamiliesTableViewController.h; path = DBDebugToolkit/Classes/UserInterface/DBFontFamiliesTableViewController.h; sourceTree = "<group>"; };
+		12864362F52CC3D62F459AAE79EB48A7 /* DBMenuSwitchTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBMenuSwitchTableViewCell.m; path = DBDebugToolkit/Classes/Cells/DBMenuSwitchTableViewCell.m; sourceTree = "<group>"; };
+		144207C319C0D828493BC94814878232 /* DBTouchIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTouchIndicatorView.h; path = DBDebugToolkit/Classes/UserInterface/DBTouchIndicatorView.h; sourceTree = "<group>"; };
+		145CDA617266721B6AD24A28382CA062 /* DBCustomLocationViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCustomLocationViewController.h; path = DBDebugToolkit/Classes/Location/DBCustomLocationViewController.h; sourceTree = "<group>"; };
+		14FF8B0C2C5AB8582F7DAE49195CB38E /* DBFPSCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBFPSCalculator.h; path = DBDebugToolkit/Classes/Performance/DBFPSCalculator.h; sourceTree = "<group>"; };
+		15FA883A69A3430B51B269CC79565D2C /* DBCustomAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCustomAction.h; path = DBDebugToolkit/Classes/CustomActions/DBCustomAction.h; sourceTree = "<group>"; };
+		1727EDCD028D31F5CF4D102112050069 /* DBGridOverlayColorScheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBGridOverlayColorScheme.h; path = DBDebugToolkit/Classes/UserInterface/GridOverlay/DBGridOverlayColorScheme.h; sourceTree = "<group>"; };
+		17BE92BE174078F58C7FA36662EFE166 /* DBUserInterfaceTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBUserInterfaceTableViewController.h; path = DBDebugToolkit/Classes/UserInterface/DBUserInterfaceTableViewController.h; sourceTree = "<group>"; };
+		196B8A8D93DFB8DC14E3824F96B10F65 /* DBEntitiesTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBEntitiesTableViewController.m; path = DBDebugToolkit/Classes/Resources/CoreData/DBEntitiesTableViewController.m; sourceTree = "<group>"; };
+		19FCBBB34F277FCD4A70026453656CFF /* Pods-Threads-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Threads-acknowledgements.plist"; sourceTree = "<group>"; };
+		1B90EEC5A3D501AC8C47592C27552C8D /* URLRequest.CachePolicy+readableDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest.CachePolicy+readableDescription.swift"; path = "DBDebugToolkit/Classes/Extensions/URLRequest.CachePolicy+readableDescription.swift"; sourceTree = "<group>"; };
+		1BF52F1183DAA7C8BB172244A1399396 /* CustomVariablesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomVariablesView.swift; path = DBDebugToolkit/Classes/Swift/Views/CustomVariablesView.swift; sourceTree = "<group>"; };
+		1C47306E99F0DB46E1A83F005A953F3B /* DBFilesTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBFilesTableViewController.m; path = DBDebugToolkit/Classes/Resources/Files/DBFilesTableViewController.m; sourceTree = "<group>"; };
+		1D2DACEA3D4DDC12779CA8F4D89D30B2 /* DBPerformanceToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBPerformanceToolkit.m; path = DBDebugToolkit/Classes/Performance/DBPerformanceToolkit.m; sourceTree = "<group>"; };
+		1DE767ADA72B1EE0F793643E4EDB7E0F /* DBPerformanceWidgetView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBPerformanceWidgetView.m; path = DBDebugToolkit/Classes/Performance/Widget/DBPerformanceWidgetView.m; sourceTree = "<group>"; };
+		1DF03ED0519E0BD371EB02E6E55DC343 /* DBFileTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBFileTableViewCell.h; path = DBDebugToolkit/Classes/Resources/Files/DBFileTableViewCell.h; sourceTree = "<group>"; };
+		20F498BAE74DD0F3FD71858AB9096576 /* DBBodyPreviewViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBBodyPreviewViewController.h; path = DBDebugToolkit/Classes/Network/DBBodyPreviewViewController.h; sourceTree = "<group>"; };
+		21286D7165A48D0584D31D48172CFAA5 /* NSObject+DBDebugToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+DBDebugToolkit.h"; path = "DBDebugToolkit/Classes/Categories/NSObject+DBDebugToolkit.h"; sourceTree = "<group>"; };
+		21B06D106AD20F56A09D2F18ED16150F /* UIWindow+DBUserInterfaceToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+DBUserInterfaceToolkit.h"; path = "DBDebugToolkit/Classes/UserInterface/Categories/UIWindow+DBUserInterfaceToolkit.h"; sourceTree = "<group>"; };
+		24B8A29ABDECD6819D42FA4F91A249EB /* PerformanceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PerformanceView.swift; path = DBDebugToolkit/Classes/Swift/Views/PerformanceView.swift; sourceTree = "<group>"; };
+		2530B71926FF7B3C03CDEB6FDDF9FAB8 /* Pods-ThreadsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ThreadsTests-dummy.m"; sourceTree = "<group>"; };
+		25AECA0325F83B8EFDD7A3E76B95C43A /* DBMenuSwitchTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DBMenuSwitchTableViewCell.xib; path = DBDebugToolkit/Resources/DBMenuSwitchTableViewCell.xib; sourceTree = "<group>"; };
+		25D07D6BD77F4FC0C4056F77129EA7C8 /* DBManagedObjectsListTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBManagedObjectsListTableViewController.storyboard; path = DBDebugToolkit/Resources/DBManagedObjectsListTableViewController.storyboard; sourceTree = "<group>"; };
+		25FF56CA65340CA9F84019B76C30E344 /* DBDebugToolkit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DBDebugToolkit-dummy.m"; sourceTree = "<group>"; };
+		267360C5078E7C3F741354DBE60D56F4 /* DBManagedObjectTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBManagedObjectTableViewController.h; path = DBDebugToolkit/Classes/Resources/CoreData/DBManagedObjectTableViewController.h; sourceTree = "<group>"; };
+		26B91D919848314528ABAD52CC6180B7 /* DBPresetLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBPresetLocation.m; path = DBDebugToolkit/Classes/Location/DBPresetLocation.m; sourceTree = "<group>"; };
+		26D6D47ADBB55B7F0E548DDEFCAEC451 /* Pods-Threads-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Threads-dummy.m"; sourceTree = "<group>"; };
+		26F30322747F00DAE364855B8DC29C92 /* DBColorPickerTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBColorPickerTableViewCell.h; path = DBDebugToolkit/Classes/Cells/ColorPicker/DBColorPickerTableViewCell.h; sourceTree = "<group>"; };
+		2A36A0EB271896A25022F5A506E63D2D /* DBFPSCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBFPSCalculator.m; path = DBDebugToolkit/Classes/Performance/DBFPSCalculator.m; sourceTree = "<group>"; };
+		2B86099F0DA845D4F0B4A83BB6764D60 /* CLLocationManager+DBLocationToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLLocationManager+DBLocationToolkit.m"; path = "DBDebugToolkit/Classes/Location/CLLocationManager+DBLocationToolkit.m"; sourceTree = "<group>"; };
+		2D474BB74D67F371225F1BFECB9C0BD5 /* Pods-Threads-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Threads-frameworks.sh"; sourceTree = "<group>"; };
+		2F0EFCC02F487752029954DD13848FF8 /* DBRequestTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBRequestTableViewCell.m; path = DBDebugToolkit/Classes/Cells/DBRequestTableViewCell.m; sourceTree = "<group>"; };
+		32FEB870F5F875BB380BE0BE0D9DD4E9 /* UILabel+DBDebugToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+DBDebugToolkit.h"; path = "DBDebugToolkit/Classes/Categories/UILabel+DBDebugToolkit.h"; sourceTree = "<group>"; };
+		35ECA3BE0F882F1058387416BC3BE932 /* DBTextViewTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBTextViewTableViewCell.m; path = DBDebugToolkit/Classes/Cells/DBTextViewTableViewCell.m; sourceTree = "<group>"; };
+		372C37BD5ED129565DC9940F81484449 /* DBTitleValueTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTitleValueTableViewCell.h; path = DBDebugToolkit/Classes/Cells/TitleValue/DBTitleValueTableViewCell.h; sourceTree = "<group>"; };
+		3773962A74E67FB21FDCE49966D560B5 /* DBColorCheckbox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBColorCheckbox.h; path = DBDebugToolkit/Classes/Cells/ColorPicker/DBColorCheckbox.h; sourceTree = "<group>"; };
+		38094E14C9E69D5F5A9282F5BD21B9F7 /* CustomActionsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomActionsView.swift; path = DBDebugToolkit/Classes/Swift/Views/CustomActionsView.swift; sourceTree = "<group>"; };
+		3868637932F74AF809A190215417FBA3 /* DBTextViewTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DBTextViewTableViewCell.xib; path = DBDebugToolkit/Resources/DBTextViewTableViewCell.xib; sourceTree = "<group>"; };
+		391F883D476A22EBF9AC07DE996DAB84 /* DBFontFamiliesTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBFontFamiliesTableViewController.storyboard; path = DBDebugToolkit/Resources/DBFontFamiliesTableViewController.storyboard; sourceTree = "<group>"; };
+		394103FD3D405AC1E88CBB52234C1638 /* SearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = DBDebugToolkit/Classes/Swift/Views/SearchBar.swift; sourceTree = "<group>"; };
+		39495CB768B63785FFC3DD732194A4B0 /* DBFontPreviewViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBFontPreviewViewController.m; path = DBDebugToolkit/Classes/UserInterface/DBFontPreviewViewController.m; sourceTree = "<group>"; };
+		39722CD3B520B8E1B87B86B75D06E32C /* DBTopLevelViewsWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTopLevelViewsWrapper.h; path = DBDebugToolkit/Classes/TopLevelViews/DBTopLevelViewsWrapper.h; sourceTree = "<group>"; };
+		3B74DD567DB1819F6946EDBCE56D6DD2 /* DBPerformanceTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBPerformanceTableViewController.m; path = DBDebugToolkit/Classes/Performance/DBPerformanceTableViewController.m; sourceTree = "<group>"; };
+		3BD982DC53221F941966DA37DC37B46F /* NSBundle+DBDebugToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+DBDebugToolkit.m"; path = "DBDebugToolkit/Classes/Categories/NSBundle+DBDebugToolkit.m"; sourceTree = "<group>"; };
+		3C59388552FE59555E0CF5F8576C736B /* DBCrashReportDetailsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCrashReportDetailsTableViewController.m; path = DBDebugToolkit/Classes/CrashReports/DBCrashReportDetailsTableViewController.m; sourceTree = "<group>"; };
+		3C7F2FB47ACE18F6E1D2E1D2EDD5D45F /* Bundle+BuildInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+BuildInfo.swift"; path = "DBDebugToolkit/Classes/Extensions/Bundle+BuildInfo.swift"; sourceTree = "<group>"; };
+		3CCC7014B12612903FF3BEC7FA4C757E /* NSOperationQueue+DBMainQueueOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSOperationQueue+DBMainQueueOperation.m"; path = "DBDebugToolkit/Classes/Network/MainQueueOperation/NSOperationQueue+DBMainQueueOperation.m"; sourceTree = "<group>"; };
+		3CD6EC253FE4A93FA80351E59D0089F9 /* DBCoreDataFilterSettingsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCoreDataFilterSettingsTableViewController.m; path = DBDebugToolkit/Classes/Resources/CoreData/Filters/DBCoreDataFilterSettingsTableViewController.m; sourceTree = "<group>"; };
+		3E28B9C1AD6710889D628080E95A9E37 /* CookiesList+ViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CookiesList+ViewModel.swift"; path = "DBDebugToolkit/Classes/Swift/Models/CookiesList+ViewModel.swift"; sourceTree = "<group>"; };
+		3E6909D912FF5482B06C00A910C213C9 /* DBDebugToolkit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DBDebugToolkit-prefix.pch"; sourceTree = "<group>"; };
+		3FE54B82F225662500E95F3331F10CCF /* DBBodyPreviewViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBBodyPreviewViewController.storyboard; path = DBDebugToolkit/Resources/DBBodyPreviewViewController.storyboard; sourceTree = "<group>"; };
+		410EF8DF064401E8EC33EC85A9B0D513 /* DBDebugToolkit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DBDebugToolkit-Info.plist"; sourceTree = "<group>"; };
+		422151AB2ECBC756B24A4B329DA68ECC /* DBRequestOutcome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBRequestOutcome.h; path = DBDebugToolkit/Classes/Network/RequestModel/DBRequestOutcome.h; sourceTree = "<group>"; };
+		428C3D78520389229D1C0F00BACA3506 /* DBDeviceInfoProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBDeviceInfoProvider.h; path = DBDebugToolkit/Classes/Device/DBDeviceInfoProvider.h; sourceTree = "<group>"; };
+		42CDD998E4B8F3E0395BBEF6ED0FA572 /* DBLongPressTrigger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBLongPressTrigger.h; path = DBDebugToolkit/Classes/Triggers/LongPressTrigger/DBLongPressTrigger.h; sourceTree = "<group>"; };
+		43D840C55A86EF232FFB8C75E7A79146 /* DBPerformanceWidgetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBPerformanceWidgetView.h; path = DBDebugToolkit/Classes/Performance/Widget/DBPerformanceWidgetView.h; sourceTree = "<group>"; };
+		4411612F2AAE54BC49D8E356C1D05E7F /* UIColor+DBUserInterfaceToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+DBUserInterfaceToolkit.m"; path = "DBDebugToolkit/Classes/UserInterface/Categories/UIColor+DBUserInterfaceToolkit.m"; sourceTree = "<group>"; };
+		48B08D0D955B78217F82C6D52328B12A /* DBCoreDataFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCoreDataFilter.m; path = DBDebugToolkit/Classes/Resources/CoreData/Filters/DBCoreDataFilter.m; sourceTree = "<group>"; };
+		49EBB6C15BBE82A23748104BC88EB4F5 /* UIView+DBUserInterfaceToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+DBUserInterfaceToolkit.m"; path = "DBDebugToolkit/Classes/UserInterface/Categories/UIView+DBUserInterfaceToolkit.m"; sourceTree = "<group>"; };
+		4A0832D4B3AE6E1B31745AEC6F27E198 /* DBCrashReportsToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCrashReportsToolkit.h; path = DBDebugToolkit/Classes/CrashReports/DBCrashReportsToolkit.h; sourceTree = "<group>"; };
+		4A5BFE9ACA789FBD94114260C5EDC862 /* Pods-ThreadsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ThreadsTests-umbrella.h"; sourceTree = "<group>"; };
+		4AE7BB23298FD0836CB9F636C765B44A /* DBMenuSegmentedControlTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBMenuSegmentedControlTableViewCell.h; path = DBDebugToolkit/Classes/Cells/DBMenuSegmentedControlTableViewCell.h; sourceTree = "<group>"; };
+		4B35BF94568B1D5E4B20B8191F26E3FC /* DBMenuTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBMenuTableViewController.storyboard; path = DBDebugToolkit/Resources/DBMenuTableViewController.storyboard; sourceTree = "<group>"; };
+		4D36E6EEA80FA827751A180E06CDC358 /* DBResourcesTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBResourcesTableViewController.storyboard; path = DBDebugToolkit/Resources/DBResourcesTableViewController.storyboard; sourceTree = "<group>"; };
+		4D7760CE22308AB153B99F8764496BE3 /* MenuViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuViewModel.swift; path = DBDebugToolkit/Classes/Swift/Models/MenuViewModel.swift; sourceTree = "<group>"; };
+		4F0A1D45997EFA27739781CEAC790450 /* DBRequestDataHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBRequestDataHandler.m; path = DBDebugToolkit/Classes/Network/RequestModel/DBRequestDataHandler.m; sourceTree = "<group>"; };
+		502FFD6B39A8B30170A0B885C06BC5D6 /* DBPersistentStoreCoordinatorsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBPersistentStoreCoordinatorsTableViewController.m; path = DBDebugToolkit/Classes/Resources/CoreData/DBPersistentStoreCoordinatorsTableViewController.m; sourceTree = "<group>"; };
+		506C8C90D6E2B006164FFD9178393CBC /* DBFontPreviewViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBFontPreviewViewController.storyboard; path = DBDebugToolkit/Resources/DBFontPreviewViewController.storyboard; sourceTree = "<group>"; };
+		50C65812B9DA1633EB980FD1E0597289 /* DBRequestModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBRequestModel.m; path = DBDebugToolkit/Classes/Network/RequestModel/DBRequestModel.m; sourceTree = "<group>"; };
+		511887E5C350C644C56CAAEA744D5080 /* DBUserInterfaceViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBUserInterfaceViewController.storyboard; path = DBDebugToolkit/Resources/DBUserInterfaceViewController.storyboard; sourceTree = "<group>"; };
+		516E921CA0A9C86B86C8DEFB0B541E23 /* DBLocationTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBLocationTableViewController.h; path = DBDebugToolkit/Classes/Location/DBLocationTableViewController.h; sourceTree = "<group>"; };
+		51D4758AF6353652ABAF45799FCFA82F /* DBCoreDataFilterTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBCoreDataFilterTableViewController.storyboard; path = DBDebugToolkit/Resources/DBCoreDataFilterTableViewController.storyboard; sourceTree = "<group>"; };
+		525321F34B3B60EA2520D446AA1B2D7E /* DBLocationToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBLocationToolkit.m; path = DBDebugToolkit/Classes/Location/DBLocationToolkit.m; sourceTree = "<group>"; };
+		548E49B8BC38ECA0032E9D08C96F7F2C /* DBLocationTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBLocationTableViewController.storyboard; path = DBDebugToolkit/Resources/DBLocationTableViewController.storyboard; sourceTree = "<group>"; };
+		54CEC3C633DAE3BD52D494795DC26FEA /* DBDebugToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBDebugToolkit.m; path = DBDebugToolkit/Classes/DBDebugToolkit.m; sourceTree = "<group>"; };
+		55DFA45137254382701B96BC18D41598 /* DBCrashReportsToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCrashReportsToolkit.m; path = DBDebugToolkit/Classes/CrashReports/DBCrashReportsToolkit.m; sourceTree = "<group>"; };
+		55F468F7AC5310885B5A840046646C6B /* DBTitleValueListViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTitleValueListViewModel.h; path = DBDebugToolkit/Classes/Resources/DBTitleValueListViewModel.h; sourceTree = "<group>"; };
+		5624DE9DED9A6C649B84D26927FF1FE1 /* DBAuthenticationChallengeSender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBAuthenticationChallengeSender.h; path = DBDebugToolkit/Classes/Network/URLProtocol/DBAuthenticationChallengeSender.h; sourceTree = "<group>"; };
+		59799C8332E040715658B712AC212055 /* DBColorCheckbox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBColorCheckbox.m; path = DBDebugToolkit/Classes/Cells/ColorPicker/DBColorCheckbox.m; sourceTree = "<group>"; };
+		5A18DFBA52C9E6375C87920C8CF11E99 /* DBMainQueueOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBMainQueueOperation.h; path = DBDebugToolkit/Classes/Network/MainQueueOperation/DBMainQueueOperation.h; sourceTree = "<group>"; };
+		5B4C74DF6748CFDEFB630DFAD407709B /* Pods-Threads-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Threads-umbrella.h"; sourceTree = "<group>"; };
+		5B955E734A435E9BD256FE7EB10E584E /* DBCustomLocationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCustomLocationViewController.m; path = DBDebugToolkit/Classes/Location/DBCustomLocationViewController.m; sourceTree = "<group>"; };
+		5CFFBC380105B3F16599943B371D2769 /* DBOptionsListTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBOptionsListTableViewController.storyboard; path = DBDebugToolkit/Resources/DBOptionsListTableViewController.storyboard; sourceTree = "<group>"; };
+		5D66F6E7BD368D615F5612A14B2209D6 /* DBLocationTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBLocationTableViewController.m; path = DBDebugToolkit/Classes/Location/DBLocationTableViewController.m; sourceTree = "<group>"; };
+		5E0968CEC477ED34AAD57B3F06BDF72E /* DBTextViewViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBTextViewViewController.m; path = DBDebugToolkit/Classes/UserInterface/DBTextViewViewController.m; sourceTree = "<group>"; };
+		5E3BD10FC0D0A36531E053658273758E /* DBCoreDataFilterSettingsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCoreDataFilterSettingsTableViewController.h; path = DBDebugToolkit/Classes/Resources/CoreData/Filters/DBCoreDataFilterSettingsTableViewController.h; sourceTree = "<group>"; };
+		5ED8784726ABBC11317A9415CFA70EE7 /* NetworkViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkViewModel.swift; path = DBDebugToolkit/Classes/Swift/Models/NetworkViewModel.swift; sourceTree = "<group>"; };
+		5FB5677E63EC0A5A1D8B8CC9AF121872 /* Pods-Threads.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Threads.modulemap"; sourceTree = "<group>"; };
+		6016F6DD8671C23ED1E9E4FB726E076A /* DBDebugToolkit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DBDebugToolkit.debug.xcconfig; sourceTree = "<group>"; };
+		60E115DCD18DD793C55E8C597778A61A /* DBCoreDataFilterOperator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCoreDataFilterOperator.m; path = DBDebugToolkit/Classes/Resources/CoreData/Filters/DBCoreDataFilterOperator.m; sourceTree = "<group>"; };
+		65AD03EC8D7FA759D30836E68B80BC52 /* DBCoreDataFilterSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCoreDataFilterSettings.h; path = DBDebugToolkit/Classes/Resources/CoreData/Filters/DBCoreDataFilterSettings.h; sourceTree = "<group>"; };
+		672243441AAD0E84777E855B6EAAFA50 /* DBCoreDataFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCoreDataFilter.h; path = DBDebugToolkit/Classes/Resources/CoreData/Filters/DBCoreDataFilter.h; sourceTree = "<group>"; };
+		672703F1B8E281F291F3EC27FD8C439A /* DBCrashReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCrashReport.h; path = DBDebugToolkit/Classes/CrashReports/DBCrashReport.h; sourceTree = "<group>"; };
+		67CDD91858D1461E28716C896DE5A52E /* DBCrashReport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCrashReport.m; path = DBDebugToolkit/Classes/CrashReports/DBCrashReport.m; sourceTree = "<group>"; };
+		67ED3F4F563812EB03FE44DC98972BE9 /* DBLocationToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBLocationToolkit.h; path = DBDebugToolkit/Classes/Location/DBLocationToolkit.h; sourceTree = "<group>"; };
+		6892C1B92A9BEC5C5010CFA169FED24D /* DBFileTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DBFileTableViewCell.xib; path = DBDebugToolkit/Resources/DBFileTableViewCell.xib; sourceTree = "<group>"; };
+		68B44C9B4132A0AA17756DA53B1E09A3 /* DBManagedObjectsListTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBManagedObjectsListTableViewController.h; path = DBDebugToolkit/Classes/Resources/CoreData/DBManagedObjectsListTableViewController.h; sourceTree = "<group>"; };
+		69EDCD09E2484FDC086CF84E523961EC /* DBDebugToolkitUserDefaultsKeys.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBDebugToolkitUserDefaultsKeys.h; path = DBDebugToolkit/Classes/Resources/UserDefaults/DBDebugToolkitUserDefaultsKeys.h; sourceTree = "<group>"; };
+		6C1BC7AAA5E719AEBB07A569154EBCD4 /* DBTitleValueTableViewCellDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBTitleValueTableViewCellDataSource.m; path = DBDebugToolkit/Classes/Cells/TitleValue/DBTitleValueTableViewCellDataSource.m; sourceTree = "<group>"; };
+		6CE04DB1FE689EB8F4E1B2991230F8F0 /* DBResourcesTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBResourcesTableViewController.h; path = DBDebugToolkit/Classes/Resources/DBResourcesTableViewController.h; sourceTree = "<group>"; };
+		6DD4ABB82AE5A1E27FA1C127E5BEBAEF /* DBLongPressTrigger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBLongPressTrigger.m; path = DBDebugToolkit/Classes/Triggers/LongPressTrigger/DBLongPressTrigger.m; sourceTree = "<group>"; };
+		6F3F1F947AA247D63DB4F6FA118AD3DF /* DBFontFamiliesTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBFontFamiliesTableViewController.m; path = DBDebugToolkit/Classes/UserInterface/DBFontFamiliesTableViewController.m; sourceTree = "<group>"; };
+		6F93D0C12437597927790A0EBE26BE99 /* Pods-ThreadsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThreadsTests.release.xcconfig"; sourceTree = "<group>"; };
+		6FC361C5234D25C7D4FB34405385C9A2 /* DBCrashReportsTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBCrashReportsTableViewController.storyboard; path = DBDebugToolkit/Resources/DBCrashReportsTableViewController.storyboard; sourceTree = "<group>"; };
+		703B0B3A4FCC143E7C6826B99D3C4532 /* RequestDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestDetails.swift; path = DBDebugToolkit/Classes/Swift/Views/RequestDetails.swift; sourceTree = "<group>"; };
+		71CE58ADC47E044EA9EA469BFE8407D2 /* DBTitleValueTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBTitleValueTableViewCell.m; path = DBDebugToolkit/Classes/Cells/TitleValue/DBTitleValueTableViewCell.m; sourceTree = "<group>"; };
+		726B4A111F2074F284207738BA9B5B41 /* DBGridOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBGridOverlayView.m; path = DBDebugToolkit/Classes/UserInterface/GridOverlay/DBGridOverlayView.m; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		732B8689C6FDF07B4362F54D7814DAD4 /* TitleValueView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitleValueView.swift; path = DBDebugToolkit/Classes/Swift/Views/TitleValueView.swift; sourceTree = "<group>"; };
+		734C65E9E9D7154C907B2064FEFE2702 /* DBMenuSegmentedControlTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBMenuSegmentedControlTableViewCell.m; path = DBDebugToolkit/Classes/Cells/DBMenuSegmentedControlTableViewCell.m; sourceTree = "<group>"; };
+		75141E97289D184902E3F110062EE30D /* DBDebugToolkitTriggerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBDebugToolkitTriggerDelegate.h; path = DBDebugToolkit/Classes/Triggers/DBDebugToolkitTriggerDelegate.h; sourceTree = "<group>"; };
+		765E1D77AE82C69FB273DA6EB4219AFC /* DBManagedObjectTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DBManagedObjectTableViewCell.xib; path = DBDebugToolkit/Resources/DBManagedObjectTableViewCell.xib; sourceTree = "<group>"; };
+		7735285AE791A8549BFEF4F79E14A832 /* CrashReportsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CrashReportsView.swift; path = DBDebugToolkit/Classes/Swift/Views/CrashReportsView.swift; sourceTree = "<group>"; };
+		78EC02182CE1C68F45913B5BDB99378E /* DBDeviceInfoProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBDeviceInfoProvider.m; path = DBDebugToolkit/Classes/Device/DBDeviceInfoProvider.m; sourceTree = "<group>"; };
+		795E7419DE572A49DBB6E4E08B73CCAF /* DBTitleValueListTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTitleValueListTableViewController.h; path = DBDebugToolkit/Classes/Resources/DBTitleValueListTableViewController.h; sourceTree = "<group>"; };
+		796ADF3E6F60409F54ECEA7CFA08D118 /* DBTapTrigger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTapTrigger.h; path = DBDebugToolkit/Classes/Triggers/TapTrigger/DBTapTrigger.h; sourceTree = "<group>"; };
+		7A9B8D61162AF02A503299E9D8CD5027 /* DBConsoleOutputCaptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBConsoleOutputCaptor.m; path = DBDebugToolkit/Classes/Console/DBConsoleOutputCaptor.m; sourceTree = "<group>"; };
+		7ABF81E8C532B3D9D2CF5AB4469AEF74 /* Pods-Threads-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Threads-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7B1AB7A1D10154E0AA1DD1CC65FB75A5 /* NSOperationQueue+DBMainQueueOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSOperationQueue+DBMainQueueOperation.h"; path = "DBDebugToolkit/Classes/Network/MainQueueOperation/NSOperationQueue+DBMainQueueOperation.h"; sourceTree = "<group>"; };
+		7B58406417D7A8529EF64388FDB91937 /* UIView+DBUserInterfaceToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+DBUserInterfaceToolkit.h"; path = "DBDebugToolkit/Classes/UserInterface/Categories/UIView+DBUserInterfaceToolkit.h"; sourceTree = "<group>"; };
+		7E027DC524021201BF54C87C205B4D5E /* DBRequestDataHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBRequestDataHandler.h; path = DBDebugToolkit/Classes/Network/RequestModel/DBRequestDataHandler.h; sourceTree = "<group>"; };
+		7E249771D40FBA071066F210FE2B4D71 /* ResourcesList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourcesList.swift; path = DBDebugToolkit/Classes/Swift/Views/ResourcesList.swift; sourceTree = "<group>"; };
+		7F8FE779A47B57DC2CEC6E455DC79A31 /* CLLocationManager+DBLocationToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLLocationManager+DBLocationToolkit.h"; path = "DBDebugToolkit/Classes/Location/CLLocationManager+DBLocationToolkit.h"; sourceTree = "<group>"; };
+		806F732D077782DD64243F54BA10C8F5 /* DBCustomLocationViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBCustomLocationViewController.storyboard; path = DBDebugToolkit/Resources/DBCustomLocationViewController.storyboard; sourceTree = "<group>"; };
+		80EBC22D455F9BEFA264BC9A7172C67C /* DBCoreDataToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCoreDataToolkit.m; path = DBDebugToolkit/Classes/Resources/CoreData/DBCoreDataToolkit.m; sourceTree = "<group>"; };
+		8188B42640F2B80DCCA7DFBD0FE81910 /* DBGridOverlaySettingsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBGridOverlaySettingsTableViewController.m; path = DBDebugToolkit/Classes/UserInterface/GridOverlay/DBGridOverlaySettingsTableViewController.m; sourceTree = "<group>"; };
+		81CB2658ED730465D28079FCA1C9BF12 /* DBCoreDataFilterTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCoreDataFilterTableViewController.m; path = DBDebugToolkit/Classes/Resources/CoreData/Filters/DBCoreDataFilterTableViewController.m; sourceTree = "<group>"; };
+		822DF892D15E1293F811E4E0C161E9A5 /* DBPerformanceToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBPerformanceToolkit.h; path = DBDebugToolkit/Classes/Performance/DBPerformanceToolkit.h; sourceTree = "<group>"; };
+		82D61BF32DE9C6CDAC2CF233E88D19C2 /* DBTextViewViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBTextViewViewController.storyboard; path = DBDebugToolkit/Resources/DBTextViewViewController.storyboard; sourceTree = "<group>"; };
+		8378C089EDDE8BDD6E0504AFEBA7340D /* DBManagedObjectTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBManagedObjectTableViewCell.h; path = DBDebugToolkit/Classes/Resources/CoreData/DBManagedObjectTableViewCell.h; sourceTree = "<group>"; };
+		8617C5FCE1B9563A4FABDCA8035F4982 /* SwiftUIViewFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUIViewFactory.swift; path = DBDebugToolkit/Classes/Swift/SwiftUIViewFactory.swift; sourceTree = "<group>"; };
+		8654CE573D05808C933C7E3EC68E01FA /* Pods-ThreadsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ThreadsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		86673FC976BCFE2F4797979855B4C4A8 /* DBKeychainToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBKeychainToolkit.m; path = DBDebugToolkit/Classes/Resources/Keychain/DBKeychainToolkit.m; sourceTree = "<group>"; };
+		8693F91333D7BD5B1C99BDAADFF613BA /* DBMenuChartTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBMenuChartTableViewCell.h; path = DBDebugToolkit/Classes/Cells/DBMenuChartTableViewCell.h; sourceTree = "<group>"; };
+		86E65D95E2D1868110AC3900F5079AAF /* DBCustomActionsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCustomActionsTableViewController.h; path = DBDebugToolkit/Classes/CustomActions/DBCustomActionsTableViewController.h; sourceTree = "<group>"; };
+		877B7E11FDC774EE28AB6428616EE669 /* DBFilesTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBFilesTableViewController.storyboard; path = DBDebugToolkit/Resources/DBFilesTableViewController.storyboard; sourceTree = "<group>"; };
+		8792AE6BC0886726342D1716B50BA7BD /* Pods-ThreadsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThreadsTests-Info.plist"; sourceTree = "<group>"; };
+		882B7EA7D00958717D79511D0410A134 /* DBTopLevelViewsWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBTopLevelViewsWrapper.m; path = DBDebugToolkit/Classes/TopLevelViews/DBTopLevelViewsWrapper.m; sourceTree = "<group>"; };
+		885016BB1A651079F369A8B246F51086 /* UIWindow+DBShakeTrigger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+DBShakeTrigger.h"; path = "DBDebugToolkit/Classes/Triggers/ShakeTrigger/UIWindow+DBShakeTrigger.h"; sourceTree = "<group>"; };
+		89E46AB538FEE99E6D192880C4DF17EA /* DBManagedObjectTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBManagedObjectTableViewController.m; path = DBDebugToolkit/Classes/Resources/CoreData/DBManagedObjectTableViewController.m; sourceTree = "<group>"; };
+		8A95E7CC49D21DB42A73B6F9EA04C447 /* DBTextViewViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTextViewViewController.h; path = DBDebugToolkit/Classes/UserInterface/DBTextViewViewController.h; sourceTree = "<group>"; };
+		8E02092D46469B2AD74FE458D9E6F00D /* DBChartView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBChartView.h; path = DBDebugToolkit/Classes/Chart/DBChartView.h; sourceTree = "<group>"; };
+		8F05B0663473CA21C89E3EBA2FE19FC2 /* UIView+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Snapshot.h"; path = "DBDebugToolkit/Classes/Categories/UIView+Snapshot.h"; sourceTree = "<group>"; };
+		8F317D12C62E1697EDC4E0313137B01C /* DBMenuTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBMenuTableViewController.m; path = DBDebugToolkit/Classes/Menu/DBMenuTableViewController.m; sourceTree = "<group>"; };
+		8FD31897BAA86F1583BBC838B0DAAF62 /* DBFileTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBFileTableViewCell.m; path = DBDebugToolkit/Classes/Resources/Files/DBFileTableViewCell.m; sourceTree = "<group>"; };
+		916FF0A813B59881D8886327F7876A0D /* DBCoreDataFilterTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCoreDataFilterTableViewController.h; path = DBDebugToolkit/Classes/Resources/CoreData/Filters/DBCoreDataFilterTableViewController.h; sourceTree = "<group>"; };
+		9233601300B5C7E4E6A597C498528E99 /* DBShakeTrigger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBShakeTrigger.m; path = DBDebugToolkit/Classes/Triggers/ShakeTrigger/DBShakeTrigger.m; sourceTree = "<group>"; };
+		931C230FD776EB787B6A53213A2066DA /* DBTextViewTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTextViewTableViewCell.h; path = DBDebugToolkit/Classes/Cells/DBTextViewTableViewCell.h; sourceTree = "<group>"; };
+		9402312FC4DF37B3DFFCEA7E17ED5460 /* UIColor+DBDebugToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+DBDebugToolkit.h"; path = "DBDebugToolkit/Classes/Categories/UIColor+DBDebugToolkit.h"; sourceTree = "<group>"; };
+		95DB0FD557F58A0BEA7F57E38FDB6D2B /* DBNetworkSettingsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBNetworkSettingsTableViewController.h; path = DBDebugToolkit/Classes/Network/DBNetworkSettingsTableViewController.h; sourceTree = "<group>"; };
+		96049756B753483C34D34695E03C42D4 /* DBDebugToolkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DBDebugToolkit.release.xcconfig; sourceTree = "<group>"; };
+		96518C64E5C0F51C64E713A0DEC5AAFA /* DBPerformanceSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBPerformanceSection.h; path = DBDebugToolkit/Classes/Performance/DBPerformanceSection.h; sourceTree = "<group>"; };
+		96BF5F770C11895188C9EEF0AA7D0142 /* DBCustomVariablesTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBCustomVariablesTableViewController.storyboard; path = DBDebugToolkit/Resources/DBCustomVariablesTableViewController.storyboard; sourceTree = "<group>"; };
+		97BA21C2E0468215B01789A44795975F /* NSObject+DBDebugToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+DBDebugToolkit.m"; path = "DBDebugToolkit/Classes/Categories/NSObject+DBDebugToolkit.m"; sourceTree = "<group>"; };
+		97BCA2AB48E4A008CD1144FDEC486911 /* DBSliderTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBSliderTableViewCell.m; path = DBDebugToolkit/Classes/Cells/DBSliderTableViewCell.m; sourceTree = "<group>"; };
+		9D692C9AA332E7407487272FF89E4B54 /* DBCoreDataFilterSettingsTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBCoreDataFilterSettingsTableViewController.storyboard; path = DBDebugToolkit/Resources/DBCoreDataFilterSettingsTableViewController.storyboard; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E553D24E633D07342FBABD928B9FBD1 /* DBCrashReportsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCrashReportsTableViewController.h; path = DBDebugToolkit/Classes/CrashReports/DBCrashReportsTableViewController.h; sourceTree = "<group>"; };
+		9ECE8D466D7759825AF45EFAEDB8B4DA /* DBPresetLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBPresetLocation.h; path = DBDebugToolkit/Classes/Location/DBPresetLocation.h; sourceTree = "<group>"; };
+		A0606BEF75E5AE2FAB5F3D5212483879 /* Pods-Threads */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Threads"; path = Pods_Threads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1BB5571B43B793A866C5C4597B0C7D0 /* DBTapTrigger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBTapTrigger.m; path = DBDebugToolkit/Classes/Triggers/TapTrigger/DBTapTrigger.m; sourceTree = "<group>"; };
+		A2DF852D686ECBC60C348E5E86CE8F31 /* DBCoreDataToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCoreDataToolkit.h; path = DBDebugToolkit/Classes/Resources/CoreData/DBCoreDataToolkit.h; sourceTree = "<group>"; };
+		A3AE5900A114515A9B400DC6D9B96BBA /* CookiesList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CookiesList.swift; path = DBDebugToolkit/Classes/Swift/Views/CookiesList.swift; sourceTree = "<group>"; };
+		A5B3B128F0CCC0D25FF10CD20E7F414E /* DBUserInterfaceTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBUserInterfaceTableViewController.m; path = DBDebugToolkit/Classes/UserInterface/DBUserInterfaceTableViewController.m; sourceTree = "<group>"; };
+		A70C21A00DC927E1626BA9DFB9660447 /* DBPersistentStoreCoordinatorsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBPersistentStoreCoordinatorsTableViewController.h; path = DBDebugToolkit/Classes/Resources/CoreData/DBPersistentStoreCoordinatorsTableViewController.h; sourceTree = "<group>"; };
+		A93C140BB89A938205B64A7555BC553A /* DBCrashReportsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCrashReportsTableViewController.m; path = DBDebugToolkit/Classes/CrashReports/DBCrashReportsTableViewController.m; sourceTree = "<group>"; };
+		A9A19C6CA679EE617D1BA7DE614A6165 /* DBRequestModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBRequestModel.h; path = DBDebugToolkit/Classes/Network/RequestModel/DBRequestModel.h; sourceTree = "<group>"; };
+		AB44C0ED80EC7830AAB2123ABE5BEFC3 /* UILabel+DBDebugToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+DBDebugToolkit.m"; path = "DBDebugToolkit/Classes/Categories/UILabel+DBDebugToolkit.m"; sourceTree = "<group>"; };
+		AB8D91924DF77839D08EEBB9439C7D93 /* DBGridOverlayColorScheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBGridOverlayColorScheme.m; path = DBDebugToolkit/Classes/UserInterface/GridOverlay/DBGridOverlayColorScheme.m; sourceTree = "<group>"; };
+		AC55EDC4387A16B83488D79D1547FE19 /* DBNetworkSettingsTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBNetworkSettingsTableViewController.storyboard; path = DBDebugToolkit/Resources/DBNetworkSettingsTableViewController.storyboard; sourceTree = "<group>"; };
+		ACAC1FB175DC8E4D29A3C00EEF1DBAD0 /* DBTopLevelView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTopLevelView.h; path = DBDebugToolkit/Classes/TopLevelViews/DBTopLevelView.h; sourceTree = "<group>"; };
+		AD92CEAF58DA361837E683F388E49586 /* NSPersistentStoreCoordinator+DBCoreDataToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStoreCoordinator+DBCoreDataToolkit.m"; path = "DBDebugToolkit/Classes/Resources/CoreData/NSPersistentStoreCoordinator+DBCoreDataToolkit.m"; sourceTree = "<group>"; };
+		AE850A8F85F577B466F9D08E9A7C10E0 /* ConsoleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleView.swift; path = DBDebugToolkit/Classes/Swift/Views/ConsoleView.swift; sourceTree = "<group>"; };
+		AEF4B4A00F0DCD759537997001DC3449 /* UIApplication+DBDebugToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+DBDebugToolkit.h"; path = "DBDebugToolkit/Classes/Categories/UIApplication+DBDebugToolkit.h"; sourceTree = "<group>"; };
+		AFE04279DF66CC6E18984581B42F9445 /* DBImageViewViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBImageViewViewController.storyboard; path = DBDebugToolkit/Resources/DBImageViewViewController.storyboard; sourceTree = "<group>"; };
+		B044C4B1A3B76E0397FD9443AFCEF350 /* ConsoleViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleViewModel.swift; path = DBDebugToolkit/Classes/Swift/Models/ConsoleViewModel.swift; sourceTree = "<group>"; };
+		B298E0AF9A635238B89A335E1E7289D4 /* DBGridOverlaySettingsTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBGridOverlaySettingsTableViewController.storyboard; path = DBDebugToolkit/Resources/DBGridOverlaySettingsTableViewController.storyboard; sourceTree = "<group>"; };
+		B2EBD5A1AFBEE3CD5881C372C7832D4E /* DBCoreDataFilterSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCoreDataFilterSettings.m; path = DBDebugToolkit/Classes/Resources/CoreData/Filters/DBCoreDataFilterSettings.m; sourceTree = "<group>"; };
+		B35B50C68EB7518F840A41DF59ED02E8 /* Pods-ThreadsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThreadsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B395CEB1148D6E86852355F0698774E7 /* UIApplication+DBDebugToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+DBDebugToolkit.m"; path = "DBDebugToolkit/Classes/Categories/UIApplication+DBDebugToolkit.m"; sourceTree = "<group>"; };
+		B618863D16ED04971E00E24CD5ACF071 /* DBCoreDataFilterOperator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCoreDataFilterOperator.h; path = DBDebugToolkit/Classes/Resources/CoreData/Filters/DBCoreDataFilterOperator.h; sourceTree = "<group>"; };
+		B77FECC3AA399B09478A8BC0597A4FAA /* ResourceBundle-DBDebugToolkit-DBDebugToolkit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-DBDebugToolkit-DBDebugToolkit-Info.plist"; sourceTree = "<group>"; };
+		B81E75FA5AE2F59302E1D489A31E0C1A /* DBConsoleOutputCaptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBConsoleOutputCaptor.h; path = DBDebugToolkit/Classes/Console/DBConsoleOutputCaptor.h; sourceTree = "<group>"; };
+		B9CEE0981F01DE5DD7D0B00139121A3F /* CoreDataView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataView.swift; path = DBDebugToolkit/Classes/Swift/Views/CoreDataView.swift; sourceTree = "<group>"; };
+		BA12FF3A0C8E5407704E58DFECF8C319 /* NetworkList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkList.swift; path = DBDebugToolkit/Classes/Swift/Views/NetworkList.swift; sourceTree = "<group>"; };
+		BBD120AC494BF51491546B3F05C00A47 /* DBMenuTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBMenuTableViewController.h; path = DBDebugToolkit/Classes/Menu/DBMenuTableViewController.h; sourceTree = "<group>"; };
+		BD40006FCE507BD2749BBEE60756FB73 /* DBMainQueueOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBMainQueueOperation.m; path = DBDebugToolkit/Classes/Network/MainQueueOperation/DBMainQueueOperation.m; sourceTree = "<group>"; };
+		BD5514B12C1C677BBC5D481F73858E3D /* DBRequestOutcome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBRequestOutcome.m; path = DBDebugToolkit/Classes/Network/RequestModel/DBRequestOutcome.m; sourceTree = "<group>"; };
+		BE918BE17C8075B91160FC17662493B3 /* DBTitleValueListTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBTitleValueListTableViewController.storyboard; path = DBDebugToolkit/Resources/DBTitleValueListTableViewController.storyboard; sourceTree = "<group>"; };
+		BFC041C7788D3C099D420547F99A7F0C /* DBMenuSegmentedControlTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DBMenuSegmentedControlTableViewCell.xib; path = DBDebugToolkit/Resources/DBMenuSegmentedControlTableViewCell.xib; sourceTree = "<group>"; };
+		C2BBEDB707E9893A99A29A0BEBAD1EA4 /* DBEntitiesTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBEntitiesTableViewController.h; path = DBDebugToolkit/Classes/Resources/CoreData/DBEntitiesTableViewController.h; sourceTree = "<group>"; };
+		C33F58DADA462F0748736D561CF9C70C /* DBPersistentStoreCoordinatorsTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBPersistentStoreCoordinatorsTableViewController.storyboard; path = DBDebugToolkit/Resources/DBPersistentStoreCoordinatorsTableViewController.storyboard; sourceTree = "<group>"; };
+		C3BDF4E83B84A534773A100EFF9C83E7 /* Pods-Threads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Threads.debug.xcconfig"; sourceTree = "<group>"; };
+		C454775AD58C1E383F29FD0A78A4BF7D /* DBColorPickerTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBColorPickerTableViewCell.m; path = DBDebugToolkit/Classes/Cells/ColorPicker/DBColorPickerTableViewCell.m; sourceTree = "<group>"; };
+		C4E47D45A66FA69234FD7EB2720A0661 /* DBTitleValueListTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBTitleValueListTableViewController.m; path = DBDebugToolkit/Classes/Resources/DBTitleValueListTableViewController.m; sourceTree = "<group>"; };
+		C6CC39D1F8D9CE2A1049B82A8A9BC9D5 /* DBDebugToolkit-DBDebugToolkit */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "DBDebugToolkit-DBDebugToolkit"; path = DBDebugToolkit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8DBBEB4A2CAC0137FC1D378DBF8F1BA /* DBCustomVariablesTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCustomVariablesTableViewController.m; path = DBDebugToolkit/Classes/CustomVariables/DBCustomVariablesTableViewController.m; sourceTree = "<group>"; };
+		CB10DD752CE1C902568614DB58970227 /* DBMenuChartTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DBMenuChartTableViewCell.xib; path = DBDebugToolkit/Resources/DBMenuChartTableViewCell.xib; sourceTree = "<group>"; };
+		CB91297BF28EE38C47A3814A0AA5A84B /* DBAuthenticationChallengeSender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBAuthenticationChallengeSender.m; path = DBDebugToolkit/Classes/Network/URLProtocol/DBAuthenticationChallengeSender.m; sourceTree = "<group>"; };
+		CBCC8B3F457AC6F55755530795C70E1A /* DBTitleValueTableViewCellDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTitleValueTableViewCellDataSource.h; path = DBDebugToolkit/Classes/Cells/TitleValue/DBTitleValueTableViewCellDataSource.h; sourceTree = "<group>"; };
+		CC7B2F73F5F10095FFF7283F0F4F83F0 /* RequestSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestSettings.swift; path = DBDebugToolkit/Classes/Swift/Views/RequestSettings.swift; sourceTree = "<group>"; };
+		CCA57A939A9E48A3AEE0A34496380328 /* DBCustomActionsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCustomActionsTableViewController.m; path = DBDebugToolkit/Classes/CustomActions/DBCustomActionsTableViewController.m; sourceTree = "<group>"; };
+		CCB2B0E2F32CEE29679BAFAD14568DF7 /* DBRequestModel+responseDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DBRequestModel+responseDescription.swift"; path = "DBDebugToolkit/Classes/Extensions/DBRequestModel+responseDescription.swift"; sourceTree = "<group>"; };
+		CD566BBB42F5F37BD057DE5EAB5777D3 /* DBResourcesTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBResourcesTableViewController.m; path = DBDebugToolkit/Classes/Resources/DBResourcesTableViewController.m; sourceTree = "<group>"; };
+		CF8BE4E21D8C21E4FB526A56E811CDC0 /* DBShakeTrigger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBShakeTrigger.h; path = DBDebugToolkit/Classes/Triggers/ShakeTrigger/DBShakeTrigger.h; sourceTree = "<group>"; };
+		CF9EA27E5D114B14117FEAA6C861BE96 /* Pods-ThreadsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ThreadsTests.modulemap"; sourceTree = "<group>"; };
+		CF9F1E69C1D7366E3A8775DFB3476E21 /* DBCrashReportDetailsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCrashReportDetailsTableViewController.h; path = DBDebugToolkit/Classes/CrashReports/DBCrashReportDetailsTableViewController.h; sourceTree = "<group>"; };
+		D36E8C8F6F9F4A59904E158803F82110 /* DBPerformanceTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBPerformanceTableViewController.storyboard; path = DBDebugToolkit/Resources/DBPerformanceTableViewController.storyboard; sourceTree = "<group>"; };
+		D4B14B72E644548160145C5646B2C117 /* DBEntitiesTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBEntitiesTableViewController.storyboard; path = DBDebugToolkit/Resources/DBEntitiesTableViewController.storyboard; sourceTree = "<group>"; };
+		D55BEA4CD77BD6CF02B1D2248C76ED45 /* NSBundle+DBDebugToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+DBDebugToolkit.h"; path = "DBDebugToolkit/Classes/Categories/NSBundle+DBDebugToolkit.h"; sourceTree = "<group>"; };
+		D5AF03FA766339610C7F81C66115BCB1 /* DBSliderTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBSliderTableViewCell.h; path = DBDebugToolkit/Classes/Cells/DBSliderTableViewCell.h; sourceTree = "<group>"; };
+		D6A093FBB68579BABBC6F909642D49C3 /* DBManagedObjectTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBManagedObjectTableViewController.storyboard; path = DBDebugToolkit/Resources/DBManagedObjectTableViewController.storyboard; sourceTree = "<group>"; };
+		D8BC2A66D739E5F02677FFD2E8CAAC20 /* DBCustomActionsTableViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DBCustomActionsTableViewController.storyboard; path = DBDebugToolkit/Resources/DBCustomActionsTableViewController.storyboard; sourceTree = "<group>"; };
+		D92B44939551ACD42BEA4CD2D4C8E9FA /* DBGridOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBGridOverlayView.h; path = DBDebugToolkit/Classes/UserInterface/GridOverlay/DBGridOverlayView.h; sourceTree = "<group>"; };
+		D9A911D33F678AAF3ABC77AB53697D50 /* Pods-ThreadsTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ThreadsTests"; path = Pods_ThreadsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC4126BB51BC99E511ED81510913A4E /* DBMenuSwitchTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBMenuSwitchTableViewCell.h; path = DBDebugToolkit/Classes/Cells/DBMenuSwitchTableViewCell.h; sourceTree = "<group>"; };
+		DD141E29266577DF3CA33B7AA6FCBDB7 /* DBManagedObjectsListTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBManagedObjectsListTableViewController.m; path = DBDebugToolkit/Classes/Resources/CoreData/DBManagedObjectsListTableViewController.m; sourceTree = "<group>"; };
+		DDBBFBEB8C13373CC85C20975EDA9C1E /* DBDebugToolkitTrigger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBDebugToolkitTrigger.h; path = DBDebugToolkit/Classes/Triggers/DBDebugToolkitTrigger.h; sourceTree = "<group>"; };
+		DFD1642D27BFD8F730008A378EE6B399 /* DBImageViewViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBImageViewViewController.h; path = DBDebugToolkit/Classes/CrashReports/DBImageViewViewController.h; sourceTree = "<group>"; };
+		E02C78DD1B7FA907342BF476495A3137 /* DBOptionsListTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBOptionsListTableViewController.m; path = DBDebugToolkit/Classes/Resources/CoreData/Filters/DBOptionsListTableViewController.m; sourceTree = "<group>"; };
+		E1B3D2966ECF3A2683148F4CF9D81A4B /* UserInterfaceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInterfaceView.swift; path = DBDebugToolkit/Classes/Swift/Views/UserInterfaceView.swift; sourceTree = "<group>"; };
+		E204D3AAE35CA4D5BC75B9C047E720E0 /* DBOptionsListTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBOptionsListTableViewController.h; path = DBDebugToolkit/Classes/Resources/CoreData/Filters/DBOptionsListTableViewController.h; sourceTree = "<group>"; };
+		E4BBB92A1F96FE0F97A6A739CD5D60E9 /* DBUserDefaultsToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBUserDefaultsToolkit.m; path = DBDebugToolkit/Classes/Resources/UserDefaults/DBUserDefaultsToolkit.m; sourceTree = "<group>"; };
+		E5FE145678FA6251AF845376C33C9C10 /* MenuList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuList.swift; path = DBDebugToolkit/Classes/Swift/Views/MenuList.swift; sourceTree = "<group>"; };
+		E69934A912F0CFD61EF738313DC594AF /* DBNetworkToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBNetworkToolkit.m; path = DBDebugToolkit/Classes/Network/DBNetworkToolkit.m; sourceTree = "<group>"; };
+		E69F0FE0945A420A72DD28D9AF40C0A9 /* UIWindow+DBUserInterfaceToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+DBUserInterfaceToolkit.m"; path = "DBDebugToolkit/Classes/UserInterface/Categories/UIWindow+DBUserInterfaceToolkit.m"; sourceTree = "<group>"; };
+		E7395C0A29D56E093D99A3A5E795610E /* DBPerformanceWidgetView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DBPerformanceWidgetView.xib; path = DBDebugToolkit/Resources/DBPerformanceWidgetView.xib; sourceTree = "<group>"; };
+		E97996D519F1863DDA656B61EA4E497C /* DBUserInterfaceToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBUserInterfaceToolkit.m; path = DBDebugToolkit/Classes/UserInterface/DBUserInterfaceToolkit.m; sourceTree = "<group>"; };
+		E99CFA8831B7F20CB4BA539F0582880D /* DBDebugToolkit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DBDebugToolkit; path = DBDebugToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB9761848F731CD25500E3B4C3753D3 /* UIWindow+DBShakeTrigger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+DBShakeTrigger.m"; path = "DBDebugToolkit/Classes/Triggers/ShakeTrigger/UIWindow+DBShakeTrigger.m"; sourceTree = "<group>"; };
+		ECCB7C7C2E3F4FC12BDAA188FF37C864 /* DBBodyPreviewViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBBodyPreviewViewController.m; path = DBDebugToolkit/Classes/Network/DBBodyPreviewViewController.m; sourceTree = "<group>"; };
+		ECDC3CF4F644DBBB0025E98C20A3D330 /* DBManagedObjectTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBManagedObjectTableViewCell.m; path = DBDebugToolkit/Classes/Resources/CoreData/DBManagedObjectTableViewCell.m; sourceTree = "<group>"; };
+		ED909260F0764639AAB4F6DFAEBE1CD0 /* DBCustomVariablesTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCustomVariablesTableViewController.h; path = DBDebugToolkit/Classes/CustomVariables/DBCustomVariablesTableViewController.h; sourceTree = "<group>"; };
+		EE17D79D50EA79F8AAEE698CECB71044 /* UIColor+DBDebugToolkit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+DBDebugToolkit.m"; path = "DBDebugToolkit/Classes/Categories/UIColor+DBDebugToolkit.m"; sourceTree = "<group>"; };
+		EE9165A604C096A76AA4C64C9A3CAE03 /* DBDebugToolkit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DBDebugToolkit-umbrella.h"; sourceTree = "<group>"; };
+		F09E72B19B8414062103830712E76ECC /* NSPersistentStoreCoordinator+DBCoreDataToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStoreCoordinator+DBCoreDataToolkit.h"; path = "DBDebugToolkit/Classes/Resources/CoreData/NSPersistentStoreCoordinator+DBCoreDataToolkit.h"; sourceTree = "<group>"; };
+		F111F418EB8BA0F076E0B79A62678F6D /* Pods-Threads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Threads.release.xcconfig"; sourceTree = "<group>"; };
+		F121FF52619029C0A1ACFD00996E4ACC /* NSURLSessionDelegateSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSURLSessionDelegateSwizzle.h; path = DBDebugToolkit/Classes/Network/URLProtocol/NSURLSessionDelegateSwizzle.h; sourceTree = "<group>"; };
+		F2558977421945302A8B7EADBC11DA88 /* DBKeychainToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBKeychainToolkit.h; path = DBDebugToolkit/Classes/Resources/Keychain/DBKeychainToolkit.h; sourceTree = "<group>"; };
+		F3621AC07124CF3DF2C8457CEBB057D0 /* DBColorPickerTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DBColorPickerTableViewCell.xib; path = DBDebugToolkit/Resources/DBColorPickerTableViewCell.xib; sourceTree = "<group>"; };
+		F44E0015E78EE74C764EFDA186B59A15 /* DBNetworkSettingsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBNetworkSettingsTableViewController.m; path = DBDebugToolkit/Classes/Network/DBNetworkSettingsTableViewController.m; sourceTree = "<group>"; };
+		F4F85CC67880E6A26A050AE6BE8B228A /* DBCustomVariable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBCustomVariable.h; path = DBDebugToolkit/Classes/CustomVariables/DBCustomVariable.h; sourceTree = "<group>"; };
+		F50A88C0A9ED88694AE7A2761587A31D /* DBMenuChartTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBMenuChartTableViewCell.m; path = DBDebugToolkit/Classes/Cells/DBMenuChartTableViewCell.m; sourceTree = "<group>"; };
+		F581E052AA7BAB592038B5C12D2F90E9 /* DBChartView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBChartView.m; path = DBDebugToolkit/Classes/Chart/DBChartView.m; sourceTree = "<group>"; };
+		F641B6F61654737621CE022C333E3823 /* NSURLSessionDelegateSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSURLSessionDelegateSwizzle.m; path = DBDebugToolkit/Classes/Network/URLProtocol/NSURLSessionDelegateSwizzle.m; sourceTree = "<group>"; };
+		F6D381DAC868AB9DF1410EAE96D4E79F /* FilesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilesView.swift; path = DBDebugToolkit/Classes/Swift/Views/FilesView.swift; sourceTree = "<group>"; };
+		F75C2B86660BA9ED75F782BFD6F8BC5D /* DBUserDefaultsToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBUserDefaultsToolkit.h; path = DBDebugToolkit/Classes/Resources/UserDefaults/DBUserDefaultsToolkit.h; sourceTree = "<group>"; };
+		F7A999BFD0AC50D9615C931EF90562B6 /* UIColor+DBUserInterfaceToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+DBUserInterfaceToolkit.h"; path = "DBDebugToolkit/Classes/UserInterface/Categories/UIColor+DBUserInterfaceToolkit.h"; sourceTree = "<group>"; };
+		F8A4848FE78E0017BA5C4A38DBD5DE8E /* DBSliderTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DBSliderTableViewCell.xib; path = DBDebugToolkit/Resources/DBSliderTableViewCell.xib; sourceTree = "<group>"; };
+		F8AFFBF8626D143D62B1EB172C4AECA6 /* DBImageViewViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBImageViewViewController.m; path = DBDebugToolkit/Classes/CrashReports/DBImageViewViewController.m; sourceTree = "<group>"; };
+		F8CD840C4CC10636AA3382494EE23EDF /* DBDebugToolkit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBDebugToolkit.h; path = DBDebugToolkit/Classes/DBDebugToolkit.h; sourceTree = "<group>"; };
+		FA05EBAB0DF8892E5D51248F3B9BCAFE /* DBRequestTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBRequestTableViewCell.h; path = DBDebugToolkit/Classes/Cells/DBRequestTableViewCell.h; sourceTree = "<group>"; };
+		FC9AF8047D958A6BDE98669C7B11570F /* LocationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationView.swift; path = DBDebugToolkit/Classes/Swift/Views/LocationView.swift; sourceTree = "<group>"; };
+		FE20DE1CFE58033D0F31BDD80D39EDC4 /* DBCustomAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBCustomAction.m; path = DBDebugToolkit/Classes/CustomActions/DBCustomAction.m; sourceTree = "<group>"; };
+		FFAD967E14A2416FD58B6EB61BC912A4 /* RequestBodyPreview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestBodyPreview.swift; path = DBDebugToolkit/Classes/Swift/Views/RequestBodyPreview.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DBE7FAF8E943E78BAF8CDC6794DC485 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85E27157BC8F5FD8AC13E5D9D1D2E852 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15C26197CBAD6253ECC824292BDF5D1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435E140599E3F10EB6E1F65F35EF830F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83BE8912201B4A73D6796BE3F6FF0C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADE7E5EECAC1003482142BABA01E813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E3EF5ABF1768795E6EC2FF407AC71F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		275C3ECE6127452BD6A7B8DC6D679172 /* Pods-ThreadsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF9EA27E5D114B14117FEAA6C861BE96 /* Pods-ThreadsTests.modulemap */,
+				8654CE573D05808C933C7E3EC68E01FA /* Pods-ThreadsTests-acknowledgements.markdown */,
+				B35B50C68EB7518F840A41DF59ED02E8 /* Pods-ThreadsTests-acknowledgements.plist */,
+				2530B71926FF7B3C03CDEB6FDDF9FAB8 /* Pods-ThreadsTests-dummy.m */,
+				8792AE6BC0886726342D1716B50BA7BD /* Pods-ThreadsTests-Info.plist */,
+				4A5BFE9ACA789FBD94114260C5EDC862 /* Pods-ThreadsTests-umbrella.h */,
+				0CD6BDC41047BB706E05FACA313022DD /* Pods-ThreadsTests.debug.xcconfig */,
+				6F93D0C12437597927790A0EBE26BE99 /* Pods-ThreadsTests.release.xcconfig */,
+			);
+			name = "Pods-ThreadsTests";
+			path = "Target Support Files/Pods-ThreadsTests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6D5F71E85182A31BB7B8FF00C87002CE /* DBDebugToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				3C7F2FB47ACE18F6E1D2E1D2EDD5D45F /* Bundle+BuildInfo.swift */,
+				7F8FE779A47B57DC2CEC6E455DC79A31 /* CLLocationManager+DBLocationToolkit.h */,
+				2B86099F0DA845D4F0B4A83BB6764D60 /* CLLocationManager+DBLocationToolkit.m */,
+				AE850A8F85F577B466F9D08E9A7C10E0 /* ConsoleView.swift */,
+				B044C4B1A3B76E0397FD9443AFCEF350 /* ConsoleViewModel.swift */,
+				A3AE5900A114515A9B400DC6D9B96BBA /* CookiesList.swift */,
+				3E28B9C1AD6710889D628080E95A9E37 /* CookiesList+ViewModel.swift */,
+				B9CEE0981F01DE5DD7D0B00139121A3F /* CoreDataView.swift */,
+				7735285AE791A8549BFEF4F79E14A832 /* CrashReportsView.swift */,
+				38094E14C9E69D5F5A9282F5BD21B9F7 /* CustomActionsView.swift */,
+				1BF52F1183DAA7C8BB172244A1399396 /* CustomVariablesView.swift */,
+				5624DE9DED9A6C649B84D26927FF1FE1 /* DBAuthenticationChallengeSender.h */,
+				CB91297BF28EE38C47A3814A0AA5A84B /* DBAuthenticationChallengeSender.m */,
+				20F498BAE74DD0F3FD71858AB9096576 /* DBBodyPreviewViewController.h */,
+				ECCB7C7C2E3F4FC12BDAA188FF37C864 /* DBBodyPreviewViewController.m */,
+				8E02092D46469B2AD74FE458D9E6F00D /* DBChartView.h */,
+				F581E052AA7BAB592038B5C12D2F90E9 /* DBChartView.m */,
+				3773962A74E67FB21FDCE49966D560B5 /* DBColorCheckbox.h */,
+				59799C8332E040715658B712AC212055 /* DBColorCheckbox.m */,
+				26F30322747F00DAE364855B8DC29C92 /* DBColorPickerTableViewCell.h */,
+				C454775AD58C1E383F29FD0A78A4BF7D /* DBColorPickerTableViewCell.m */,
+				B81E75FA5AE2F59302E1D489A31E0C1A /* DBConsoleOutputCaptor.h */,
+				7A9B8D61162AF02A503299E9D8CD5027 /* DBConsoleOutputCaptor.m */,
+				672243441AAD0E84777E855B6EAAFA50 /* DBCoreDataFilter.h */,
+				48B08D0D955B78217F82C6D52328B12A /* DBCoreDataFilter.m */,
+				B618863D16ED04971E00E24CD5ACF071 /* DBCoreDataFilterOperator.h */,
+				60E115DCD18DD793C55E8C597778A61A /* DBCoreDataFilterOperator.m */,
+				65AD03EC8D7FA759D30836E68B80BC52 /* DBCoreDataFilterSettings.h */,
+				B2EBD5A1AFBEE3CD5881C372C7832D4E /* DBCoreDataFilterSettings.m */,
+				5E3BD10FC0D0A36531E053658273758E /* DBCoreDataFilterSettingsTableViewController.h */,
+				3CD6EC253FE4A93FA80351E59D0089F9 /* DBCoreDataFilterSettingsTableViewController.m */,
+				916FF0A813B59881D8886327F7876A0D /* DBCoreDataFilterTableViewController.h */,
+				81CB2658ED730465D28079FCA1C9BF12 /* DBCoreDataFilterTableViewController.m */,
+				A2DF852D686ECBC60C348E5E86CE8F31 /* DBCoreDataToolkit.h */,
+				80EBC22D455F9BEFA264BC9A7172C67C /* DBCoreDataToolkit.m */,
+				672703F1B8E281F291F3EC27FD8C439A /* DBCrashReport.h */,
+				67CDD91858D1461E28716C896DE5A52E /* DBCrashReport.m */,
+				CF9F1E69C1D7366E3A8775DFB3476E21 /* DBCrashReportDetailsTableViewController.h */,
+				3C59388552FE59555E0CF5F8576C736B /* DBCrashReportDetailsTableViewController.m */,
+				9E553D24E633D07342FBABD928B9FBD1 /* DBCrashReportsTableViewController.h */,
+				A93C140BB89A938205B64A7555BC553A /* DBCrashReportsTableViewController.m */,
+				4A0832D4B3AE6E1B31745AEC6F27E198 /* DBCrashReportsToolkit.h */,
+				55DFA45137254382701B96BC18D41598 /* DBCrashReportsToolkit.m */,
+				15FA883A69A3430B51B269CC79565D2C /* DBCustomAction.h */,
+				FE20DE1CFE58033D0F31BDD80D39EDC4 /* DBCustomAction.m */,
+				86E65D95E2D1868110AC3900F5079AAF /* DBCustomActionsTableViewController.h */,
+				CCA57A939A9E48A3AEE0A34496380328 /* DBCustomActionsTableViewController.m */,
+				145CDA617266721B6AD24A28382CA062 /* DBCustomLocationViewController.h */,
+				5B955E734A435E9BD256FE7EB10E584E /* DBCustomLocationViewController.m */,
+				F4F85CC67880E6A26A050AE6BE8B228A /* DBCustomVariable.h */,
+				0B314B6261F27B5AA5557465387ECE3E /* DBCustomVariable.m */,
+				ED909260F0764639AAB4F6DFAEBE1CD0 /* DBCustomVariablesTableViewController.h */,
+				C8DBBEB4A2CAC0137FC1D378DBF8F1BA /* DBCustomVariablesTableViewController.m */,
+				F8CD840C4CC10636AA3382494EE23EDF /* DBDebugToolkit.h */,
+				54CEC3C633DAE3BD52D494795DC26FEA /* DBDebugToolkit.m */,
+				DDBBFBEB8C13373CC85C20975EDA9C1E /* DBDebugToolkitTrigger.h */,
+				75141E97289D184902E3F110062EE30D /* DBDebugToolkitTriggerDelegate.h */,
+				69EDCD09E2484FDC086CF84E523961EC /* DBDebugToolkitUserDefaultsKeys.h */,
+				428C3D78520389229D1C0F00BACA3506 /* DBDeviceInfoProvider.h */,
+				78EC02182CE1C68F45913B5BDB99378E /* DBDeviceInfoProvider.m */,
+				C2BBEDB707E9893A99A29A0BEBAD1EA4 /* DBEntitiesTableViewController.h */,
+				196B8A8D93DFB8DC14E3824F96B10F65 /* DBEntitiesTableViewController.m */,
+				05E8740D024D5676CBB1C9AE9DB3037C /* DBFilesTableViewController.h */,
+				1C47306E99F0DB46E1A83F005A953F3B /* DBFilesTableViewController.m */,
+				1DF03ED0519E0BD371EB02E6E55DC343 /* DBFileTableViewCell.h */,
+				8FD31897BAA86F1583BBC838B0DAAF62 /* DBFileTableViewCell.m */,
+				0EB22353EE21039EFB092584D2058F58 /* DBFontFamiliesTableViewController.h */,
+				6F3F1F947AA247D63DB4F6FA118AD3DF /* DBFontFamiliesTableViewController.m */,
+				049A707BB80D253D38222162A185C467 /* DBFontPreviewViewController.h */,
+				39495CB768B63785FFC3DD732194A4B0 /* DBFontPreviewViewController.m */,
+				14FF8B0C2C5AB8582F7DAE49195CB38E /* DBFPSCalculator.h */,
+				2A36A0EB271896A25022F5A506E63D2D /* DBFPSCalculator.m */,
+				1727EDCD028D31F5CF4D102112050069 /* DBGridOverlayColorScheme.h */,
+				AB8D91924DF77839D08EEBB9439C7D93 /* DBGridOverlayColorScheme.m */,
+				0C1AC9EAD82D6CE3DCC11C3F124D9DC4 /* DBGridOverlaySettingsTableViewController.h */,
+				8188B42640F2B80DCCA7DFBD0FE81910 /* DBGridOverlaySettingsTableViewController.m */,
+				D92B44939551ACD42BEA4CD2D4C8E9FA /* DBGridOverlayView.h */,
+				726B4A111F2074F284207738BA9B5B41 /* DBGridOverlayView.m */,
+				DFD1642D27BFD8F730008A378EE6B399 /* DBImageViewViewController.h */,
+				F8AFFBF8626D143D62B1EB172C4AECA6 /* DBImageViewViewController.m */,
+				F2558977421945302A8B7EADBC11DA88 /* DBKeychainToolkit.h */,
+				86673FC976BCFE2F4797979855B4C4A8 /* DBKeychainToolkit.m */,
+				516E921CA0A9C86B86C8DEFB0B541E23 /* DBLocationTableViewController.h */,
+				5D66F6E7BD368D615F5612A14B2209D6 /* DBLocationTableViewController.m */,
+				67ED3F4F563812EB03FE44DC98972BE9 /* DBLocationToolkit.h */,
+				525321F34B3B60EA2520D446AA1B2D7E /* DBLocationToolkit.m */,
+				42CDD998E4B8F3E0395BBEF6ED0FA572 /* DBLongPressTrigger.h */,
+				6DD4ABB82AE5A1E27FA1C127E5BEBAEF /* DBLongPressTrigger.m */,
+				5A18DFBA52C9E6375C87920C8CF11E99 /* DBMainQueueOperation.h */,
+				BD40006FCE507BD2749BBEE60756FB73 /* DBMainQueueOperation.m */,
+				68B44C9B4132A0AA17756DA53B1E09A3 /* DBManagedObjectsListTableViewController.h */,
+				DD141E29266577DF3CA33B7AA6FCBDB7 /* DBManagedObjectsListTableViewController.m */,
+				8378C089EDDE8BDD6E0504AFEBA7340D /* DBManagedObjectTableViewCell.h */,
+				ECDC3CF4F644DBBB0025E98C20A3D330 /* DBManagedObjectTableViewCell.m */,
+				267360C5078E7C3F741354DBE60D56F4 /* DBManagedObjectTableViewController.h */,
+				89E46AB538FEE99E6D192880C4DF17EA /* DBManagedObjectTableViewController.m */,
+				8693F91333D7BD5B1C99BDAADFF613BA /* DBMenuChartTableViewCell.h */,
+				F50A88C0A9ED88694AE7A2761587A31D /* DBMenuChartTableViewCell.m */,
+				4AE7BB23298FD0836CB9F636C765B44A /* DBMenuSegmentedControlTableViewCell.h */,
+				734C65E9E9D7154C907B2064FEFE2702 /* DBMenuSegmentedControlTableViewCell.m */,
+				DCC4126BB51BC99E511ED81510913A4E /* DBMenuSwitchTableViewCell.h */,
+				12864362F52CC3D62F459AAE79EB48A7 /* DBMenuSwitchTableViewCell.m */,
+				BBD120AC494BF51491546B3F05C00A47 /* DBMenuTableViewController.h */,
+				8F317D12C62E1697EDC4E0313137B01C /* DBMenuTableViewController.m */,
+				95DB0FD557F58A0BEA7F57E38FDB6D2B /* DBNetworkSettingsTableViewController.h */,
+				F44E0015E78EE74C764EFDA186B59A15 /* DBNetworkSettingsTableViewController.m */,
+				0C0C6B27621D83AC6127EA43C7400811 /* DBNetworkToolkit.h */,
+				E69934A912F0CFD61EF738313DC594AF /* DBNetworkToolkit.m */,
+				E204D3AAE35CA4D5BC75B9C047E720E0 /* DBOptionsListTableViewController.h */,
+				E02C78DD1B7FA907342BF476495A3137 /* DBOptionsListTableViewController.m */,
+				96518C64E5C0F51C64E713A0DEC5AAFA /* DBPerformanceSection.h */,
+				0DEECB7C5FC2697F92693DB2657EBE47 /* DBPerformanceTableViewController.h */,
+				3B74DD567DB1819F6946EDBCE56D6DD2 /* DBPerformanceTableViewController.m */,
+				822DF892D15E1293F811E4E0C161E9A5 /* DBPerformanceToolkit.h */,
+				1D2DACEA3D4DDC12779CA8F4D89D30B2 /* DBPerformanceToolkit.m */,
+				43D840C55A86EF232FFB8C75E7A79146 /* DBPerformanceWidgetView.h */,
+				1DE767ADA72B1EE0F793643E4EDB7E0F /* DBPerformanceWidgetView.m */,
+				A70C21A00DC927E1626BA9DFB9660447 /* DBPersistentStoreCoordinatorsTableViewController.h */,
+				502FFD6B39A8B30170A0B885C06BC5D6 /* DBPersistentStoreCoordinatorsTableViewController.m */,
+				9ECE8D466D7759825AF45EFAEDB8B4DA /* DBPresetLocation.h */,
+				26B91D919848314528ABAD52CC6180B7 /* DBPresetLocation.m */,
+				7E027DC524021201BF54C87C205B4D5E /* DBRequestDataHandler.h */,
+				4F0A1D45997EFA27739781CEAC790450 /* DBRequestDataHandler.m */,
+				A9A19C6CA679EE617D1BA7DE614A6165 /* DBRequestModel.h */,
+				50C65812B9DA1633EB980FD1E0597289 /* DBRequestModel.m */,
+				CCB2B0E2F32CEE29679BAFAD14568DF7 /* DBRequestModel+responseDescription.swift */,
+				422151AB2ECBC756B24A4B329DA68ECC /* DBRequestOutcome.h */,
+				BD5514B12C1C677BBC5D481F73858E3D /* DBRequestOutcome.m */,
+				FA05EBAB0DF8892E5D51248F3B9BCAFE /* DBRequestTableViewCell.h */,
+				2F0EFCC02F487752029954DD13848FF8 /* DBRequestTableViewCell.m */,
+				6CE04DB1FE689EB8F4E1B2991230F8F0 /* DBResourcesTableViewController.h */,
+				CD566BBB42F5F37BD057DE5EAB5777D3 /* DBResourcesTableViewController.m */,
+				CF8BE4E21D8C21E4FB526A56E811CDC0 /* DBShakeTrigger.h */,
+				9233601300B5C7E4E6A597C498528E99 /* DBShakeTrigger.m */,
+				D5AF03FA766339610C7F81C66115BCB1 /* DBSliderTableViewCell.h */,
+				97BCA2AB48E4A008CD1144FDEC486911 /* DBSliderTableViewCell.m */,
+				796ADF3E6F60409F54ECEA7CFA08D118 /* DBTapTrigger.h */,
+				A1BB5571B43B793A866C5C4597B0C7D0 /* DBTapTrigger.m */,
+				931C230FD776EB787B6A53213A2066DA /* DBTextViewTableViewCell.h */,
+				35ECA3BE0F882F1058387416BC3BE932 /* DBTextViewTableViewCell.m */,
+				8A95E7CC49D21DB42A73B6F9EA04C447 /* DBTextViewViewController.h */,
+				5E0968CEC477ED34AAD57B3F06BDF72E /* DBTextViewViewController.m */,
+				795E7419DE572A49DBB6E4E08B73CCAF /* DBTitleValueListTableViewController.h */,
+				C4E47D45A66FA69234FD7EB2720A0661 /* DBTitleValueListTableViewController.m */,
+				55F468F7AC5310885B5A840046646C6B /* DBTitleValueListViewModel.h */,
+				372C37BD5ED129565DC9940F81484449 /* DBTitleValueTableViewCell.h */,
+				71CE58ADC47E044EA9EA469BFE8407D2 /* DBTitleValueTableViewCell.m */,
+				CBCC8B3F457AC6F55755530795C70E1A /* DBTitleValueTableViewCellDataSource.h */,
+				6C1BC7AAA5E719AEBB07A569154EBCD4 /* DBTitleValueTableViewCellDataSource.m */,
+				ACAC1FB175DC8E4D29A3C00EEF1DBAD0 /* DBTopLevelView.h */,
+				02854C5D5654E7CC2E29819B0DCB29D4 /* DBTopLevelView.m */,
+				39722CD3B520B8E1B87B86B75D06E32C /* DBTopLevelViewsWrapper.h */,
+				882B7EA7D00958717D79511D0410A134 /* DBTopLevelViewsWrapper.m */,
+				144207C319C0D828493BC94814878232 /* DBTouchIndicatorView.h */,
+				07273670CC87D729BF5D1ED3238C0CA6 /* DBTouchIndicatorView.m */,
+				F75C2B86660BA9ED75F782BFD6F8BC5D /* DBUserDefaultsToolkit.h */,
+				E4BBB92A1F96FE0F97A6A739CD5D60E9 /* DBUserDefaultsToolkit.m */,
+				17BE92BE174078F58C7FA36662EFE166 /* DBUserInterfaceTableViewController.h */,
+				A5B3B128F0CCC0D25FF10CD20E7F414E /* DBUserInterfaceTableViewController.m */,
+				03816ACF6184A4666CD20D120C54048D /* DBUserInterfaceToolkit.h */,
+				E97996D519F1863DDA656B61EA4E497C /* DBUserInterfaceToolkit.m */,
+				F6D381DAC868AB9DF1410EAE96D4E79F /* FilesView.swift */,
+				FC9AF8047D958A6BDE98669C7B11570F /* LocationView.swift */,
+				E5FE145678FA6251AF845376C33C9C10 /* MenuList.swift */,
+				4D7760CE22308AB153B99F8764496BE3 /* MenuViewModel.swift */,
+				BA12FF3A0C8E5407704E58DFECF8C319 /* NetworkList.swift */,
+				5ED8784726ABBC11317A9415CFA70EE7 /* NetworkViewModel.swift */,
+				D55BEA4CD77BD6CF02B1D2248C76ED45 /* NSBundle+DBDebugToolkit.h */,
+				3BD982DC53221F941966DA37DC37B46F /* NSBundle+DBDebugToolkit.m */,
+				21286D7165A48D0584D31D48172CFAA5 /* NSObject+DBDebugToolkit.h */,
+				97BA21C2E0468215B01789A44795975F /* NSObject+DBDebugToolkit.m */,
+				7B1AB7A1D10154E0AA1DD1CC65FB75A5 /* NSOperationQueue+DBMainQueueOperation.h */,
+				3CCC7014B12612903FF3BEC7FA4C757E /* NSOperationQueue+DBMainQueueOperation.m */,
+				F09E72B19B8414062103830712E76ECC /* NSPersistentStoreCoordinator+DBCoreDataToolkit.h */,
+				AD92CEAF58DA361837E683F388E49586 /* NSPersistentStoreCoordinator+DBCoreDataToolkit.m */,
+				F121FF52619029C0A1ACFD00996E4ACC /* NSURLSessionDelegateSwizzle.h */,
+				F641B6F61654737621CE022C333E3823 /* NSURLSessionDelegateSwizzle.m */,
+				24B8A29ABDECD6819D42FA4F91A249EB /* PerformanceView.swift */,
+				FFAD967E14A2416FD58B6EB61BC912A4 /* RequestBodyPreview.swift */,
+				703B0B3A4FCC143E7C6826B99D3C4532 /* RequestDetails.swift */,
+				CC7B2F73F5F10095FFF7283F0F4F83F0 /* RequestSettings.swift */,
+				7E249771D40FBA071066F210FE2B4D71 /* ResourcesList.swift */,
+				0484708B63CD10798F893871677BE24E /* ResourcesViewModel.swift */,
+				394103FD3D405AC1E88CBB52234C1638 /* SearchBar.swift */,
+				8617C5FCE1B9563A4FABDCA8035F4982 /* SwiftUIViewFactory.swift */,
+				732B8689C6FDF07B4362F54D7814DAD4 /* TitleValueView.swift */,
+				AEF4B4A00F0DCD759537997001DC3449 /* UIApplication+DBDebugToolkit.h */,
+				B395CEB1148D6E86852355F0698774E7 /* UIApplication+DBDebugToolkit.m */,
+				9402312FC4DF37B3DFFCEA7E17ED5460 /* UIColor+DBDebugToolkit.h */,
+				EE17D79D50EA79F8AAEE698CECB71044 /* UIColor+DBDebugToolkit.m */,
+				F7A999BFD0AC50D9615C931EF90562B6 /* UIColor+DBUserInterfaceToolkit.h */,
+				4411612F2AAE54BC49D8E356C1D05E7F /* UIColor+DBUserInterfaceToolkit.m */,
+				32FEB870F5F875BB380BE0BE0D9DD4E9 /* UILabel+DBDebugToolkit.h */,
+				AB44C0ED80EC7830AAB2123ABE5BEFC3 /* UILabel+DBDebugToolkit.m */,
+				7B58406417D7A8529EF64388FDB91937 /* UIView+DBUserInterfaceToolkit.h */,
+				49EBB6C15BBE82A23748104BC88EB4F5 /* UIView+DBUserInterfaceToolkit.m */,
+				8F05B0663473CA21C89E3EBA2FE19FC2 /* UIView+Snapshot.h */,
+				0222182780ADE425063651DC922FFC35 /* UIView+Snapshot.m */,
+				885016BB1A651079F369A8B246F51086 /* UIWindow+DBShakeTrigger.h */,
+				EBB9761848F731CD25500E3B4C3753D3 /* UIWindow+DBShakeTrigger.m */,
+				21B06D106AD20F56A09D2F18ED16150F /* UIWindow+DBUserInterfaceToolkit.h */,
+				E69F0FE0945A420A72DD28D9AF40C0A9 /* UIWindow+DBUserInterfaceToolkit.m */,
+				078A90D920406526C28FBF400DB28FAA /* UIWindow+keyWindow.swift */,
+				1B90EEC5A3D501AC8C47592C27552C8D /* URLRequest.CachePolicy+readableDescription.swift */,
+				E1B3D2966ECF3A2683148F4CF9D81A4B /* UserInterfaceView.swift */,
+				78B881A6200C8D6BA9C0ACB415DBE4F5 /* Resources */,
+				EEC331F1A644804E05087A71D263AED5 /* Support Files */,
+			);
+			name = DBDebugToolkit;
+			path = DBDebugToolkit;
+			sourceTree = "<group>";
+		};
+		78B881A6200C8D6BA9C0ACB415DBE4F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3FE54B82F225662500E95F3331F10CCF /* DBBodyPreviewViewController.storyboard */,
+				F3621AC07124CF3DF2C8457CEBB057D0 /* DBColorPickerTableViewCell.xib */,
+				9D692C9AA332E7407487272FF89E4B54 /* DBCoreDataFilterSettingsTableViewController.storyboard */,
+				51D4758AF6353652ABAF45799FCFA82F /* DBCoreDataFilterTableViewController.storyboard */,
+				0469501753B94BE32A18689E38290B55 /* DBCrashReportDetailsTableViewController.storyboard */,
+				6FC361C5234D25C7D4FB34405385C9A2 /* DBCrashReportsTableViewController.storyboard */,
+				D8BC2A66D739E5F02677FFD2E8CAAC20 /* DBCustomActionsTableViewController.storyboard */,
+				806F732D077782DD64243F54BA10C8F5 /* DBCustomLocationViewController.storyboard */,
+				96BF5F770C11895188C9EEF0AA7D0142 /* DBCustomVariablesTableViewController.storyboard */,
+				D4B14B72E644548160145C5646B2C117 /* DBEntitiesTableViewController.storyboard */,
+				877B7E11FDC774EE28AB6428616EE669 /* DBFilesTableViewController.storyboard */,
+				6892C1B92A9BEC5C5010CFA169FED24D /* DBFileTableViewCell.xib */,
+				391F883D476A22EBF9AC07DE996DAB84 /* DBFontFamiliesTableViewController.storyboard */,
+				506C8C90D6E2B006164FFD9178393CBC /* DBFontPreviewViewController.storyboard */,
+				B298E0AF9A635238B89A335E1E7289D4 /* DBGridOverlaySettingsTableViewController.storyboard */,
+				AFE04279DF66CC6E18984581B42F9445 /* DBImageViewViewController.storyboard */,
+				548E49B8BC38ECA0032E9D08C96F7F2C /* DBLocationTableViewController.storyboard */,
+				25D07D6BD77F4FC0C4056F77129EA7C8 /* DBManagedObjectsListTableViewController.storyboard */,
+				765E1D77AE82C69FB273DA6EB4219AFC /* DBManagedObjectTableViewCell.xib */,
+				D6A093FBB68579BABBC6F909642D49C3 /* DBManagedObjectTableViewController.storyboard */,
+				CB10DD752CE1C902568614DB58970227 /* DBMenuChartTableViewCell.xib */,
+				BFC041C7788D3C099D420547F99A7F0C /* DBMenuSegmentedControlTableViewCell.xib */,
+				25AECA0325F83B8EFDD7A3E76B95C43A /* DBMenuSwitchTableViewCell.xib */,
+				4B35BF94568B1D5E4B20B8191F26E3FC /* DBMenuTableViewController.storyboard */,
+				AC55EDC4387A16B83488D79D1547FE19 /* DBNetworkSettingsTableViewController.storyboard */,
+				5CFFBC380105B3F16599943B371D2769 /* DBOptionsListTableViewController.storyboard */,
+				D36E8C8F6F9F4A59904E158803F82110 /* DBPerformanceTableViewController.storyboard */,
+				E7395C0A29D56E093D99A3A5E795610E /* DBPerformanceWidgetView.xib */,
+				C33F58DADA462F0748736D561CF9C70C /* DBPersistentStoreCoordinatorsTableViewController.storyboard */,
+				4D36E6EEA80FA827751A180E06CDC358 /* DBResourcesTableViewController.storyboard */,
+				F8A4848FE78E0017BA5C4A38DBD5DE8E /* DBSliderTableViewCell.xib */,
+				3868637932F74AF809A190215417FBA3 /* DBTextViewTableViewCell.xib */,
+				82D61BF32DE9C6CDAC2CF233E88D19C2 /* DBTextViewViewController.storyboard */,
+				BE918BE17C8075B91160FC17662493B3 /* DBTitleValueListTableViewController.storyboard */,
+				0D6B0E60BCE93FD6AEF4D15DEA797B0C /* DBTitleValueTableViewCell.xib */,
+				511887E5C350C644C56CAAEA744D5080 /* DBUserInterfaceViewController.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A4444AC3F6F18CA000229E4F4C84B1D9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1160544B994D787A7BB0E2EC80D85C0 /* Pods-Threads */,
+				275C3ECE6127452BD6A7B8DC6D679172 /* Pods-ThreadsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C1160544B994D787A7BB0E2EC80D85C0 /* Pods-Threads */ = {
+			isa = PBXGroup;
+			children = (
+				5FB5677E63EC0A5A1D8B8CC9AF121872 /* Pods-Threads.modulemap */,
+				7ABF81E8C532B3D9D2CF5AB4469AEF74 /* Pods-Threads-acknowledgements.markdown */,
+				19FCBBB34F277FCD4A70026453656CFF /* Pods-Threads-acknowledgements.plist */,
+				26D6D47ADBB55B7F0E548DDEFCAEC451 /* Pods-Threads-dummy.m */,
+				2D474BB74D67F371225F1BFECB9C0BD5 /* Pods-Threads-frameworks.sh */,
+				05F6630D2DEEB15780A3EAFFCE8824CF /* Pods-Threads-Info.plist */,
+				5B4C74DF6748CFDEFB630DFAD407709B /* Pods-Threads-umbrella.h */,
+				C3BDF4E83B84A534773A100EFF9C83E7 /* Pods-Threads.debug.xcconfig */,
+				F111F418EB8BA0F076E0B79A62678F6D /* Pods-Threads.release.xcconfig */,
+			);
+			name = "Pods-Threads";
+			path = "Target Support Files/Pods-Threads";
+			sourceTree = "<group>";
+		};
+		C4C3C86AD3240988E53460480B080053 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E99CFA8831B7F20CB4BA539F0582880D /* DBDebugToolkit */,
+				C6CC39D1F8D9CE2A1049B82A8A9BC9D5 /* DBDebugToolkit-DBDebugToolkit */,
+				A0606BEF75E5AE2FAB5F3D5212483879 /* Pods-Threads */,
+				D9A911D33F678AAF3ABC77AB53697D50 /* Pods-ThreadsTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D598ED4E050AEFABD908F38AA27E8751 /* Pods */,
+				C4C3C86AD3240988E53460480B080053 /* Products */,
+				A4444AC3F6F18CA000229E4F4C84B1D9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D598ED4E050AEFABD908F38AA27E8751 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D5F71E85182A31BB7B8FF00C87002CE /* DBDebugToolkit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EEC331F1A644804E05087A71D263AED5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0033EFE13DDEFF5A77EFCE5C4066CCC1 /* DBDebugToolkit.modulemap */,
+				25FF56CA65340CA9F84019B76C30E344 /* DBDebugToolkit-dummy.m */,
+				410EF8DF064401E8EC33EC85A9B0D513 /* DBDebugToolkit-Info.plist */,
+				3E6909D912FF5482B06C00A910C213C9 /* DBDebugToolkit-prefix.pch */,
+				EE9165A604C096A76AA4C64C9A3CAE03 /* DBDebugToolkit-umbrella.h */,
+				6016F6DD8671C23ED1E9E4FB726E076A /* DBDebugToolkit.debug.xcconfig */,
+				96049756B753483C34D34695E03C42D4 /* DBDebugToolkit.release.xcconfig */,
+				B77FECC3AA399B09478A8BC0597A4FAA /* ResourceBundle-DBDebugToolkit-DBDebugToolkit-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DBDebugToolkit";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2C70B5ADB704CBC5940A7B4BAFED3841 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E6B86C1284F8747BE83667F835E7E5 /* Pods-Threads-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64880D9EE2B8C26DF2C75A81DE4BF48B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345F9B5CC68BBBD38DF4A0172AB9478D /* Pods-ThreadsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67023552AC8BF75DA58B9412BB9F592 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F6B36B0BFAD11BC8C5DBA18CA95A4FD /* CLLocationManager+DBLocationToolkit.h in Headers */,
+				DC4BCB982D5F5389D9B7170603E4DD83 /* DBAuthenticationChallengeSender.h in Headers */,
+				E345D8EEF76A7D9C8926E23364683B5A /* DBBodyPreviewViewController.h in Headers */,
+				B80A5DF59C550158FAD87C5497CB4A3B /* DBChartView.h in Headers */,
+				91D2B074ED3BE75F7FC13DC2D980D028 /* DBColorCheckbox.h in Headers */,
+				0464270806C95463211C632D4818685B /* DBColorPickerTableViewCell.h in Headers */,
+				6C13095552E3BC0D99C1221BAC3346CE /* DBConsoleOutputCaptor.h in Headers */,
+				9F7CD1A939B9DB70EDC86197FE506B4F /* DBCoreDataFilter.h in Headers */,
+				226133E9CA5FAED5B64FDE09F63947B8 /* DBCoreDataFilterOperator.h in Headers */,
+				7B5B91FC16614942CBB426AF03E00D14 /* DBCoreDataFilterSettings.h in Headers */,
+				AB7FA0ACCA6F7B4EB39ECB7AAA71022C /* DBCoreDataFilterSettingsTableViewController.h in Headers */,
+				166D0C7A130C8C1FDCCE14CFE8D6D9E4 /* DBCoreDataFilterTableViewController.h in Headers */,
+				E5E8BD0ADC116B96FFFC6E7E85154332 /* DBCoreDataToolkit.h in Headers */,
+				B960C219736C9CE38B1E5F2E4CA40804 /* DBCrashReport.h in Headers */,
+				FFED1E8A1FB4530125446837871293A5 /* DBCrashReportDetailsTableViewController.h in Headers */,
+				A510600A1D75E5E047ED848E0501D142 /* DBCrashReportsTableViewController.h in Headers */,
+				ED5233490423554B4883E4C6B74F637E /* DBCrashReportsToolkit.h in Headers */,
+				0C38CD4D8E0D2D8F0B29BE40E318A582 /* DBCustomAction.h in Headers */,
+				BD2C55BA5C5CA46D3FCCE91C73CC70D3 /* DBCustomActionsTableViewController.h in Headers */,
+				2841DF4527C4CFAB0092DD60C5CC74A8 /* DBCustomLocationViewController.h in Headers */,
+				2C0CA98186550E2C89F4F2700027D454 /* DBCustomVariable.h in Headers */,
+				87631E2F35E274C3D8211A11FE6F09A7 /* DBCustomVariablesTableViewController.h in Headers */,
+				A41E5C7613A375B9CD6D5CA70E0D50C4 /* DBDebugToolkit.h in Headers */,
+				AF9BAFE913B7D1031D51F517AD706482 /* DBDebugToolkit-umbrella.h in Headers */,
+				F5A9F370F52F3BD27E66E07C5E31A823 /* DBDebugToolkitTrigger.h in Headers */,
+				DFCC21D5BAC15C12CFE7A3E092D90CBA /* DBDebugToolkitTriggerDelegate.h in Headers */,
+				2E3FBF3A5F45806C76E8FD265E5DE954 /* DBDebugToolkitUserDefaultsKeys.h in Headers */,
+				13CD68494C16174D3DECAB22A8684AF2 /* DBDeviceInfoProvider.h in Headers */,
+				E9C422ACF66831D68CEE1BF236F95AD1 /* DBEntitiesTableViewController.h in Headers */,
+				28EF7D09A2518B06642498A655E7212A /* DBFilesTableViewController.h in Headers */,
+				DA35CDD9A015B230B3BB097B9131B36D /* DBFileTableViewCell.h in Headers */,
+				2FA94811F9969B79F2B8659C714BF683 /* DBFontFamiliesTableViewController.h in Headers */,
+				9085FCCF47D0432DDD68E616A5AB6B1B /* DBFontPreviewViewController.h in Headers */,
+				8473EF245C457982935B6F0421632073 /* DBFPSCalculator.h in Headers */,
+				AB8CCC0B54D245C4356A095D1DB99C73 /* DBGridOverlayColorScheme.h in Headers */,
+				DFD255FEF4A8BFF431623EB0784613B2 /* DBGridOverlaySettingsTableViewController.h in Headers */,
+				358874A5B0CA1DF7BA41AECBC83406EA /* DBGridOverlayView.h in Headers */,
+				80CCFCA4BB55A980676158F70839E533 /* DBImageViewViewController.h in Headers */,
+				086892E3A41F4DE20B9DD1F67BCAA058 /* DBKeychainToolkit.h in Headers */,
+				1C5B2242DF82302D6B61E5A17A3A5F6A /* DBLocationTableViewController.h in Headers */,
+				F6A161D10CC4581932768110685B0B5E /* DBLocationToolkit.h in Headers */,
+				6FB4AC46B76CBC1E5E3A0ACFD47ADFD5 /* DBLongPressTrigger.h in Headers */,
+				BDC069FB375784D0FE307CF25734CB4D /* DBMainQueueOperation.h in Headers */,
+				71B7E5690CCD928F9F52D46D35A074B9 /* DBManagedObjectsListTableViewController.h in Headers */,
+				CFBDD4F2D4FC133B0AF6C51EC2C0778F /* DBManagedObjectTableViewCell.h in Headers */,
+				7626CC6C5B9F5680A341742DD4860ECD /* DBManagedObjectTableViewController.h in Headers */,
+				6A34B1F1CC0553191971E6E27BF199DE /* DBMenuChartTableViewCell.h in Headers */,
+				A2AF37AD3FF458234A419EE68B36CB32 /* DBMenuSegmentedControlTableViewCell.h in Headers */,
+				A9A6873F85388CAF879040C49AC051D1 /* DBMenuSwitchTableViewCell.h in Headers */,
+				0B9E8FF9E02FB4A57E697E82E1FB3E95 /* DBMenuTableViewController.h in Headers */,
+				9D2C71CADD482F0972DF58D3D4C98066 /* DBNetworkSettingsTableViewController.h in Headers */,
+				892801E6002794B288D1993B9B3AB6DB /* DBNetworkToolkit.h in Headers */,
+				1A337AF1BEA62756199568B8C53B6B81 /* DBOptionsListTableViewController.h in Headers */,
+				4BF825AE2AA2F88A8D80C269BFE3A1F8 /* DBPerformanceSection.h in Headers */,
+				BCEDCF0D48DE7C14CD9896E6D2712715 /* DBPerformanceTableViewController.h in Headers */,
+				FD50364C2FF187E9DD8555FBA4E33698 /* DBPerformanceToolkit.h in Headers */,
+				DE5BB4FBBE7BE0E53C4DBF16558B2DBE /* DBPerformanceWidgetView.h in Headers */,
+				576A6DAEC4FEDC6CFA9056B67FA6D4AD /* DBPersistentStoreCoordinatorsTableViewController.h in Headers */,
+				41C141E01939D06FB5CA28755AD90F53 /* DBPresetLocation.h in Headers */,
+				9CF1F96290FCC7923FF896E859C29472 /* DBRequestDataHandler.h in Headers */,
+				B1E8DC0AB03A8AEC0167A054C51E1B11 /* DBRequestModel.h in Headers */,
+				5E9F0CF07DED4B5A34CC128AE4F3B2C2 /* DBRequestOutcome.h in Headers */,
+				D9B1D72A80883993E290F82D4DA20AA6 /* DBRequestTableViewCell.h in Headers */,
+				0B38897F2A3D7927A9C6A7B02E8BEFBA /* DBResourcesTableViewController.h in Headers */,
+				4CE448C070B565208F849C53F176C1C2 /* DBShakeTrigger.h in Headers */,
+				CD45808BAD375D78E30E7362E6A662A9 /* DBSliderTableViewCell.h in Headers */,
+				61B46599D555DC11859AB38B0BC70013 /* DBTapTrigger.h in Headers */,
+				31828ECC02B4E5A076D6F5D38EC72709 /* DBTextViewTableViewCell.h in Headers */,
+				6835582C4C1FFCF64E2FCBD7A7873E0E /* DBTextViewViewController.h in Headers */,
+				C3F1C2187F194B007B32AA004586049E /* DBTitleValueListTableViewController.h in Headers */,
+				D8704409B166677D4E80007882CBB17F /* DBTitleValueListViewModel.h in Headers */,
+				F547C734283AD4E70FD4B3E9F28C136E /* DBTitleValueTableViewCell.h in Headers */,
+				1E4E5D1387D75A66DF17988CC64391F7 /* DBTitleValueTableViewCellDataSource.h in Headers */,
+				4F78BD63E1ABD311D0B55DBE7B0A7144 /* DBTopLevelView.h in Headers */,
+				4DAAB73D517B8C2F245CCEE16D6C2066 /* DBTopLevelViewsWrapper.h in Headers */,
+				9D955CB15B5F4C165162E699E325F02E /* DBTouchIndicatorView.h in Headers */,
+				9E67855C296C8374CE07B3173C297BEE /* DBUserDefaultsToolkit.h in Headers */,
+				BDE58849EF8191431975DF218FB71469 /* DBUserInterfaceTableViewController.h in Headers */,
+				C48FA19E2D41D415ED2CE2AA31C93F96 /* DBUserInterfaceToolkit.h in Headers */,
+				240B23DD2CDFC1EEA18E7D22D4A27967 /* NSBundle+DBDebugToolkit.h in Headers */,
+				E735E9EE32BC29AEE2FBAE9979BB5F6D /* NSObject+DBDebugToolkit.h in Headers */,
+				D9FECAD17A97925C7E9A68E7D086B865 /* NSOperationQueue+DBMainQueueOperation.h in Headers */,
+				B767D21B757957E6A60B8759E7B99FD6 /* NSPersistentStoreCoordinator+DBCoreDataToolkit.h in Headers */,
+				44FF238DDC162A3AB6AB6B63E72F1A60 /* NSURLSessionDelegateSwizzle.h in Headers */,
+				41521C48ED781DA8791506BBF9734E3F /* UIApplication+DBDebugToolkit.h in Headers */,
+				061F026834F52A217E561B9B4FCD263F /* UIColor+DBDebugToolkit.h in Headers */,
+				3377B0DB18ACF3DCED9E8A88BFC3F2FF /* UIColor+DBUserInterfaceToolkit.h in Headers */,
+				5DD42C0EB70BF06A54D924F4B189DAA4 /* UILabel+DBDebugToolkit.h in Headers */,
+				FC2E56F3ACFCC24E933ED14671980FEF /* UIView+DBUserInterfaceToolkit.h in Headers */,
+				6A8FA730D6DE05EEB55C6DD1399C2410 /* UIView+Snapshot.h in Headers */,
+				495A33F355CDC69FC4F3AE4EE9975FA2 /* UIWindow+DBShakeTrigger.h in Headers */,
+				7B6412C09E5D69F54EEDAACFAD400D13 /* UIWindow+DBUserInterfaceToolkit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		39C7BD4699F15645EA51D9F439333942 /* DBDebugToolkit-DBDebugToolkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC419C190038F37369A4A6B6C0603B20 /* Build configuration list for PBXNativeTarget "DBDebugToolkit-DBDebugToolkit" */;
+			buildPhases = (
+				F0460809000526A1389032A7DFA01640 /* Sources */,
+				15C26197CBAD6253ECC824292BDF5D1F /* Frameworks */,
+				02DD3ED1D033E984406A366E46E0D053 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DBDebugToolkit-DBDebugToolkit";
+			productName = DBDebugToolkit;
+			productReference = C6CC39D1F8D9CE2A1049B82A8A9BC9D5 /* DBDebugToolkit-DBDebugToolkit */;
+			productType = "com.apple.product-type.bundle";
+		};
+		47332AC72188BEB6C5B7D38C4BA72B55 /* Pods-ThreadsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E149A8C7107BC0D7FA279BFD8DE36B9 /* Build configuration list for PBXNativeTarget "Pods-ThreadsTests" */;
+			buildPhases = (
+				64880D9EE2B8C26DF2C75A81DE4BF48B /* Headers */,
+				D91006C4A2451C17D882A10A5FAB60F8 /* Sources */,
+				435E140599E3F10EB6E1F65F35EF830F /* Frameworks */,
+				A3A9B16F9A57761D6AEEFC17A2E9734E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E479EB588E3FC7486CEB6A701FD0620 /* PBXTargetDependency */,
+			);
+			name = "Pods-ThreadsTests";
+			productName = Pods_ThreadsTests;
+			productReference = D9A911D33F678AAF3ABC77AB53697D50 /* Pods-ThreadsTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		4E1B3B34BD09192573D90B8EF35F244D /* DBDebugToolkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F948D555DB0C825B09E724D60FCB251D /* Build configuration list for PBXNativeTarget "DBDebugToolkit" */;
+			buildPhases = (
+				D67023552AC8BF75DA58B9412BB9F592 /* Headers */,
+				1BC3D609795A29E21924505AEE222F3F /* Sources */,
+				FADE7E5EECAC1003482142BABA01E813 /* Frameworks */,
+				CFA1A66E4A8A5DD1EAA5A3F728E11CF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				844E5769860A5008F64F405B696D27BD /* PBXTargetDependency */,
+			);
+			name = DBDebugToolkit;
+			productName = DBDebugToolkit;
+			productReference = E99CFA8831B7F20CB4BA539F0582880D /* DBDebugToolkit */;
+			productType = "com.apple.product-type.framework";
+		};
+		997B7FEB9CE0DFFC18E77E5D46DA626D /* Pods-Threads */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CBC680509C9078D7787D6D0FAD3543E /* Build configuration list for PBXNativeTarget "Pods-Threads" */;
+			buildPhases = (
+				2C70B5ADB704CBC5940A7B4BAFED3841 /* Headers */,
+				362AA95CC07BE9D8242759C96E119136 /* Sources */,
+				0DBE7FAF8E943E78BAF8CDC6794DC485 /* Frameworks */,
+				3AB8EF7E10CC4B64F10D3EF4C204A3FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FA6B4568D857B2E7B8A9FBD744578EE /* PBXTargetDependency */,
+			);
+			name = "Pods-Threads";
+			productName = Pods_Threads;
+			productReference = A0606BEF75E5AE2FAB5F3D5212483879 /* Pods-Threads */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C4C3C86AD3240988E53460480B080053 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E1B3B34BD09192573D90B8EF35F244D /* DBDebugToolkit */,
+				39C7BD4699F15645EA51D9F439333942 /* DBDebugToolkit-DBDebugToolkit */,
+				997B7FEB9CE0DFFC18E77E5D46DA626D /* Pods-Threads */,
+				47332AC72188BEB6C5B7D38C4BA72B55 /* Pods-ThreadsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02DD3ED1D033E984406A366E46E0D053 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57E397F0A604BEB1758EDC2F112C49C /* DBBodyPreviewViewController.storyboard in Resources */,
+				46707208AE8167A220762260981F193E /* DBColorPickerTableViewCell.xib in Resources */,
+				3F425DE927F3BA3F045189B1B064195D /* DBCoreDataFilterSettingsTableViewController.storyboard in Resources */,
+				643BB3D7861F0FC7B3F9164D7B20C769 /* DBCoreDataFilterTableViewController.storyboard in Resources */,
+				0626CD021D1307FCD69B74038192B9E5 /* DBCrashReportDetailsTableViewController.storyboard in Resources */,
+				CE5D1FD074E0E8081D3108F9853A1B0F /* DBCrashReportsTableViewController.storyboard in Resources */,
+				F6714BB9FA94F11FBE13952AE5FCD2B5 /* DBCustomActionsTableViewController.storyboard in Resources */,
+				7F8BB011AC46D32699FEF4C1B219D9E0 /* DBCustomLocationViewController.storyboard in Resources */,
+				3F93C31937BDC072B432210EE527E8C6 /* DBCustomVariablesTableViewController.storyboard in Resources */,
+				F1017624CDC8DC4B971AB4D2A6C30148 /* DBEntitiesTableViewController.storyboard in Resources */,
+				FE694803AFE40BD047FA48EE5BC6DE38 /* DBFilesTableViewController.storyboard in Resources */,
+				22F56D7DF5C62CBDFD1C6102A4544355 /* DBFileTableViewCell.xib in Resources */,
+				C557C489609DE22D4D3F97A6E37AAFA2 /* DBFontFamiliesTableViewController.storyboard in Resources */,
+				DAC5FEAB58E29737C4F15BDCECAB1DC0 /* DBFontPreviewViewController.storyboard in Resources */,
+				6F8BE813730E4797FE91138C36D94A8D /* DBGridOverlaySettingsTableViewController.storyboard in Resources */,
+				7AD084C6FE45BCF89D76F2D19AFD5DC9 /* DBImageViewViewController.storyboard in Resources */,
+				184F818C9D05987B36BBF94091B8C9EC /* DBLocationTableViewController.storyboard in Resources */,
+				9EE174C9C0129CE4B6E336EFB1B05630 /* DBManagedObjectsListTableViewController.storyboard in Resources */,
+				98BB62D638475C0EABEFFE287BF7EA58 /* DBManagedObjectTableViewCell.xib in Resources */,
+				FDF7C4D991FF645D819D7591DDB719BA /* DBManagedObjectTableViewController.storyboard in Resources */,
+				CB0B480EBAB656E5EC69FFEB4C9ABADD /* DBMenuChartTableViewCell.xib in Resources */,
+				E63CDB77E2611D06CB59EAD3ACAC4829 /* DBMenuSegmentedControlTableViewCell.xib in Resources */,
+				435704D72FE1627E0EB6DEDFB38D1A6E /* DBMenuSwitchTableViewCell.xib in Resources */,
+				34DE249A76A3875EDC5EF2D68E3CC53D /* DBMenuTableViewController.storyboard in Resources */,
+				5BF56209464D2065608BC95681191BB0 /* DBNetworkSettingsTableViewController.storyboard in Resources */,
+				1C3373E64A1FFE45F094D3303A6F119F /* DBOptionsListTableViewController.storyboard in Resources */,
+				CA95F662FA953B149A024FF0521AD179 /* DBPerformanceTableViewController.storyboard in Resources */,
+				02C64B5854F193E56DD0C54212A22247 /* DBPerformanceWidgetView.xib in Resources */,
+				E4225F938500B5C78C0DF491D3C8EC1C /* DBPersistentStoreCoordinatorsTableViewController.storyboard in Resources */,
+				0A46A164C533661B59B75FC0768DE636 /* DBResourcesTableViewController.storyboard in Resources */,
+				207CB6083F0C1C1DE427BC42B8A47980 /* DBSliderTableViewCell.xib in Resources */,
+				12D4A66766CB00846BD9288C57831EBD /* DBTextViewTableViewCell.xib in Resources */,
+				8944F3C3BED31E0BA71C50C182C7BEB7 /* DBTextViewViewController.storyboard in Resources */,
+				F04622F08DBB74E0B9B771D33D79979E /* DBTitleValueListTableViewController.storyboard in Resources */,
+				FE64939A847F9A1B6A4C45A75C63C3C2 /* DBTitleValueTableViewCell.xib in Resources */,
+				95A3FA4016D3D64F4D510BD22817A53B /* DBUserInterfaceViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AB8EF7E10CC4B64F10D3EF4C204A3FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A9B16F9A57761D6AEEFC17A2E9734E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFA1A66E4A8A5DD1EAA5A3F728E11CF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D31100DEA95B9B8DA2AF694DCB358E /* DBDebugToolkit-DBDebugToolkit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BC3D609795A29E21924505AEE222F3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				216402C7553A0740EC84C9C595B0FB4C /* Bundle+BuildInfo.swift in Sources */,
+				24CCEB5367F9EF84C2E7B8CAF8D13B2C /* CLLocationManager+DBLocationToolkit.m in Sources */,
+				DF9ED7652E053C04E2CC94200E5BCF7C /* ConsoleView.swift in Sources */,
+				36F19678C41394D558C83B3922A23667 /* ConsoleViewModel.swift in Sources */,
+				85D352041DF595622D9477F00EA1CC27 /* CookiesList.swift in Sources */,
+				540D77E08F47F355E9BA9BA40FD2C321 /* CookiesList+ViewModel.swift in Sources */,
+				97DF74AD2237B026827F366918C81CB9 /* CoreDataView.swift in Sources */,
+				6B895A50F9DE4A1893AB5E7EA3ACF414 /* CrashReportsView.swift in Sources */,
+				382D373DAC2950006B4D90225DDDAA20 /* CustomActionsView.swift in Sources */,
+				6894A943AC940853CDC4F3F66E08D9C8 /* CustomVariablesView.swift in Sources */,
+				A49F2063214C0831CD046219E90184F5 /* DBAuthenticationChallengeSender.m in Sources */,
+				D510401C4BEAF051C60C033284C59A5A /* DBBodyPreviewViewController.m in Sources */,
+				8CBE4BB5B7A0DFF74D90A23F934A3E9A /* DBChartView.m in Sources */,
+				82081D6D19AA0633A441B28D05A8B0F8 /* DBColorCheckbox.m in Sources */,
+				A0F4498B54160540A0530E05A9D5BE4C /* DBColorPickerTableViewCell.m in Sources */,
+				D5157643E46E575C1362D23C475D89EE /* DBConsoleOutputCaptor.m in Sources */,
+				36A22992AC40F87D47B3A0F3D280002D /* DBCoreDataFilter.m in Sources */,
+				8DA4F57E647CCA36FD16146A345E08A6 /* DBCoreDataFilterOperator.m in Sources */,
+				F0140B75957A9451CF4E59A3F3D99192 /* DBCoreDataFilterSettings.m in Sources */,
+				5F93BB19A77B683109644A6F44D3ED04 /* DBCoreDataFilterSettingsTableViewController.m in Sources */,
+				106D2A8A1F4CBDF54DAF0A5BBD47986C /* DBCoreDataFilterTableViewController.m in Sources */,
+				5FBFEDF663786D893661B9D1A5B3D629 /* DBCoreDataToolkit.m in Sources */,
+				CFF79D9FA4D5F22B5A882F4F3C4EFE7F /* DBCrashReport.m in Sources */,
+				535978FB6B399B3C5B3AF380FCEA697C /* DBCrashReportDetailsTableViewController.m in Sources */,
+				F9AD4539BEBCA2B83C9C9974B6FA9501 /* DBCrashReportsTableViewController.m in Sources */,
+				FEA68B109599C5500F4BEEF1A6D8FCC9 /* DBCrashReportsToolkit.m in Sources */,
+				D8AA5A1FD944DC8567297BE52DAF70D7 /* DBCustomAction.m in Sources */,
+				9B5F2789B376401E10F0E0484F019F7D /* DBCustomActionsTableViewController.m in Sources */,
+				24A08919DFE3C06188B55A0664E39604 /* DBCustomLocationViewController.m in Sources */,
+				CD75131EFE80C1055B77E4A876705FDC /* DBCustomVariable.m in Sources */,
+				70C1E3FCB0141F45233CD03C621A5E30 /* DBCustomVariablesTableViewController.m in Sources */,
+				01CADB8927FEEB2FA5C3BBAC01B3607D /* DBDebugToolkit.m in Sources */,
+				90AAAB0425C893FBF12DB72481CC3EE3 /* DBDebugToolkit-dummy.m in Sources */,
+				CD45B0F3F3AD67D97ED8270C0593681F /* DBDeviceInfoProvider.m in Sources */,
+				E38AFB5D9C90CBF2A6D380DA922A3BB0 /* DBEntitiesTableViewController.m in Sources */,
+				A232F2B5C0232A9608C594A04BA8E4AB /* DBFilesTableViewController.m in Sources */,
+				398633C49C496B9DDD10F0D4DBDF8BF9 /* DBFileTableViewCell.m in Sources */,
+				B3CACEE412C115F207E5618EEF9455BB /* DBFontFamiliesTableViewController.m in Sources */,
+				580AA6692F376EAD33FC1F8004EE6AB5 /* DBFontPreviewViewController.m in Sources */,
+				1D4C400B2BA970B392F59BF47C94A696 /* DBFPSCalculator.m in Sources */,
+				512E4BF4AA2C4447293F0F13AAE5E310 /* DBGridOverlayColorScheme.m in Sources */,
+				485C338804D835A8599F03F75B77E4A5 /* DBGridOverlaySettingsTableViewController.m in Sources */,
+				0592AB3D8EA42BE5AC6BFD68E98ECC68 /* DBGridOverlayView.m in Sources */,
+				27773DD7F2DF95265931E6642BE195EE /* DBImageViewViewController.m in Sources */,
+				69F248E46C8842596075C55E1E856FEB /* DBKeychainToolkit.m in Sources */,
+				7EC87437DA614A352CE74CD8F805509C /* DBLocationTableViewController.m in Sources */,
+				9C1E8A120693C20C8F54D86AA077FD52 /* DBLocationToolkit.m in Sources */,
+				1EAE3ED662417B63477B7721EBB3CB4D /* DBLongPressTrigger.m in Sources */,
+				9A3F6333D27422FD003B226FD3EC3D9B /* DBMainQueueOperation.m in Sources */,
+				D524B099A48EF7CF85F507AA9843BD2D /* DBManagedObjectsListTableViewController.m in Sources */,
+				16A0C2AAACF64AFF3E6A73FD2DB03487 /* DBManagedObjectTableViewCell.m in Sources */,
+				16E786FDCFA7485B5B51A34CC0E22D39 /* DBManagedObjectTableViewController.m in Sources */,
+				ECF432C46D605F919F8EC80F441F31D7 /* DBMenuChartTableViewCell.m in Sources */,
+				966DCA55A9A9DE91CB0F28B56AC099DE /* DBMenuSegmentedControlTableViewCell.m in Sources */,
+				2C8D9A38ACE5A21ED1510D7195B2EB17 /* DBMenuSwitchTableViewCell.m in Sources */,
+				EC5C0A1E852778353E75C0BBAE746F69 /* DBMenuTableViewController.m in Sources */,
+				F3CC0A68CEFA2D88DFBBD6A83759DE55 /* DBNetworkSettingsTableViewController.m in Sources */,
+				A158DAD573A014B8C7E949E7BFC39E43 /* DBNetworkToolkit.m in Sources */,
+				6F0C78172D9FD099BE9FF313156F700F /* DBOptionsListTableViewController.m in Sources */,
+				644867300F8A436732BBBC5FF140FC49 /* DBPerformanceTableViewController.m in Sources */,
+				0D12AC0AE88DC2E5DBBF75CA74A7E13D /* DBPerformanceToolkit.m in Sources */,
+				EBC8E3126A759D3C0781D4739BBC51E1 /* DBPerformanceWidgetView.m in Sources */,
+				694D74C426F29040D2C53D6DE3821741 /* DBPersistentStoreCoordinatorsTableViewController.m in Sources */,
+				BD4FBE5EA38AF483DFDBDE04CB3F958A /* DBPresetLocation.m in Sources */,
+				37DE891C5354807871C3432ECF3F5C71 /* DBRequestDataHandler.m in Sources */,
+				BAF7EC870FC47F425E7A8E9AF4614ECB /* DBRequestModel.m in Sources */,
+				4C9803A46DBDC147681DF931FA764CD8 /* DBRequestModel+responseDescription.swift in Sources */,
+				BFDF1A0CF921ABE46100C7015E653CD9 /* DBRequestOutcome.m in Sources */,
+				E439E40301E68534FE5B7317F0BAAA52 /* DBRequestTableViewCell.m in Sources */,
+				17B37459772089A787F620662E188D30 /* DBResourcesTableViewController.m in Sources */,
+				2868D12A12004125C73D37EBEC1E9A46 /* DBShakeTrigger.m in Sources */,
+				F6B586B43F5FE04AD0BC497DBB16B09B /* DBSliderTableViewCell.m in Sources */,
+				48F9F488366F926FCE8A5C85967FB4F7 /* DBTapTrigger.m in Sources */,
+				360D740E3A9D691DC483DD7A97BBF315 /* DBTextViewTableViewCell.m in Sources */,
+				9C3D7E38B455A5C2B52D4FAC584082E6 /* DBTextViewViewController.m in Sources */,
+				3771FCD8FC5787126B780E6BF86D2FE2 /* DBTitleValueListTableViewController.m in Sources */,
+				BB25D0C94EB11F2A47BA685A22466285 /* DBTitleValueTableViewCell.m in Sources */,
+				FD3242608E421F5089F939293F6B0E9A /* DBTitleValueTableViewCellDataSource.m in Sources */,
+				C43B789B6F9ECC195D1C5B6E0C6E6DE4 /* DBTopLevelView.m in Sources */,
+				4CAE29D0EEBB76EFD60E36706ECD777A /* DBTopLevelViewsWrapper.m in Sources */,
+				8B2FB17240FDF7EE945B4946B0432889 /* DBTouchIndicatorView.m in Sources */,
+				F7A791ECD44EABC682EF6ECEED37529F /* DBUserDefaultsToolkit.m in Sources */,
+				03528B0E99F454AAECE7A35E084929FE /* DBUserInterfaceTableViewController.m in Sources */,
+				08C4B942E653BAABA4CC4DBD9CD70B5E /* DBUserInterfaceToolkit.m in Sources */,
+				6BEC30B52D7538048FB6FB607D53F973 /* FilesView.swift in Sources */,
+				22FB22235AE3348CF80D1CEF3DC5E9A1 /* LocationView.swift in Sources */,
+				0A3CE40D9B0EDB9326B658251E8160C8 /* MenuList.swift in Sources */,
+				554F10605AD063FBD07F76A223703D6E /* MenuViewModel.swift in Sources */,
+				2E03EA2967A9836C8246B1717EF56A98 /* NetworkList.swift in Sources */,
+				71C8B52698B485C114063BF60A174C8C /* NetworkViewModel.swift in Sources */,
+				D0DF175DB056C671135FACF7B45236BF /* NSBundle+DBDebugToolkit.m in Sources */,
+				B0F6BE5B36B35F1851A969B6B4F4ACA2 /* NSObject+DBDebugToolkit.m in Sources */,
+				8F39CE465F18D94A806514F94D9C5B21 /* NSOperationQueue+DBMainQueueOperation.m in Sources */,
+				3B54CB4FB346D6F167E0CF930DC59938 /* NSPersistentStoreCoordinator+DBCoreDataToolkit.m in Sources */,
+				3DCF62968CDF34DAB06D193028049B74 /* NSURLSessionDelegateSwizzle.m in Sources */,
+				63272583DDF2D07998AC35A4E428F0A8 /* PerformanceView.swift in Sources */,
+				6F4DA2395E15452E6225D9C93B0B6187 /* RequestBodyPreview.swift in Sources */,
+				24B3D21E9A25E1F8F42492E852BE8DEE /* RequestDetails.swift in Sources */,
+				C896A67292EE23BEA05A2CBCE17165D0 /* RequestSettings.swift in Sources */,
+				7828E5C9C6EC435C09EDF5401217AE63 /* ResourcesList.swift in Sources */,
+				09200C9C9D8CED5F5D2A6364575B4EBD /* ResourcesViewModel.swift in Sources */,
+				DC091B911BE794C2660DAB1A8618E355 /* SearchBar.swift in Sources */,
+				9D0F7BB89D4EA5E30F18023DA742FA2B /* SwiftUIViewFactory.swift in Sources */,
+				6C0CE7873F6A393FC79C9AF884D6CDD0 /* TitleValueView.swift in Sources */,
+				F3E32235625853439A46FDD350DF46FC /* UIApplication+DBDebugToolkit.m in Sources */,
+				D9EF8A9417A6D7E103B8526FD8435F19 /* UIColor+DBDebugToolkit.m in Sources */,
+				E3572C69F566ED624D1EB5B5C6894AE1 /* UIColor+DBUserInterfaceToolkit.m in Sources */,
+				7AC18938CA67664C7416D4CA2182DBEA /* UILabel+DBDebugToolkit.m in Sources */,
+				B3DFD0F57222562351B86EE34A025C91 /* UIView+DBUserInterfaceToolkit.m in Sources */,
+				DD7C312702ABBC1FECDF3F80A1B53CFA /* UIView+Snapshot.m in Sources */,
+				6C26ADA950F9FD09B1C655FE4D70457D /* UIWindow+DBShakeTrigger.m in Sources */,
+				7C702375B3E0575541172E69FEF29D30 /* UIWindow+DBUserInterfaceToolkit.m in Sources */,
+				2E934F41A49F72054A5C75C10B9C16E3 /* UIWindow+keyWindow.swift in Sources */,
+				A7F6C7396623C8EDB7B05E2BE1D5BC28 /* URLRequest.CachePolicy+readableDescription.swift in Sources */,
+				4C890B683A00F055BA7AF81BAFCCA762 /* UserInterfaceView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362AA95CC07BE9D8242759C96E119136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F8A8ECF16154273936D5F7BFAAB1B2 /* Pods-Threads-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D91006C4A2451C17D882A10A5FAB60F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC9AAA3F68AC9DF668594CEF69CDA403 /* Pods-ThreadsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0460809000526A1389032A7DFA01640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FA6B4568D857B2E7B8A9FBD744578EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DBDebugToolkit;
+			target = 4E1B3B34BD09192573D90B8EF35F244D /* DBDebugToolkit */;
+			targetProxy = 362357AD618FB9EFDBECD5DAC1A9BA21 /* PBXContainerItemProxy */;
+		};
+		5E479EB588E3FC7486CEB6A701FD0620 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Threads";
+			target = 997B7FEB9CE0DFFC18E77E5D46DA626D /* Pods-Threads */;
+			targetProxy = E46AFCECD06FBC2CE593E205EACA6D4D /* PBXContainerItemProxy */;
+		};
+		844E5769860A5008F64F405B696D27BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DBDebugToolkit-DBDebugToolkit";
+			target = 39C7BD4699F15645EA51D9F439333942 /* DBDebugToolkit-DBDebugToolkit */;
+			targetProxy = 17766B9740D71CBD17AAEEC390B443AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09909ECBA13E8F70A928465E7F7A9A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		25EDDD16ECFD7D61B4A8E7D969970B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6016F6DD8671C23ED1E9E4FB726E076A /* DBDebugToolkit.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DBDebugToolkit";
+				IBSC_MODULE = DBDebugToolkit;
+				INFOPLIST_FILE = "Target Support Files/DBDebugToolkit/ResourceBundle-DBDebugToolkit-DBDebugToolkit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = DBDebugToolkit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2DE0D8898245310716431F92FA4989FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		35D456C5B76FD347F63A4F8BF6539C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3BDF4E83B84A534773A100EFF9C83E7 /* Pods-Threads.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Threads/Pods-Threads-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Threads/Pods-Threads.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5332EC2662469D067DFA955C54F6139A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CD6BDC41047BB706E05FACA313022DD /* Pods-ThreadsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ThreadsTests/Pods-ThreadsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ThreadsTests/Pods-ThreadsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		787BF3C3502F80C57598D60DF5582C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96049756B753483C34D34695E03C42D4 /* DBDebugToolkit.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DBDebugToolkit";
+				IBSC_MODULE = DBDebugToolkit;
+				INFOPLIST_FILE = "Target Support Files/DBDebugToolkit/ResourceBundle-DBDebugToolkit-DBDebugToolkit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = DBDebugToolkit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B4F4021196858DA2AFA8B4476BF677AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6016F6DD8671C23ED1E9E4FB726E076A /* DBDebugToolkit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DBDebugToolkit/DBDebugToolkit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DBDebugToolkit/DBDebugToolkit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DBDebugToolkit/DBDebugToolkit.modulemap";
+				PRODUCT_MODULE_NAME = DBDebugToolkit;
+				PRODUCT_NAME = DBDebugToolkit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.4;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B614386DEF7F405D9C6FD511F869AF42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F111F418EB8BA0F076E0B79A62678F6D /* Pods-Threads.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Threads/Pods-Threads-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Threads/Pods-Threads.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F3597693E6BD26BFB7D95AF43F6F3C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F93D0C12437597927790A0EBE26BE99 /* Pods-ThreadsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ThreadsTests/Pods-ThreadsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ThreadsTests/Pods-ThreadsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F58D82F21DDD0296DF5A3A8E7A8FD9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96049756B753483C34D34695E03C42D4 /* DBDebugToolkit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DBDebugToolkit/DBDebugToolkit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DBDebugToolkit/DBDebugToolkit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DBDebugToolkit/DBDebugToolkit.modulemap";
+				PRODUCT_MODULE_NAME = DBDebugToolkit;
+				PRODUCT_NAME = DBDebugToolkit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.4;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09909ECBA13E8F70A928465E7F7A9A92 /* Debug */,
+				2DE0D8898245310716431F92FA4989FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CBC680509C9078D7787D6D0FAD3543E /* Build configuration list for PBXNativeTarget "Pods-Threads" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35D456C5B76FD347F63A4F8BF6539C33 /* Debug */,
+				B614386DEF7F405D9C6FD511F869AF42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E149A8C7107BC0D7FA279BFD8DE36B9 /* Build configuration list for PBXNativeTarget "Pods-ThreadsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5332EC2662469D067DFA955C54F6139A /* Debug */,
+				F3597693E6BD26BFB7D95AF43F6F3C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC419C190038F37369A4A6B6C0603B20 /* Build configuration list for PBXNativeTarget "DBDebugToolkit-DBDebugToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25EDDD16ECFD7D61B4A8E7D969970B56 /* Debug */,
+				787BF3C3502F80C57598D60DF5582C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F948D555DB0C825B09E724D60FCB251D /* Build configuration list for PBXNativeTarget "DBDebugToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4F4021196858DA2AFA8B4476BF677AE /* Debug */,
+				F58D82F21DDD0296DF5A3A8E7A8FD9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
