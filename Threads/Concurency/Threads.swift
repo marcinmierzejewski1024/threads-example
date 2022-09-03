@@ -49,13 +49,12 @@ class T3 : IntervalThread {
     }
     
     var mode = UploadMode.sync
-    
     var uploader : LogUploader?
     var url : String?
     var queueSize = 1
     
-    
     private var packagesToSend = [String]()
+    private let packagesToSendSemaphore = DispatchSemaphore(value: 1)
     
     override func main() {
         while (!isCancelled) {
@@ -69,8 +68,12 @@ class T3 : IntervalThread {
             }
             ThreadViewModel.sharedListSemaphore.signal()
             
+            
             if let potentialPackage = potentialPackage {
+                self.packagesToSendSemaphore.wait()
                 packagesToSend.append(potentialPackage)
+                self.packagesToSendSemaphore.signal()
+
             }
             
             self.uploadNextPackage()
@@ -82,14 +85,23 @@ class T3 : IntervalThread {
     
     func uploadNextPackage(){
 
-        if let nextPackage = packagesToSend.first {
+        self.packagesToSendSemaphore.wait()
+        let nextPackage = packagesToSend.first
+        self.packagesToSendSemaphore.signal()
+
+        print("packagesToSend start \(self.packagesToSend.count)")
+
+        if let nextPackage = nextPackage {
             switch mode {
             case .async:
-                uploader?.uploadString(nextPackage, completion: { [self] err in
+                uploader?.uploadString(nextPackage, completion: { [weak self] err in
                     if let err = err {
                          print("Error while uploading package \(nextPackage) err:\(err)")
                     } else {
-                        self.packagesToSend.removeFirst()
+                        self?.packagesToSendSemaphore.wait()
+                        self?.packagesToSend.removeFirst()
+                        self?.packagesToSendSemaphore.signal()
+                        print("packagesToSend after \(self?.packagesToSend.count ?? -1)")
                     }
                 })
             case .sync:
@@ -97,9 +109,9 @@ class T3 : IntervalThread {
                 if let err = err {
                     print("Error while uploading package \(nextPackage) err:\(err)")
                 } else {
-                    packagesToSend.removeFirst()
+                    packagesToSend.removeFirst()//same thread - no need to synchronize access
                 }
-                
+                print("packagesToSend after \(self.packagesToSend.count)")
             }
         }
     }

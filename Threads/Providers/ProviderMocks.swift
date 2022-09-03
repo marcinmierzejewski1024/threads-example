@@ -34,7 +34,7 @@ class LogUploaderMockImpl : LogUploader {
     
     func uploadString(_ string: String, completion: @escaping (Error?) -> ()) {
         
-        DispatchQueue.global().asyncAfter(deadline: .now() + 0.03) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 0.1) {
             print("uploaded \(string)")
             self.uploaded.append(string)
             completion(nil)
