@@ -10,25 +10,23 @@ import Foundation
 
 class T1 : IntervalThread {
     var batteryProvider: BatteryInfoProvider?
-    
+    var sharedListService: SharedListService?
+
     override func repeatingTask() {
-        ThreadViewModel.sharedListSemaphore.wait()
         if let val = batteryProvider?.getBatteryPercentage() {
-            ThreadViewModel.sharedList.append("\(val)")
+            sharedListService?.append(item: "\(val)")
         }
-        ThreadViewModel.sharedListSemaphore.signal()
     }
 }
 
 class T2 : IntervalThread {
     var locationProvider: LocationInfoProvider?
-    
+    var sharedListService: SharedListService?
+
     override func repeatingTask() {
-        ThreadViewModel.sharedListSemaphore.wait()
         if let val = locationProvider?.getLatLng() {
-            ThreadViewModel.sharedList.append("\(val)")
+            sharedListService?.append(item: "\(val)")
         }
-        ThreadViewModel.sharedListSemaphore.signal()
     }
     
 }
@@ -43,28 +41,30 @@ class T3 : IntervalThread {
     var url : URL?
     var queueSize = 1
     var mode = UploadMode.async
-    
-    private var packagesToSend = [String]()
-    private let packagesToSendSemaphore = DispatchSemaphore(value: 1)
+    var sharedListService: SharedListService?
+    var packagesQueueService: SharedListService?
     
     override func repeatingTask() {
         
+        guard let sharedListService = sharedListService else {
+            logger?("mising sharedListService")
+            return
+        }
+        guard let packagesQueueService = packagesQueueService else {
+            logger?("mising packagesQueueService")
+            return
+        }
+
+        
         var potentialPackage: String?
         
-        ThreadViewModel.sharedListSemaphore.wait()
-        if (ThreadViewModel.sharedList.count >= queueSize) {
-            let items = ThreadViewModel.sharedList.prefix(queueSize)
-            ThreadViewModel.sharedList.removeFirst(queueSize)
-            potentialPackage = items.joined(separator: ",")
+        if (sharedListService.count() >= queueSize) {
+            let items = sharedListService.removeFirst(count: queueSize)
+            potentialPackage = items?.joined(separator: ",")
         }
-        ThreadViewModel.sharedListSemaphore.signal()
-        
         
         if let potentialPackage = potentialPackage {
-            packagesToSendSemaphore.wait()
-            packagesToSend.append(potentialPackage)
-            packagesToSendSemaphore.signal()
-            
+            packagesQueueService.append(item: potentialPackage)
             uploadNextPackage()
         }
     }
@@ -76,11 +76,9 @@ class T3 : IntervalThread {
             return
         }
         
-        self.packagesToSendSemaphore.wait()
-        let nextPackage = packagesToSend.first
-        self.packagesToSendSemaphore.signal()
+        let nextPackage = packagesQueueService?.first(count: 1)?.first
         
-        logger?("packages to send start \(self.packagesToSend.count)")
+        logger?("packages to send start \(self.packagesQueueService?.count() ?? -1)")
         
         if let nextPackage = nextPackage {
             switch mode {
@@ -90,10 +88,8 @@ class T3 : IntervalThread {
                     if let err = err {
                         self?.logger?("Error while uploading package \(nextPackage) err:\(err)")
                     } else {
-                        self?.packagesToSendSemaphore.wait()
-                        self?.packagesToSend.removeFirst()
-                        self?.packagesToSendSemaphore.signal()
-                        self?.logger?("packages To Send after \(self?.packagesToSend.count ?? -1)")
+                        let _ = self?.packagesQueueService?.removeFirst(count: 1)
+                        self?.logger?("packages To Send after \(self?.packagesQueueService?.count() ?? -1)")
                     }
                 })
                 
@@ -102,9 +98,9 @@ class T3 : IntervalThread {
                 if let err = err {
                     logger?("Error while uploading package \(nextPackage) err:\(err)")
                 } else {
-                    packagesToSend.removeFirst()//same thread - no need to synchronize access
+                    let _ = packagesQueueService?.removeFirst(count: 1)
                 }
-                logger?("packages To Send after \(self.packagesToSend.count)")
+                logger?("packages To Send after \(packagesQueueService?.count() ?? -1)")
             }
         }
     }
