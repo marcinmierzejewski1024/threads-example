@@ -47,6 +47,9 @@ class ThreadViewModelMockConfiguratorImpl : ThreadViewModelConfigurator {
         let sharedListService = SemaphoreSharedListService()
         let packagesQueueService = SemaphoreSharedListService()
 
+        let alternativeSharedListService = DispatchQueueSharedListService()
+        let alternativePackagesQueueService = DispatchQueueSharedListService()
+
         
         let t1 = T1()
         t1.interval = t1Interval
