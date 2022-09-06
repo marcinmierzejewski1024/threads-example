@@ -19,14 +19,15 @@ protocol SharedListService {
 
 
 class SharedListServiceAbstract<T> : SharedListService {
-    var count: Int {
-        0
-    }
     
     typealias SharedListServiceItem = T
     
     func append(item: SharedListServiceItem) {}
     func removeFirst(count: Int) -> [SharedListServiceItem]? { nil }
     func first(count: Int) -> [SharedListServiceItem]? { nil }
+    var count: Int {
+        0
+    }
+    
 }
 
