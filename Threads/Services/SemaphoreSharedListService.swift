@@ -40,7 +40,7 @@ class SemaphoreSharedListService<SharedListServiceItem> : SharedListServiceAbstr
         return nil
     }
     
-    override func count() -> Int {
+    override var count: Int {
         self.sharedListSemaphore.wait()
         defer {
             self.sharedListSemaphore.signal()

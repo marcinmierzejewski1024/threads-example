@@ -37,7 +37,7 @@ class DispatchQueueSharedListService<SharedListServiceItem> : SharedListServiceA
         return result
     }
     
-    override func count() -> Int {
+    override var count: Int {
         var result = 0
         accessQueue.sync {
             result = sharedList.count

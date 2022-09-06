@@ -58,7 +58,7 @@ class T3 : IntervalThread {
         
         var potentialPackage: String?
         
-        if (sharedListService.count() >= queueSize) {
+        if (sharedListService.count >= queueSize) {
             let items = sharedListService.removeFirst(count: queueSize)
             potentialPackage = items?.joined(separator: ",")
         }
@@ -78,7 +78,7 @@ class T3 : IntervalThread {
         
         let nextPackage = packagesQueueService?.first(count: 1)?.first
         
-        logger?("packages to send start \(self.packagesQueueService?.count() ?? -1)")
+        logger?("packages to send start \(self.packagesQueueService?.count ?? -1)")
         
         if let nextPackage = nextPackage {
             switch mode {
@@ -89,7 +89,7 @@ class T3 : IntervalThread {
                         self?.logger?("Error while uploading package \(nextPackage) err:\(err)")
                     } else {
                         let _ = self?.packagesQueueService?.removeFirst(count: 1)
-                        self?.logger?("packages To Send after \(self?.packagesQueueService?.count() ?? -1)")
+                        self?.logger?("packages To Send after \(self?.packagesQueueService?.count ?? -1)")
                     }
                 })
                 
@@ -100,7 +100,7 @@ class T3 : IntervalThread {
                 } else {
                     let _ = packagesQueueService?.removeFirst(count: 1)
                 }
-                logger?("packages To Send after \(packagesQueueService?.count() ?? -1)")
+                logger?("packages To Send after \(packagesQueueService?.count ?? -1)")
             }
         }
     }
