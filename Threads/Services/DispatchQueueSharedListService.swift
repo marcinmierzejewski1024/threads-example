@@ -8,7 +8,8 @@
 import Foundation
 
 
-class DispatchQueueSharedListService<SharedListServiceItem> : SharedListService<SharedListServiceItem> {
+class DispatchQueueSharedListService<SharedListServiceItem> : SharedListServiceAbstract<SharedListServiceItem> {
+    
     private let accessQueue = DispatchQueue(label: "DispatchQueueSharedListService")
     var sharedList = [SharedListServiceItem]()
 

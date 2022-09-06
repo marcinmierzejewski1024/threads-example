@@ -10,7 +10,7 @@ import Foundation
 
 class T1 : IntervalThread {
     var batteryProvider: BatteryInfoProvider?
-    var sharedListService: SharedListService<String>?
+    var sharedListService: SharedListServiceAbstract<String>?
 
     override func repeatingTask() {
         if let val = batteryProvider?.getBatteryPercentage() {
@@ -21,7 +21,7 @@ class T1 : IntervalThread {
 
 class T2 : IntervalThread {
     var locationProvider: LocationInfoProvider?
-    var sharedListService: SharedListService<String>?
+    var sharedListService: SharedListServiceAbstract<String>?
 
     override func repeatingTask() {
         if let val = locationProvider?.getLatLng() {
@@ -41,8 +41,8 @@ class T3 : IntervalThread {
     var url : URL?
     var queueSize = 1
     var mode = UploadMode.sync
-    var sharedListService: SharedListService<String>?
-    var packagesQueueService: SharedListService<String>?
+    var sharedListService: SharedListServiceAbstract<String>?
+    var packagesQueueService: SharedListServiceAbstract<String>?
     
     override func repeatingTask() {
         
