@@ -17,10 +17,10 @@ class ThreadViewModel : ObservableObject {
     
     
     func startClicked() {
-        let a = 0.001
-        let b = 0.002
+        let a = 0.01
+        let b = 0.02
         let c = 100
-        let d = "https://wp.pl"
+        let d = "https://onet.pl"
         
         prepareThreads(t1Interval: a, t2Interval: b, queueSize: c, url: d)
         start()
@@ -95,11 +95,11 @@ class ThreadViewModelConfiguratorImpl : ThreadViewModelConfigurator {
     
     func prepareThreads(t1Interval:TimeInterval, t2Interval:TimeInterval, queueSize:Int, url: String) -> (T1, T2, T3) {
         
-        let sharedListService = SemaphoreSharedListService()
-        let packagesQueueService = SemaphoreSharedListService()
+        let sharedListService = SemaphoreSharedListService<String>()
+        let packagesQueueService = SemaphoreSharedListService<String>()
 
-        let alternativeSharedListService = DispatchQueueSharedListService()
-        let alternativePackagesQueueService = DispatchQueueSharedListService()
+//        let alternativeSharedListService = DispatchQueueSharedListService<String>()
+//        let alternativePackagesQueueService = DispatchQueueSharedListService<String>()
 
         
         let t1 = T1()

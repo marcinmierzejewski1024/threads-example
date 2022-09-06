@@ -8,17 +8,17 @@
 import Foundation
 
 
-class DispatchQueueSharedListService : SharedListService {
+class DispatchQueueSharedListService<SharedListServiceItem> : SharedListService<SharedListServiceItem> {
     private let accessQueue = DispatchQueue(label: "DispatchQueueSharedListService")
     var sharedList = [SharedListServiceItem]()
 
-    func append(item: SharedListServiceItem) {
+    override func append(item: SharedListServiceItem) {
         accessQueue.async {
             self.sharedList.append(item)
         }
     }
     
-    func removeFirst(count: Int) -> [SharedListServiceItem]? {
+    override func removeFirst(count: Int) -> [SharedListServiceItem]? {
         
         var result: [SharedListServiceItem]?
         accessQueue.sync {
@@ -28,7 +28,7 @@ class DispatchQueueSharedListService : SharedListService {
         return result
     }
     
-    func first(count: Int) -> [SharedListServiceItem]? {
+    override func first(count: Int) -> [SharedListServiceItem]? {
         var result: [SharedListServiceItem]?
         accessQueue.sync {
             result = Array(sharedList.prefix(count))
@@ -36,7 +36,7 @@ class DispatchQueueSharedListService : SharedListService {
         return result
     }
     
-    func count() -> Int {
+    override func count() -> Int {
         var result = 0
         accessQueue.sync {
             result = sharedList.count

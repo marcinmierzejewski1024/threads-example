@@ -7,12 +7,12 @@
 
 import Foundation
 
-typealias SharedListServiceItem = String
-protocol SharedListService {
-    func append(item: SharedListServiceItem)
-    func removeFirst(count: Int) -> [SharedListServiceItem]?
-    func first(count: Int) -> [SharedListServiceItem]?
-    func count() -> Int
+class SharedListService<SharedListServiceItem> {
+    
+    func append(item: SharedListServiceItem){}
+    func removeFirst(count: Int) -> [SharedListServiceItem]?{nil}
+    func first(count: Int) -> [SharedListServiceItem]?{nil}
+    func count() -> Int{0}
 }
 
 

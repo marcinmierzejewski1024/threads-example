@@ -7,18 +7,18 @@
 
 import Foundation
 
-class SemaphoreSharedListService : SharedListService {
+class SemaphoreSharedListService<SharedListServiceItem> : SharedListService<SharedListServiceItem> {
     
     let sharedListSemaphore = DispatchSemaphore(value: 1)
     var sharedList = [SharedListServiceItem]()
     
-    func append(item: SharedListServiceItem) {
+    override func append(item: SharedListServiceItem) {
         self.sharedListSemaphore.wait()
         self.sharedList.append(item)
         self.sharedListSemaphore.signal()
     }
     
-    func first(count: Int) -> [SharedListServiceItem]? {
+    override func first(count: Int) -> [SharedListServiceItem]? {
         self.sharedListSemaphore.wait()
         defer {
             self.sharedListSemaphore.signal()
@@ -27,7 +27,7 @@ class SemaphoreSharedListService : SharedListService {
     }
 
     
-    func removeFirst(count: Int) -> [SharedListServiceItem]? {
+    override func removeFirst(count: Int) -> [SharedListServiceItem]? {
         self.sharedListSemaphore.wait()
         defer {
             self.sharedListSemaphore.signal()
@@ -40,7 +40,7 @@ class SemaphoreSharedListService : SharedListService {
         return nil
     }
     
-    func count() -> Int {
+    override func count() -> Int {
         self.sharedListSemaphore.wait()
         defer {
             self.sharedListSemaphore.signal()

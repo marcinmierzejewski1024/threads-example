@@ -44,11 +44,11 @@ class LogUploaderMockImpl : LogUploader {
 class ThreadViewModelMockConfiguratorImpl : ThreadViewModelConfigurator {
     func prepareThreads(t1Interval: TimeInterval, t2Interval: TimeInterval, queueSize: Int, url: String) -> (T1, T2, T3) {
         
-        let sharedListService = SemaphoreSharedListService()
-        let packagesQueueService = SemaphoreSharedListService()
+        let sharedListService = SemaphoreSharedListService<String>()
+        let packagesQueueService = SemaphoreSharedListService<String>()
 
-        let alternativeSharedListService = DispatchQueueSharedListService()
-        let alternativePackagesQueueService = DispatchQueueSharedListService()
+//        let alternativeSharedListService = DispatchQueueSharedListService<String>()
+//        let alternativePackagesQueueService = DispatchQueueSharedListService<String>()
 
         
         let t1 = T1()
