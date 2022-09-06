@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SemaphoreSharedListService<SharedListServiceItem> : SharedListServiceAbstract<SharedListServiceItem> {
+class SemaphoreSharedListService<SharedListServiceItem> : AnySharedListService<SharedListServiceItem> {
     
     let sharedListSemaphore = DispatchSemaphore(value: 1)
     var sharedList = [SharedListServiceItem]()

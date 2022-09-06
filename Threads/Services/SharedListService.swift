@@ -17,8 +17,8 @@ protocol SharedListService {
     var count: Int { get }
 }
 
-
-class SharedListServiceAbstract<T> : SharedListService {
+//type erasure
+class AnySharedListService<T> : SharedListService {
     
     typealias SharedListServiceItem = T
     
